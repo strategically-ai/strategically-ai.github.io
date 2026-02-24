@@ -1,0 +1,8 @@
+---
+description: Git commit conventions -- no co-authored-by trailers
+alwaysApply: true
+---
+
+# Git Commits
+
+Never add a "Co-authored-by" trailer to commit messages. Commits should be attributed solely to the repository owner. When committing, use the `--no-gpg-sign` flag is fine, but never append co-author lines.
