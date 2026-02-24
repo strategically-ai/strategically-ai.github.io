@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-02-24">
+<meta name="description" content="We analyzed the most recent 10-K filings of the Fortune 100 to measure how large companies discuss AI. The result: nearly all of them mention it, but most frame it as a risk – not an opportunity.">
 
-<title>Insights – The AI Strategist</title>
+<title>What Fortune 100 Companies Actually Say About AI – The AI Strategist</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-54b218939627cd219cfbe17f31695448.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-54b218939627cd219cfbe17f31695448.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -139,7 +81,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">The AI Strategist</span>
     </a>
   </div>
@@ -150,15 +92,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Insights</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -244,21 +186,52 @@ window.Quarto = {
 </div>
 
 </div></div>
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QUk=">AI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Y2FwaXRhbC1hbGxvY2F0aW9u">capital-allocation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U0VDLWZpbGluZ3M=">SEC-filings <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2VudGltZW50LWFuYWx5c2lz">sentiment-analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3RyYXRlZ3k=">strategy <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-question" id="toc-the-question" class="nav-link active" data-scroll-target="#the-question">The question</a></li>
+  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a></li>
+  <li><a href="#finding-1-ai-is-now-a-near-universal-disclosure-topic" id="toc-finding-1-ai-is-now-a-near-universal-disclosure-topic" class="nav-link" data-scroll-target="#finding-1-ai-is-now-a-near-universal-disclosure-topic">Finding 1: AI is now a near-universal disclosure topic</a></li>
+  <li><a href="#finding-2-the-majority-frame-ai-as-a-risk" id="toc-finding-2-the-majority-frame-ai-as-a-risk" class="nav-link" data-scroll-target="#finding-2-the-majority-frame-ai-as-a-risk">Finding 2: The majority frame AI as a risk</a></li>
+  <li><a href="#finding-3-sector-determines-the-narrative" id="toc-finding-3-sector-determines-the-narrative" class="nav-link" data-scroll-target="#finding-3-sector-determines-the-narrative">Finding 3: Sector determines the narrative</a></li>
+  <li><a href="#finding-4-risk-and-regulation-dominate-the-thematic-landscape" id="toc-finding-4-risk-and-regulation-dominate-the-thematic-landscape" class="nav-link" data-scroll-target="#finding-4-risk-and-regulation-dominate-the-thematic-landscape">Finding 4: Risk and regulation dominate the thematic landscape</a></li>
+  <li><a href="#finding-5-ai-intensity-varies-enormously" id="toc-finding-5-ai-intensity-varies-enormously" class="nav-link" data-scroll-target="#finding-5-ai-intensity-varies-enormously">Finding 5: AI intensity varies enormously</a></li>
+  <li><a href="#what-this-means-for-investors-and-operators" id="toc-what-this-means-for-investors-and-operators" class="nav-link" data-scroll-target="#what-this-means-for-investors-and-operators">What this means for investors and operators</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Insights</h1>
-</div>
+<h1 class="title">What Fortune 100 Companies Actually Say About AI</h1>
+<p class="subtitle lead">A sentiment analysis of artificial intelligence language in the latest 10-K filings of America’s largest public companies</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">sentiment-analysis</div>
+    <div class="quarto-category">SEC-filings</div>
+    <div class="quarto-category">strategy</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    We analyzed the most recent 10-K filings of the Fortune 100 to measure how large companies discuss AI. The result: nearly all of them mention it, but most frame it as a risk – not an opportunity.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 24, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -268,85 +241,143 @@ window.Quarto = {
 </header>
 
 
+<section id="the-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-question">The question</h2>
+<p>Artificial intelligence is everywhere in corporate discourse. Earnings calls, investor presentations, and annual reports are saturated with references to AI, machine learning, and generative models. But what are companies actually saying when they write about AI in the document that carries the most legal weight – the annual 10-K filing?</p>
+<p>We analyzed the most recent 10-K filing for each Fortune 100 company to answer a specific question: <strong>when America’s largest public companies discuss AI in their regulatory disclosures, do they frame it as an opportunity or a risk?</strong></p>
+<p>The answer is striking, and carries implications for how investors should interpret corporate AI narratives.</p>
+</section>
+<section id="scope" class="level2">
+<h2 class="anchored" data-anchor-id="scope">Scope</h2>
+<ul>
+<li><strong>Universe:</strong> Fortune 100 companies by revenue. Of these, 94 are public filers with retrievable 10-K filings from SEC EDGAR.</li>
+<li><strong>Filings:</strong> The single most recent 10-K per company (filing dates range from early 2025 to February 2026).</li>
+<li><strong>Method:</strong> We extracted passages from each 10-K that contain AI-related terms (artificial intelligence, machine learning, deep learning, generative AI, predictive models, and related phrases), then classified the sentiment of those passages and identified the dominant theme of each company’s AI discussion.</li>
+</ul>
+</section>
+<section id="finding-1-ai-is-now-a-near-universal-disclosure-topic" class="level2">
+<h2 class="anchored" data-anchor-id="finding-1-ai-is-now-a-near-universal-disclosure-topic">Finding 1: AI is now a near-universal disclosure topic</h2>
+<p>Of the 94 Fortune 100 companies with retrievable filings, <strong>90 (96%) mention artificial intelligence</strong> or closely related terms in their latest 10-K. This is no longer a technology-sector phenomenon. Companies across healthcare, energy, retail, financials, and industrials are all addressing AI in their annual reports.</p>
+<p>The four companies without any AI-related language in their filings are the exception, not the rule. The question for investors is no longer <em>whether</em> a company mentions AI, but <em>how</em> it frames the technology.</p>
+<p><img src="ai_mention_rate.png" class="img-fluid"></p>
+</section>
+<section id="finding-2-the-majority-frame-ai-as-a-risk" class="level2">
+<h2 class="anchored" data-anchor-id="finding-2-the-majority-frame-ai-as-a-risk">Finding 2: The majority frame AI as a risk</h2>
+<p>This is the headline result. Among the 90 companies that discuss AI:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Sentiment</th>
+<th>Companies</th>
+<th>Share</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Negative (risk-focused)</td>
+<td>42</td>
+<td>47%</td>
+</tr>
+<tr class="even">
+<td>Positive (opportunity-focused)</td>
+<td>32</td>
+<td>36%</td>
+</tr>
+<tr class="odd">
+<td>Neutral (factual)</td>
+<td>16</td>
+<td>18%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nearly half of Fortune 100 companies frame AI primarily as a risk</strong> in their most recent 10-K. The language is dominated by regulatory uncertainty, cybersecurity threats, compliance costs, and competitive disruption. Positive framing – AI as a strategic asset, growth driver, or source of competitive advantage – accounts for just over a third.</p>
+<p>This is a meaningful signal. The 10-K is a legally binding document reviewed by counsel. The language in it reflects what management and legal teams believe they need to disclose to investors. When the dominant framing is risk, it tells us that the corporate reality of AI adoption – at least as seen through the lens of regulatory disclosure – is more cautious than the narrative on earnings calls and in investor presentations.</p>
+<p><img src="sentiment_distribution.png" class="img-fluid"></p>
+</section>
+<section id="finding-3-sector-determines-the-narrative" class="level2">
+<h2 class="anchored" data-anchor-id="finding-3-sector-determines-the-narrative">Finding 3: Sector determines the narrative</h2>
+<p>The sentiment split is not uniform across industries. Technology companies are a clear outlier: the vast majority frame AI positively, emphasizing competitive positioning, product innovation, and strategic investment. This is expected – these are the companies building and selling AI.</p>
+<p>The pattern reverses in nearly every other sector:</p>
+<ul>
+<li><strong>Financials</strong> lean heavily negative, with banks and insurers focusing on cybersecurity risk, regulatory compliance, and the operational uncertainties of deploying AI in regulated environments. JPMorgan Chase, Bank of America, Citigroup, and Morgan Stanley all classify as negative or cautious.</li>
+<li><strong>Healthcare</strong> is mixed but tilts negative, with pharmaceutical and insurance companies emphasizing regulatory risk, while providers like HCA Healthcare and CVS Health frame AI as an operational efficiency tool.</li>
+<li><strong>Industrials</strong> are split. Defense contractors like Lockheed Martin and Northrop Grumman see AI as a competitive asset. General manufacturers like 3M and General Electric frame it primarily as a risk.</li>
+<li><strong>Retail</strong> leans negative, with companies like Target, Kroger, Home Depot, and Dollar General emphasizing the risks of AI-driven competition and cybersecurity exposure.</li>
+<li><strong>Energy</strong> is predominantly negative, focused on cybersecurity and operational risk, with the notable exception of Chevron, which frames AI as a productivity tool.</li>
+</ul>
+<p>The implication for investors: <strong>the same technology is being framed as opportunity or threat depending on whether a company is a builder of AI or a consumer of it.</strong></p>
+</section>
+<section id="finding-4-risk-and-regulation-dominate-the-thematic-landscape" class="level2">
+<h2 class="anchored" data-anchor-id="finding-4-risk-and-regulation-dominate-the-thematic-landscape">Finding 4: Risk and regulation dominate the thematic landscape</h2>
+<p>Beyond sentiment, we classified the primary theme of each company’s AI discussion. The results reinforce the risk-first framing:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Primary AI Theme</th>
+<th>Companies</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Risk and regulation</td>
+<td>47</td>
+</tr>
+<tr class="even">
+<td>Competitive positioning</td>
+<td>19</td>
+</tr>
+<tr class="odd">
+<td>Operational efficiency</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Investment and capex</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Product innovation</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Data and analytics</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Customer experience</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Talent and workforce</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Over half of all Fortune 100 companies that mention AI do so primarily in the context of risk and regulation.</strong> This includes cybersecurity threats amplified by AI, evolving regulatory frameworks (particularly around data privacy and algorithmic accountability), and the competitive risk of falling behind on AI adoption.</p>
+<p>Competitive positioning is a distant second, driven almost entirely by technology companies. Operational efficiency – the use case that arguably delivers the most near-term enterprise value – ranks third.</p>
+<p><img src="ai_themes.png" class="img-fluid"></p>
+</section>
+<section id="finding-5-ai-intensity-varies-enormously" class="level2">
+<h2 class="anchored" data-anchor-id="finding-5-ai-intensity-varies-enormously">Finding 5: AI intensity varies enormously</h2>
+<p>The depth of AI discussion varies dramatically across the Fortune 100. Some companies dedicate extensive passages to AI strategy, risk management, and investment plans. Others mention it once in passing.</p>
+<p>The most AI-vocal companies by keyword density include Sysco (which discusses AI extensively in the context of operational transformation), Northrop Grumman (AI as a defense capability), Target (AI as a competitive and regulatory risk), HCA Healthcare (AI-driven care delivery), and Capital One (AI in financial services with significant regulatory framing).</p>
+<p>At the other end, companies like ExxonMobil, Plains All American Pipeline, and Caterpillar mention AI only once or twice, typically in a general risk factor or market demand context.</p>
+<p><img src="top_20_ai_mentions.png" class="img-fluid"></p>
+</section>
+<section id="what-this-means-for-investors-and-operators" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-means-for-investors-and-operators">What this means for investors and operators</h2>
+<p>Several implications emerge from this analysis:</p>
+<p><strong>The disclosure gap is a signal.</strong> When a company frames AI exclusively as a risk in its 10-K but touts it as a growth driver on earnings calls, that gap is worth investigating. The 10-K is the more conservative, legally scrutinized document. Investors should weight it accordingly.</p>
+<p><strong>Sector context matters.</strong> A negative AI sentiment score for a bank is not the same signal as a negative score for a technology company. Financial services firms operate under regulatory frameworks that compel cautious disclosure language. The risk framing may reflect compliance culture as much as genuine strategic concern.</p>
+<p><strong>Builders vs.&nbsp;consumers.</strong> The clearest pattern in the data is the divide between companies that build AI products (technology firms, which are overwhelmingly positive) and companies that consume AI tools (everyone else, which skew negative or neutral). This divide has direct implications for where AI-driven value creation will accrue and where AI-driven risk will concentrate.</p>
+<p><strong>The regulatory overhang is real.</strong> The dominance of “risk and regulation” as the primary AI theme is not just disclosure boilerplate. It reflects genuine uncertainty about how AI will be regulated, how liability will be allocated, and how compliance costs will scale. Companies are telling investors, in legally binding language, that they do not yet know the rules of the game.</p>
+<p><strong>Operational efficiency is underdisclosed.</strong> Only 10 companies identify operational efficiency as their primary AI theme, despite this being the use case with the most immediate and measurable impact on margins. This suggests either that operational AI adoption is earlier-stage than the public narrative implies, or that companies are not yet comfortable claiming AI-driven efficiency gains in a document subject to SEC scrutiny.</p>
+<hr>
+<p><em>This analysis covers the Fortune 100 by revenue. Of these, 94 companies had retrievable 10-K filings from SEC EDGAR. Sentiment was classified using natural language processing applied to AI-specific passages extracted from each filing. The full analysis is reproducible from the notebook in this repository.</em></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QUklMkNzZW50aW1lbnQtYW5hbHlzaXMlMkNTRUMtZmlsaW5ncyUyQ3N0cmF0ZWd5" data-listing-date-sort="1771909200000" data-listing-file-modified-sort="1771907784240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1246">
-<div class="thumbnail"><a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/fortune-100-ai-sentiment/ai_mention_rate.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">What Fortune 100 Companies Actually Say About AI</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">A sentiment analysis of artificial intelligence language in the latest 10-K filings of America’s largest public companies</a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QUk='); return false;">AI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c2VudGltZW50LWFuYWx5c2lz'); return false;">sentiment-analysis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U0VDLWZpbGluZ3M='); return false;">SEC-filings</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RyYXRlZ3k='); return false;">strategy</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">
-<p>We analyzed the most recent 10-K filings of the Fortune 100 to measure how large companies discuss AI. The result: nearly all of them mention it, but most frame it as a risk – not an opportunity.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">
-<div class="listing-date">
-Feb 24, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="c3RyYXRlZ3klMkNBSSUyQ2NhcGl0YWwtYWxsb2NhdGlvbg==" data-listing-date-sort="1771822800000" data-listing-file-modified-sort="1771890522051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1055">
-<div class="thumbnail"><a href="./posts/foundational-thesis/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/foundational-thesis/index.html" class="no-external">The End of Intuition-Led Strategy</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/foundational-thesis/index.html" class="no-external">Why the strategist’s core toolkit is shifting from intuition and spreadsheets to models and data infrastructure</a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('c3RyYXRlZ3k='); return false;">strategy</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QUk='); return false;">AI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y2FwaXRhbC1hbGxvY2F0aW9u'); return false;">capital-allocation</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/foundational-thesis/index.html" class="no-external">
-<p>A foundational essay on why strategy is moving from gut-driven to model-informed, and how AI and data science are becoming the primary instruments for capital allocation, operating decisions, and competitive analysis.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/foundational-thesis/index.html" class="no-external">
-<div class="listing-date">
-Feb 23, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

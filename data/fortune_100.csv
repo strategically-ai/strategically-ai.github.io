@@ -1,0 +1,100 @@
+company,ticker,sector
+Walmart,WMT,Retail
+Amazon,AMZN,Technology
+Apple,AAPL,Technology
+UnitedHealth Group,UNH,Healthcare
+Berkshire Hathaway,BRK-B,Financials
+CVS Health,CVS,Healthcare
+ExxonMobil,XOM,Energy
+Alphabet,GOOGL,Technology
+McKesson,MCK,Healthcare
+Cencora,COR,Healthcare
+Costco,COST,Retail
+Microsoft,MSFT,Technology
+Cigna Group,CI,Healthcare
+Cardinal Health,CAH,Healthcare
+Chevron,CVX,Energy
+JPMorgan Chase,JPM,Financials
+Fannie Mae,FNMA,Financials
+Kroger,KR,Retail
+Walgreens Boots Alliance,WBA,Retail
+Bank of America,BAC,Financials
+Ford Motor,F,Industrials
+Verizon,VZ,Telecommunications
+AT&T,T,Telecommunications
+General Motors,GM,Industrials
+Centene,CNC,Healthcare
+Meta Platforms,META,Technology
+Marathon Petroleum,MPC,Energy
+Phillips 66,PSX,Energy
+Valero Energy,VLO,Energy
+Comcast,CMCSA,Telecommunications
+Home Depot,HD,Retail
+Wells Fargo,WFC,Financials
+Tesla,TSLA,Technology
+Johnson & Johnson,JNJ,Healthcare
+State Farm,STATEFARM,Financials
+Elevance Health,ELV,Healthcare
+Target,TGT,Retail
+Citigroup,C,Financials
+Freddie Mac,FMCC,Financials
+Morgan Stanley,MS,Financials
+Goldman Sachs,GS,Financials
+Humana,HUM,Healthcare
+Procter & Gamble,PG,Consumer Goods
+General Electric,GE,Industrials
+AbbVie,ABBV,Healthcare
+PepsiCo,PEP,Consumer Goods
+Archer Daniels Midland,ADM,Consumer Goods
+Dell Technologies,DELL,Technology
+Walt Disney,DIS,Media
+Lockheed Martin,LMT,Industrials
+Raytheon Technologies,RTX,Industrials
+UPS,UPS,Industrials
+Intel,INTC,Technology
+Caterpillar,CAT,Industrials
+Pfizer,PFE,Healthcare
+FedEx,FDX,Industrials
+Cisco Systems,CSCO,Technology
+Merck,MRK,Healthcare
+ConocoPhillips,COP,Energy
+IBM,IBM,Technology
+Nike,NKE,Consumer Goods
+Lowe's,LOW,Retail
+Deere & Company,DE,Industrials
+American Express,AXP,Financials
+Broadcom,AVGO,Technology
+Oracle,ORCL,Technology
+Albertsons,ACI,Retail
+Dow,DOW,Industrials
+TJX Companies,TJX,Retail
+US Foods,USFD,Consumer Goods
+HCA Healthcare,HCA,Healthcare
+World Kinect,WKC,Energy
+Tyson Foods,TSN,Consumer Goods
+Bristol-Myers Squibb,BMY,Healthcare
+Progressive,PGR,Financials
+Thermo Fisher Scientific,TMO,Healthcare
+American International Group,AIG,Financials
+Sysco,SYY,Consumer Goods
+Starbucks,SBUX,Consumer Goods
+Abbott Laboratories,ABT,Healthcare
+Nvidia,NVDA,Technology
+Honeywell,HON,Industrials
+Plains All American Pipeline,PAA,Energy
+Best Buy,BBY,Retail
+Philip Morris,PM,Consumer Goods
+3M,MMM,Industrials
+Enterprise Products Partners,EPD,Energy
+Danaher,DHR,Healthcare
+Salesforce,CRM,Technology
+General Dynamics,GD,Industrials
+Kraft Heinz,KHC,Consumer Goods
+Capital One,COF,Financials
+Northrop Grumman,NOC,Industrials
+TIAA,TIAA,Financials
+Nucor,NUE,Industrials
+Coca-Cola,KO,Consumer Goods
+Publix Super Markets,PUSH,Retail
+Dollar General,DG,Retail
+TD Synnex,SNX,Technology
