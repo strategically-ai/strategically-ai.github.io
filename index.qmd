@@ -1,5 +1,11 @@
 ---
 title: "The AI Strategist"
+listing:
+  - id: latest
+    contents: posts
+    sort: "date desc"
+    type: default
+    max-items: 10
 ---
 
 We apply artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.
@@ -16,6 +22,7 @@ Designed for investors, operators, and founders. This platform uses machine lear
 
 ### Latest
 
-**[The End of Intuition-Led Strategy](posts/foundational-thesis/)** -- A foundational essay on why strategy is moving from intuition to models, and what that means for how we allocate capital and build businesses.
+::: {#latest}
+:::
 
 [Browse all insights &rarr;](blog.qmd)

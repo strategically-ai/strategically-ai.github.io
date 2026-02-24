@@ -5,5 +5,12 @@
       "/posts/fortune-100-ai-sentiment/index.html",
       "/posts/foundational-thesis/index.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/fortune-100-ai-sentiment/index.html",
+      "/posts/foundational-thesis/index.html"
+    ]
   }
 ]
