@@ -7,25 +7,11 @@
     "text": "The End of Intuition-Led Strategy\n\n\nWhy the strategist’s core toolkit is shifting from intuition and spreadsheets to models and data infrastructure\n\n\n\nstrategy\n\nAI\n\ncapital-allocation\n\n\n\nA foundational essay on why strategy is moving from gut-driven to model-informed, and how AI and data science are becoming the primary instruments for capital allocation, operating decisions, and competitive analysis.\n\n\n\n\n\nFeb 23, 2026\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The AI Strategist",
     "section": "",
-    "text": "A platform that applies artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.\nAudience: Investors, operators, and founders building defensible, data-informed businesses.\nFocus: Using machine learning, quantitative analysis, and reproducible research to answer strategic questions: How should capital be deployed? Where is operating leverage? What does the data say about competitive positioning?\nMedium: Every insight is backed by reproducible code and data. Content is authored in Jupyter notebooks and published via Quarto."
-  },
-  {
-    "objectID": "about.html#the-ai-strategist",
-    "href": "about.html#the-ai-strategist",
-    "title": "About",
-    "section": "",
-    "text": "A platform that applies artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.\nAudience: Investors, operators, and founders building defensible, data-informed businesses.\nFocus: Using machine learning, quantitative analysis, and reproducible research to answer strategic questions: How should capital be deployed? Where is operating leverage? What does the data say about competitive positioning?\nMedium: Every insight is backed by reproducible code and data. Content is authored in Jupyter notebooks and published via Quarto."
-  },
-  {
-    "objectID": "about.html#about-the-author",
-    "href": "about.html#about-the-author",
-    "title": "About",
-    "section": "About the author",
-    "text": "About the author\nMfundo Radebe works at Bain & Company in New York, where he sits at the intersection of strategy consulting, data science, and capital allocation. His focus is on applying AI and analytics to the way companies compete, operate, and create enterprise value, particularly across private markets.\nBefore Bain, Mfundo led strategy and data analytics at Moment, a General Catalyst-incubated payments company operating across London and Johannesburg, where he built the firm’s first product analytics infrastructure. He has delivered commercial due diligence and value creation work for private equity funds at Bain, applied machine learning to macroeconomic research and investment decisions at Bridgewater Associates’ AI Labs, and conducted research on firm strategy and financial services at Harvard Business School. He also served as a Data Engineering Lead at Goodword and a researcher at Columbia University, where he led the transformation of the core MBA economics curriculum into an AI-powered delivery platform.\nMfundo studied at Harvard University, where he was a Radcliffe Fellow, and is completing his MBA in Finance and Business Economics at Columbia Business School. He built The AI Strategist to apply the tools he uses in consulting and investing to a broader set of strategic problems, and to make that work open, reproducible, and useful.\n\nThe AI Strategist launched with The End of Intuition-Led Strategy, a foundational essay on why strategy is moving from intuition to models."
+    "text": "We apply artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.\nAI and data science applied to:\n\nMarket sizing, competitive positioning, and revenue forecasting\nDue diligence, operating diagnostics, and portfolio analytics\nCapital allocation, pricing, and operational benchmarking\n\nDesigned for investors, operators, and founders. This platform uses machine learning and quantitative methods to surface strategic insights, build decision tools, and turn data into durable enterprise value.\n\n\nLatest\nThe End of Intuition-Led Strategy – A foundational essay on why strategy is moving from intuition to models, and what that means for how we allocate capital and build businesses.\nBrowse all insights →"
   },
   {
     "objectID": "posts/foundational-thesis/index.html",
@@ -77,17 +63,24 @@
     "text": "A closing conviction\nThe strategist’s toolkit is changing. The next generation of operating partners, portfolio managers, and founders will be distinguished not by whether they can build models themselves, but by whether they can use data science to sharpen the decisions they already make.\nThe firms that treat AI as a point solution will capture some value. The firms that treat it as the primary instrument for strategy, diligence, and operating decisions will capture most of it. The gap between these two postures is already visible, and it will widen.\nThe AI Strategist is built on the conviction that learning to do strategy with these tools, deeply, quantitatively, and with operational specificity, is among the highest-leverage investments a strategist can make today."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The AI Strategist",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "We apply artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.\nAI and data science applied to:\n\nMarket sizing, competitive positioning, and revenue forecasting\nDue diligence, operating diagnostics, and portfolio analytics\nCapital allocation, pricing, and operational benchmarking\n\nDesigned for investors, operators, and founders. This platform uses machine learning and quantitative methods to surface strategic insights, build decision tools, and turn data into durable enterprise value.\n\n\nLatest\nThe End of Intuition-Led Strategy – A foundational essay on why strategy is moving from intuition to models, and what that means for how we allocate capital and build businesses.\nBrowse all insights →"
+    "text": "A platform that applies artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.\nAudience: Investors, operators, and founders building defensible, data-informed businesses.\nFocus: Using machine learning, quantitative analysis, and reproducible research to answer strategic questions: How should capital be deployed? Where is operating leverage? What does the data say about competitive positioning?\nMedium: Every insight is backed by reproducible code and data. Content is authored in Jupyter notebooks and published via Quarto."
   },
   {
-    "objectID": "notebooks/sample.html",
-    "href": "notebooks/sample.html",
-    "title": "Sample: Data-informed strategy",
+    "objectID": "about.html#the-ai-strategist",
+    "href": "about.html#the-ai-strategist",
+    "title": "About",
     "section": "",
-    "text": "A minimal notebook for The AI Strategist. Use this as a starting point for analyses on AI, corporate strategy, and value creation.\nReplace the content below with your own code and narrative.\n\nimport pandas as pd\n\n# Placeholder: your analysis here\npd.Series([\"strategy\", \"data\", \"value\"]).to_frame(name=\"focus\")"
+    "text": "A platform that applies artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.\nAudience: Investors, operators, and founders building defensible, data-informed businesses.\nFocus: Using machine learning, quantitative analysis, and reproducible research to answer strategic questions: How should capital be deployed? Where is operating leverage? What does the data say about competitive positioning?\nMedium: Every insight is backed by reproducible code and data. Content is authored in Jupyter notebooks and published via Quarto."
+  },
+  {
+    "objectID": "about.html#about-the-author",
+    "href": "about.html#about-the-author",
+    "title": "About",
+    "section": "About the author",
+    "text": "About the author\nMfundo Radebe works at Bain & Company in New York, where he sits at the intersection of strategy consulting, data science, and capital allocation. His focus is on applying AI and analytics to the way companies compete, operate, and create enterprise value, particularly across private markets.\nBefore Bain, Mfundo led strategy and data analytics at Moment, a General Catalyst-incubated payments company operating across London and Johannesburg, where he built the firm’s first product analytics infrastructure. He has delivered commercial due diligence and value creation work for private equity funds at Bain, applied machine learning to macroeconomic research and investment decisions at Bridgewater Associates’ AI Labs, and conducted research on firm strategy and financial services at Harvard Business School. He also served as a Data Engineering Lead at Goodword and a researcher at Columbia University, where he led the transformation of the core MBA economics curriculum into an AI-powered delivery platform.\nMfundo studied at Harvard University, where he was a Radcliffe Fellow, and is completing his MBA in Finance and Business Economics at Columbia Business School. He built The AI Strategist to apply the tools he uses in consulting and investing to a broader set of strategic problems, and to make that work open, reproducible, and useful.\n\nThe AI Strategist launched with The End of Intuition-Led Strategy, a foundational essay on why strategy is moving from intuition to models."
   }
 ]
