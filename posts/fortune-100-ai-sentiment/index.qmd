@@ -153,4 +153,6 @@ fig_scatter
 
 ---
 
-*This analysis covers the Fortune 100 by revenue. Of these, 94 companies had retrievable 10-K filings from SEC EDGAR. Sentiment was classified using natural language processing applied to AI-specific passages extracted from each filing. If you’d like access to the full notebook and future methodology updates, [subscribe here](/subscribe.html) and you’ll receive them by email when they’re available.*
+*This analysis covers the Fortune 100 by revenue. Of these, 94 companies had retrievable 10-K filings from SEC EDGAR. Sentiment was classified using natural language processing applied to AI-specific passages extracted from each filing. If you’d like access to the full notebook and future methodology updates, subscribe on the right and you’ll receive them by email when they’re available.*
+
+*This content is for general information only and does not constitute, and is not intended to constitute, legal, financial, or investment advice. It reflects our own interpretation of the filings and should not be relied on as such.*
