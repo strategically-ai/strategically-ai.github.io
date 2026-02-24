@@ -1,0 +1,24 @@
+/*-- scss:defaults --*/
+$body-bg: #f8f9fa;
+$body-color: #212529;
+$link-color: #1a5276;
+$navbar-bg: #1c2833;
+$font-family-sans-serif: "Source Sans Pro", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+/*-- scss:rules --*/
+.navbar {
+  border-bottom: 2px solid #2c3e50;
+}
+
+.quarto-title-meta,
+.quarto-title {
+  color: #1c2833;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+.callout-note {
+  border-left-color: #2c3e50;
+}

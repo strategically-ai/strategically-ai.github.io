@@ -1,0 +1,21 @@
+# Quarto
+/.quarto/
+_output/
+**/*.quarto_ipynb
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+.eggs/
+
+# OS
+.DS_Store
+Thumbs.db

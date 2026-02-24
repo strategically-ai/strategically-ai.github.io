@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "The AI Strategist"
+  margin-header: subscribe.html
+  navbar:
+    background: dark
+    left:
+      - href: index.qmd
+        text: Home
+      - href: blog.qmd
+        text: Insights
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme:
+      - flatly
+      - custom.scss
+    toc: true
+
+execute:
+  echo: true
+  warning: false

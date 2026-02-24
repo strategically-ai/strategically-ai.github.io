@@ -1,0 +1,74 @@
+---
+title: "The End of Intuition-Led Strategy"
+subtitle: "Why the strategist's core toolkit is shifting from intuition and spreadsheets to models and data infrastructure"
+description: "A foundational essay on why strategy is moving from gut-driven to model-informed, and how AI and data science are becoming the primary instruments for capital allocation, operating decisions, and competitive analysis."
+date: "2026-02-23"
+categories: [strategy, AI, capital-allocation]
+---
+
+## The thesis
+
+Strategy has always been an exercise in uncertainty management. For decades, the dominant toolkit was a combination of industry intuition, analogical reasoning, and spreadsheet extrapolation. That era is ending. The firms, funds, and founders who will define the next cycle of enterprise value creation are the ones doing strategy differently: using data infrastructure, predictive models, and decision systems that learn.
+
+This is not a prediction about a distant future. It is a description of what is already happening inside the most capable operating companies and investment platforms in the world. The question is no longer whether the strategist's toolkit will change. The question is how fast the gap will widen between those who build these capabilities and those who do not.
+
+## Why this matters for capital
+
+The implications for capital allocators are direct and measurable. Private equity, in particular, operates on a thesis that value can be created through a combination of operational improvement and strategic repositioning. AI gives strategists better instruments for both.
+
+On the **operating side**, machine learning compresses the time required to identify margin expansion opportunities. Pricing optimization, demand forecasting, procurement analytics, and workforce planning, areas that once required months of consultant-led diagnostic work, can now be addressed with models that run continuously and improve with each cycle. The result is not incremental: firms deploying these capabilities are seeing EBITDA improvements that materially change exit multiples.
+
+On the **capital allocation side**, AI is giving investors better tools for due diligence, deal sourcing, and portfolio construction. Natural language processing applied to earnings calls, filings, and market data surfaces signals that traditional screening misses. Predictive models trained on historical deal performance help allocators calibrate risk more precisely. The entire investment workflow, from origination to exit, is becoming model-informed in ways that were not possible five years ago.
+
+The strategic implication is clear: **capital efficiency is increasingly a function of analytical capability**. The firms that invest in building proprietary data assets and decision infrastructure will compound that advantage over time.
+
+## From data to durable advantage
+
+There is an important distinction between companies that *use* off-the-shelf AI tools and companies that *build structural advantage* by embedding data science into their operations. The former automate existing workflows. The latter construct data moats (proprietary datasets, feedback loops, and model architectures) that become harder to replicate as they scale.
+
+Consider the difference:
+
+- **Tactical AI adoption**: A retailer uses a third-party demand forecasting tool. The tool improves inventory planning, but any competitor can license the same software. The advantage is temporary and commoditized.
+- **Structural data moats**: A logistics company instruments its entire supply chain, capturing granular operational data that feeds proprietary routing and pricing models. Over time, the models improve, the data asset grows, and the gap between this company and its competitors widens. The advantage is compounding and defensible.
+
+The distinction matters enormously for investors. When evaluating a business, the question should not be "does this company use AI?" but rather "does this company have a data and model architecture that compounds its competitive position over time?"
+
+This framing applies across sectors: healthcare platforms that accumulate clinical outcome data, fintech companies that build proprietary credit models on transaction histories, industrial businesses that capture sensor data to predict maintenance needs. In each case, the defensibility comes not from the algorithm alone but from the interaction between proprietary data, domain-specific models, and operational feedback loops.
+
+::: {.callout-note}
+## Future analysis
+A forthcoming post will present a framework for evaluating data moat depth and durability across industries, with worked examples from public and private companies.
+:::
+
+## The private markets dimension
+
+If applying AI to strategy matters for public companies, it arguably matters more in private markets. The reason is structural: private equity and growth investing operate on concentrated ownership, active governance, and a finite hold period. Every operating decision compounds against a ticking clock, and the margin for error on capital deployment is thin.
+
+These are precisely the conditions where model-informed decision-making creates outsized returns.
+
+- **Due diligence precision**: Predictive models trained on deal and sector data allow funds to underwrite with greater confidence, identifying risks and upside that traditional diligence processes miss.
+- **Value creation velocity**: AI-driven operating playbooks compress the timeline for margin expansion, pricing optimization, and go-to-market execution inside portfolio companies. When hold periods are measured in years, speed to insight is a direct driver of IRR.
+- **Portfolio intelligence**: Funds that build centralized data infrastructure across their portfolios can benchmark operating performance in real time, allocate support resources more effectively, and spot inflection points earlier than peers relying on quarterly reporting cycles.
+
+For sponsors, operating partners, and management teams inside portfolio companies, the implication is that AI is not a back-office upgrade. It is a core instrument for the work of strategy itself.
+
+## What The AI Strategist will do
+
+This platform exists to apply AI and data science to strategic questions, and to make that work concrete, reproducible, and actionable.
+
+What to expect:
+
+- **Reproducible analysis**: Every quantitative insight published here will be backed by code and data that readers can inspect, run, and extend. Jupyter notebooks rendered via Quarto are the primary medium.
+- **Applied models**: Not theory for its own sake, but models applied to real strategic questions: market sizing, competitive positioning, operational benchmarking, capital allocation.
+- **Case breakdowns**: Deep examinations of how data science and quantitative methods can be applied to specific strategy and investment problems, with attention to what works, what does not, and why.
+- **Operating playbooks**: Practical frameworks for building data and analytics capabilities inside portfolio companies, corporate strategy teams, and early-stage ventures.
+
+The goal is not to catalog every advance in artificial intelligence. It is to use the most relevant tools to do better strategy work for people who allocate capital, build businesses, and make decisions under uncertainty.
+
+## A closing conviction
+
+The strategist's toolkit is changing. The next generation of operating partners, portfolio managers, and founders will be distinguished not by whether they can build models themselves, but by whether they can use data science to sharpen the decisions they already make.
+
+The firms that treat AI as a point solution will capture some value. The firms that treat it as the primary instrument for strategy, diligence, and operating decisions will capture most of it. The gap between these two postures is already visible, and it will widen.
+
+The AI Strategist is built on the conviction that learning to do strategy with these tools, deeply, quantitatively, and with operational specificity, is among the highest-leverage investments a strategist can make today.

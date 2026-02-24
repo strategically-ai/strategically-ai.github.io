@@ -1,0 +1,21 @@
+---
+title: "The AI Strategist"
+---
+
+We apply artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.
+
+**AI and data science applied to:**
+
+- Market sizing, competitive positioning, and revenue forecasting
+- Due diligence, operating diagnostics, and portfolio analytics
+- Capital allocation, pricing, and operational benchmarking
+
+Designed for investors, operators, and founders. This platform uses machine learning and quantitative methods to surface strategic insights, build decision tools, and turn data into durable enterprise value.
+
+---
+
+### Latest
+
+**[The End of Intuition-Led Strategy](posts/foundational-thesis/)** -- A foundational essay on why strategy is moving from intuition to models, and what that means for how we allocate capital and build businesses.
+
+[Browse all insights &rarr;](blog.qmd)

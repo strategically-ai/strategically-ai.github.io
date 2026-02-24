@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Insights",
+    "section": "",
+    "text": "The End of Intuition-Led Strategy\n\n\nWhy the strategist’s core toolkit is shifting from intuition and spreadsheets to models and data infrastructure\n\n\n\nstrategy\n\nAI\n\ncapital-allocation\n\n\n\nA foundational essay on why strategy is moving from gut-driven to model-informed, and how AI and data science are becoming the primary instruments for capital allocation, operating decisions, and competitive analysis.\n\n\n\n\n\nFeb 23, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "A platform that applies artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.\nAudience: Investors, operators, and founders building defensible, data-informed businesses.\nFocus: Using machine learning, quantitative analysis, and reproducible research to answer strategic questions: How should capital be deployed? Where is operating leverage? What does the data say about competitive positioning?\nMedium: Every insight is backed by reproducible code and data. Content is authored in Jupyter notebooks and published via Quarto."
+  },
+  {
+    "objectID": "about.html#the-ai-strategist",
+    "href": "about.html#the-ai-strategist",
+    "title": "About",
+    "section": "",
+    "text": "A platform that applies artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.\nAudience: Investors, operators, and founders building defensible, data-informed businesses.\nFocus: Using machine learning, quantitative analysis, and reproducible research to answer strategic questions: How should capital be deployed? Where is operating leverage? What does the data say about competitive positioning?\nMedium: Every insight is backed by reproducible code and data. Content is authored in Jupyter notebooks and published via Quarto."
+  },
+  {
+    "objectID": "about.html#about-the-author",
+    "href": "about.html#about-the-author",
+    "title": "About",
+    "section": "About the author",
+    "text": "About the author\nMfundo Radebe works at Bain & Company in New York, where he sits at the intersection of strategy consulting, data science, and capital allocation. His focus is on applying AI and analytics to the way companies compete, operate, and create enterprise value, particularly across private markets.\nBefore Bain, Mfundo led strategy and data analytics at Moment, a General Catalyst-incubated payments company operating across London and Johannesburg, where he built the firm’s first product analytics infrastructure. He has delivered commercial due diligence and value creation work for private equity funds at Bain, applied machine learning to macroeconomic research and investment decisions at Bridgewater Associates’ AI Labs, and conducted research on firm strategy and financial services at Harvard Business School. He also served as a Data Engineering Lead at Goodword and a researcher at Columbia University, where he led the transformation of the core MBA economics curriculum into an AI-powered delivery platform.\nMfundo studied at Harvard University, where he was a Radcliffe Fellow, and is completing his MBA in Finance and Business Economics at Columbia Business School. He built The AI Strategist to apply the tools he uses in consulting and investing to a broader set of strategic problems, and to make that work open, reproducible, and useful.\n\nThe AI Strategist launched with The End of Intuition-Led Strategy, a foundational essay on why strategy is moving from intuition to models."
+  },
+  {
+    "objectID": "posts/foundational-thesis/index.html",
+    "href": "posts/foundational-thesis/index.html",
+    "title": "The End of Intuition-Led Strategy",
+    "section": "",
+    "text": "Strategy has always been an exercise in uncertainty management. For decades, the dominant toolkit was a combination of industry intuition, analogical reasoning, and spreadsheet extrapolation. That era is ending. The firms, funds, and founders who will define the next cycle of enterprise value creation are the ones doing strategy differently: using data infrastructure, predictive models, and decision systems that learn.\nThis is not a prediction about a distant future. It is a description of what is already happening inside the most capable operating companies and investment platforms in the world. The question is no longer whether the strategist’s toolkit will change. The question is how fast the gap will widen between those who build these capabilities and those who do not."
+  },
+  {
+    "objectID": "posts/foundational-thesis/index.html#the-thesis",
+    "href": "posts/foundational-thesis/index.html#the-thesis",
+    "title": "The End of Intuition-Led Strategy",
+    "section": "",
+    "text": "Strategy has always been an exercise in uncertainty management. For decades, the dominant toolkit was a combination of industry intuition, analogical reasoning, and spreadsheet extrapolation. That era is ending. The firms, funds, and founders who will define the next cycle of enterprise value creation are the ones doing strategy differently: using data infrastructure, predictive models, and decision systems that learn.\nThis is not a prediction about a distant future. It is a description of what is already happening inside the most capable operating companies and investment platforms in the world. The question is no longer whether the strategist’s toolkit will change. The question is how fast the gap will widen between those who build these capabilities and those who do not."
+  },
+  {
+    "objectID": "posts/foundational-thesis/index.html#why-this-matters-for-capital",
+    "href": "posts/foundational-thesis/index.html#why-this-matters-for-capital",
+    "title": "The End of Intuition-Led Strategy",
+    "section": "Why this matters for capital",
+    "text": "Why this matters for capital\nThe implications for capital allocators are direct and measurable. Private equity, in particular, operates on a thesis that value can be created through a combination of operational improvement and strategic repositioning. AI gives strategists better instruments for both.\nOn the operating side, machine learning compresses the time required to identify margin expansion opportunities. Pricing optimization, demand forecasting, procurement analytics, and workforce planning, areas that once required months of consultant-led diagnostic work, can now be addressed with models that run continuously and improve with each cycle. The result is not incremental: firms deploying these capabilities are seeing EBITDA improvements that materially change exit multiples.\nOn the capital allocation side, AI is giving investors better tools for due diligence, deal sourcing, and portfolio construction. Natural language processing applied to earnings calls, filings, and market data surfaces signals that traditional screening misses. Predictive models trained on historical deal performance help allocators calibrate risk more precisely. The entire investment workflow, from origination to exit, is becoming model-informed in ways that were not possible five years ago.\nThe strategic implication is clear: capital efficiency is increasingly a function of analytical capability. The firms that invest in building proprietary data assets and decision infrastructure will compound that advantage over time."
+  },
+  {
+    "objectID": "posts/foundational-thesis/index.html#from-data-to-durable-advantage",
+    "href": "posts/foundational-thesis/index.html#from-data-to-durable-advantage",
+    "title": "The End of Intuition-Led Strategy",
+    "section": "From data to durable advantage",
+    "text": "From data to durable advantage\nThere is an important distinction between companies that use off-the-shelf AI tools and companies that build structural advantage by embedding data science into their operations. The former automate existing workflows. The latter construct data moats (proprietary datasets, feedback loops, and model architectures) that become harder to replicate as they scale.\nConsider the difference:\n\nTactical AI adoption: A retailer uses a third-party demand forecasting tool. The tool improves inventory planning, but any competitor can license the same software. The advantage is temporary and commoditized.\nStructural data moats: A logistics company instruments its entire supply chain, capturing granular operational data that feeds proprietary routing and pricing models. Over time, the models improve, the data asset grows, and the gap between this company and its competitors widens. The advantage is compounding and defensible.\n\nThe distinction matters enormously for investors. When evaluating a business, the question should not be “does this company use AI?” but rather “does this company have a data and model architecture that compounds its competitive position over time?”\nThis framing applies across sectors: healthcare platforms that accumulate clinical outcome data, fintech companies that build proprietary credit models on transaction histories, industrial businesses that capture sensor data to predict maintenance needs. In each case, the defensibility comes not from the algorithm alone but from the interaction between proprietary data, domain-specific models, and operational feedback loops.\n\n\n\n\n\n\nNoteFuture analysis\n\n\n\nA forthcoming post will present a framework for evaluating data moat depth and durability across industries, with worked examples from public and private companies."
+  },
+  {
+    "objectID": "posts/foundational-thesis/index.html#the-private-markets-dimension",
+    "href": "posts/foundational-thesis/index.html#the-private-markets-dimension",
+    "title": "The End of Intuition-Led Strategy",
+    "section": "The private markets dimension",
+    "text": "The private markets dimension\nIf applying AI to strategy matters for public companies, it arguably matters more in private markets. The reason is structural: private equity and growth investing operate on concentrated ownership, active governance, and a finite hold period. Every operating decision compounds against a ticking clock, and the margin for error on capital deployment is thin.\nThese are precisely the conditions where model-informed decision-making creates outsized returns.\n\nDue diligence precision: Predictive models trained on deal and sector data allow funds to underwrite with greater confidence, identifying risks and upside that traditional diligence processes miss.\nValue creation velocity: AI-driven operating playbooks compress the timeline for margin expansion, pricing optimization, and go-to-market execution inside portfolio companies. When hold periods are measured in years, speed to insight is a direct driver of IRR.\nPortfolio intelligence: Funds that build centralized data infrastructure across their portfolios can benchmark operating performance in real time, allocate support resources more effectively, and spot inflection points earlier than peers relying on quarterly reporting cycles.\n\nFor sponsors, operating partners, and management teams inside portfolio companies, the implication is that AI is not a back-office upgrade. It is a core instrument for the work of strategy itself."
+  },
+  {
+    "objectID": "posts/foundational-thesis/index.html#what-the-ai-strategist-will-do",
+    "href": "posts/foundational-thesis/index.html#what-the-ai-strategist-will-do",
+    "title": "The End of Intuition-Led Strategy",
+    "section": "What The AI Strategist will do",
+    "text": "What The AI Strategist will do\nThis platform exists to apply AI and data science to strategic questions, and to make that work concrete, reproducible, and actionable.\nWhat to expect:\n\nReproducible analysis: Every quantitative insight published here will be backed by code and data that readers can inspect, run, and extend. Jupyter notebooks rendered via Quarto are the primary medium.\nApplied models: Not theory for its own sake, but models applied to real strategic questions: market sizing, competitive positioning, operational benchmarking, capital allocation.\nCase breakdowns: Deep examinations of how data science and quantitative methods can be applied to specific strategy and investment problems, with attention to what works, what does not, and why.\nOperating playbooks: Practical frameworks for building data and analytics capabilities inside portfolio companies, corporate strategy teams, and early-stage ventures.\n\nThe goal is not to catalog every advance in artificial intelligence. It is to use the most relevant tools to do better strategy work for people who allocate capital, build businesses, and make decisions under uncertainty."
+  },
+  {
+    "objectID": "posts/foundational-thesis/index.html#a-closing-conviction",
+    "href": "posts/foundational-thesis/index.html#a-closing-conviction",
+    "title": "The End of Intuition-Led Strategy",
+    "section": "A closing conviction",
+    "text": "A closing conviction\nThe strategist’s toolkit is changing. The next generation of operating partners, portfolio managers, and founders will be distinguished not by whether they can build models themselves, but by whether they can use data science to sharpen the decisions they already make.\nThe firms that treat AI as a point solution will capture some value. The firms that treat it as the primary instrument for strategy, diligence, and operating decisions will capture most of it. The gap between these two postures is already visible, and it will widen.\nThe AI Strategist is built on the conviction that learning to do strategy with these tools, deeply, quantitatively, and with operational specificity, is among the highest-leverage investments a strategist can make today."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The AI Strategist",
+    "section": "",
+    "text": "We apply artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.\nAI and data science applied to:\n\nMarket sizing, competitive positioning, and revenue forecasting\nDue diligence, operating diagnostics, and portfolio analytics\nCapital allocation, pricing, and operational benchmarking\n\nDesigned for investors, operators, and founders. This platform uses machine learning and quantitative methods to surface strategic insights, build decision tools, and turn data into durable enterprise value.\n\n\nLatest\nThe End of Intuition-Led Strategy – A foundational essay on why strategy is moving from intuition to models, and what that means for how we allocate capital and build businesses.\nBrowse all insights →"
+  },
+  {
+    "objectID": "notebooks/sample.html",
+    "href": "notebooks/sample.html",
+    "title": "Sample: Data-informed strategy",
+    "section": "",
+    "text": "A minimal notebook for The AI Strategist. Use this as a starting point for analyses on AI, corporate strategy, and value creation.\nReplace the content below with your own code and narrative.\n\nimport pandas as pd\n\n# Placeholder: your analysis here\npd.Series([\"strategy\", \"data\", \"value\"]).to_frame(name=\"focus\")"
+  }
+]

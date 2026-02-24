@@ -1,0 +1,27 @@
+---
+title: "About"
+---
+
+## The AI Strategist
+
+A platform that applies artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.
+
+**Audience:** Investors, operators, and founders building defensible, data-informed businesses.
+
+**Focus:** Using machine learning, quantitative analysis, and reproducible research to answer strategic questions: How should capital be deployed? Where is operating leverage? What does the data say about competitive positioning?
+
+**Medium:** Every insight is backed by reproducible code and data. Content is authored in Jupyter notebooks and published via Quarto.
+
+---
+
+## About the author
+
+**Mfundo Radebe** works at Bain & Company in New York, where he sits at the intersection of strategy consulting, data science, and capital allocation. His focus is on applying AI and analytics to the way companies compete, operate, and create enterprise value, particularly across private markets.
+
+Before Bain, Mfundo led strategy and data analytics at Moment, a General Catalyst-incubated payments company operating across London and Johannesburg, where he built the firm's first product analytics infrastructure. He has delivered commercial due diligence and value creation work for private equity funds at Bain, applied machine learning to macroeconomic research and investment decisions at Bridgewater Associates' AI Labs, and conducted research on firm strategy and financial services at Harvard Business School. He also served as a Data Engineering Lead at Goodword and a researcher at Columbia University, where he led the transformation of the core MBA economics curriculum into an AI-powered delivery platform.
+
+Mfundo studied at Harvard University, where he was a Radcliffe Fellow, and is completing his MBA in Finance and Business Economics at Columbia Business School. He built The AI Strategist to apply the tools he uses in consulting and investing to a broader set of strategic problems, and to make that work open, reproducible, and useful.
+
+---
+
+*The AI Strategist launched with [The End of Intuition-Led Strategy](posts/foundational-thesis/), a foundational essay on why strategy is moving from intuition to models.*
