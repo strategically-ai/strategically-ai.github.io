@@ -157,7 +157,30 @@ The depth of AI discussion ranges from companies that dedicate extensive passage
 
 The most AI-vocal companies include Sysco (AI in the context of operational transformation), Northrop Grumman (AI as a defense capability), Target (AI as a competitive and regulatory risk), HCA Healthcare (AI-driven care delivery), and Capital One (AI in financial services with significant regulatory framing). At the other end, ExxonMobil, Plains All American Pipeline, and Caterpillar mention AI only once or twice, typically in a general risk factor or market demand context.
 
-![](top_20_ai_mentions.png)
+```{python}
+import plotly.express as px
+
+top20 = df_results.nlargest(20, "ai_mention_count").copy()
+top20["label"] = top20["company"] + " (" + top20["ticker"] + ")"
+
+fig_top20 = px.bar(
+    top20.sort_values("ai_mention_count"),
+    x="ai_mention_count",
+    y="label",
+    color="sentiment",
+    color_discrete_map=sentiment_colors,
+    orientation="h",
+    hover_data=["sector", "sentiment", "ai_mention_count"],
+    title="Top 20 Fortune 100 Companies by AI Mention Frequency",
+)
+fig_top20.update_layout(
+    xaxis_title="AI keyword mentions in latest 10-K",
+    yaxis_title="Company",
+    margin=dict(t=60, l=220, r=20, b=40),
+)
+
+fig_top20
+```
 
 ## What this means
 
