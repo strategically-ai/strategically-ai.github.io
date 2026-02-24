@@ -36,7 +36,7 @@ Among the 90 companies that discuss AI:
 | Positive (opportunity-focused) | 32 | 36% |
 | Neutral (factual) | 16 | 18% |
 
-```{python}
+```{python echo=false}
 import pandas as pd
 
 try:
@@ -101,7 +101,7 @@ Outside technology, the pattern reverses.
 
 The pattern is clear: **companies that build AI talk about it as opportunity; companies that consume it talk about it as risk.**
 
-```{python}
+```{python echo=false}
 import plotly.express as px
 
 sector_sentiment = (
@@ -157,7 +157,7 @@ The depth of AI discussion ranges from companies that dedicate extensive passage
 
 The most AI-vocal companies include Sysco (AI in the context of operational transformation), Northrop Grumman (AI as a defense capability), Target (AI as a competitive and regulatory risk), HCA Healthcare (AI-driven care delivery), and Capital One (AI in financial services with significant regulatory framing). At the other end, ExxonMobil, Plains All American Pipeline, and Caterpillar mention AI only once or twice, typically in a general risk factor or market demand context.
 
-```{python}
+```{python echo=false}
 import plotly.express as px
 
 top20 = df_results.nlargest(20, "ai_mention_count").copy()
