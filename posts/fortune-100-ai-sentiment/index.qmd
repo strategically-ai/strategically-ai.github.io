@@ -107,6 +107,16 @@ The most AI-vocal companies include Sysco (AI in the context of operational tran
 
 **Operational efficiency is underdisclosed.** Only 10 companies cite operational efficiency as their primary AI theme, despite it being the use case with the most measurable near-term impact on enterprise value. This gap between public AI enthusiasm and regulatory disclosure caution is itself a data point worth tracking over time.
 
+## Methodology (brief)
+
+1. **Company universe**: Start from the current Fortune 100 list by revenue, then drop entities without public 10-K filings (e.g., mutuals and private companies). This yields 94 public filers.
+2. **Mapping to SEC identifiers**: Map each company to its SEC CIK using the `company_tickers.json` mapping from `sec.gov`, joined on ticker (uppercased and normalized).
+3. **Filing retrieval**: For each CIK, call the SEC Submissions API (`data.sec.gov/submissions/CIK##########.json`) and select the **single most recent Form 10-K** (by filing date), capturing the accession number and primary document filename.
+4. **Text extraction**: Construct the full filing URL on `sec.gov/Archives` from the CIK, accession number (without dashes), and primary document name. Fetch the HTML, strip tags, normalize whitespace, and split into sentences.
+5. **AI-specific passages**: Identify sentences that contain AI-related terms (artificial intelligence, machine learning, deep learning, generative AI, large language models, and related phrases). For each hit, take a small window of surrounding sentences and concatenate them into an AI-focused text slice per company.
+6. **Sentiment and theme classification**: Send each AI slice to an LLM for classification into one of {positive, neutral, negative} and a primary theme (risk and regulation, competitive positioning, operational efficiency, etc.), using a structured prompt and simple parsing to extract the label, theme, and rationale.
+7. **Aggregation**: Aggregate the per-company labels and themes into the distributions shown above, and compute simple intensity metrics (e.g., AI-mention counts) for the charts.
+
 ---
 
-*This analysis covers the Fortune 100 by revenue. Of these, 94 companies had retrievable 10-K filings from SEC EDGAR. Sentiment was classified using natural language processing applied to AI-specific passages extracted from each filing. The full analysis is reproducible from the [notebook](https://github.com/strategically-ai/strategically-ai.github.io/blob/main/notebooks/fortune-100-ai-sentiment.ipynb) in this repository.*
+*This analysis covers the Fortune 100 by revenue. Of these, 94 companies had retrievable 10-K filings from SEC EDGAR. Sentiment was classified using natural language processing applied to AI-specific passages extracted from each filing. If you’d like access to the full notebook and future methodology updates, [subscribe here](/subscribe.html) and you’ll receive them by email when they’re available.*
