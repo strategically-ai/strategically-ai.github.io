@@ -36,6 +36,41 @@ Among the 90 companies that discuss AI:
 | Positive (opportunity-focused) | 32 | 36% |
 | Neutral (factual) | 16 | 18% |
 
+```{python}
+import pandas as pd
+
+try:
+    import plotly.express as px
+except ImportError:
+    import subprocess, sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
+    import plotly.express as px
+
+df_results = pd.read_csv("/Users/radebe/Documents/ai-strategist/data/fortune_100_ai_sentiment_results.csv")
+
+sentiment_colors = {"positive": "#18bc9c", "neutral": "#3498db", "negative": "#e74c3c"}
+sentiment_counts = df_results["sentiment"].value_counts().reset_index()
+sentiment_counts.columns = ["sentiment", "count"]
+
+fig_sentiment = px.bar(
+    sentiment_counts,
+    x="sentiment",
+    y="count",
+    color="sentiment",
+    color_discrete_map=sentiment_colors,
+    title="AI Sentiment Across Fortune 100 (Latest 10-K)",
+    hover_data=["count"],
+)
+fig_sentiment.update_layout(
+    xaxis_title="Sentiment",
+    yaxis_title="Number of companies",
+    showlegend=False,
+    margin=dict(t=60, l=50, r=20, b=40),
+)
+
+fig_sentiment
+```
+
 **Nearly half frame AI primarily through the lens of risk.** The language centers on regulatory uncertainty, cybersecurity threats, compliance costs, and competitive disruption.
 
 The contrast between how different companies write about the same technology is instructive. Microsoft opens its 10-K by stating:
@@ -47,8 +82,6 @@ Apple, meanwhile, leads its AI discussion with a warning:
 > "The introduction of new and complex technologies, such as artificial intelligence features, can increase these and other safety risks, including exposing users to harmful, inaccurate or other negative content and experiences."
 
 Both are trillion-dollar technology companies. One frames AI as its corporate mission; the other introduces it as a source of risk. This divergence is even more pronounced across sectors.
-
-![](sentiment_distribution.png)
 
 ## Finding 3: Sector determines the narrative
 
@@ -67,6 +100,35 @@ Outside technology, the pattern reverses.
 **Energy** is predominantly risk-focused, centered on cybersecurity and operational exposure, with the exception of Chevron, which frames AI as a productivity tool.
 
 The pattern is clear: **companies that build AI talk about it as opportunity; companies that consume it talk about it as risk.**
+
+```{python}
+import plotly.express as px
+
+sector_sentiment = (
+    df_results.groupby(["sector", "sentiment"])
+    .size()
+    .reset_index(name="count")
+)
+
+fig_sector = px.bar(
+    sector_sentiment,
+    x="count",
+    y="sector",
+    color="sentiment",
+    color_discrete_map=sentiment_colors,
+    orientation="h",
+    title="AI Sentiment by Sector (Fortune 100)",
+    hover_data=["sentiment", "count"],
+)
+fig_sector.update_layout(
+    xaxis_title="Number of companies",
+    yaxis_title="Sector",
+    barmode="stack",
+    margin=dict(t=60, l=120, r=20, b=40),
+)
+
+fig_sector
+```
 
 ![](ai_themes.png)
 
