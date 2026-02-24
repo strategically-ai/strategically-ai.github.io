@@ -48,7 +48,11 @@ except ImportError:
 
 df_results = pd.read_csv("/Users/radebe/Documents/ai-strategist/data/fortune_100_ai_sentiment_results.csv")
 
-sentiment_colors = {"positive": "#18bc9c", "neutral": "#3498db", "negative": "#e74c3c"}
+sentiment_colors = {
+    "positive": "#18bc9c",  # success
+    "neutral": "#2c3e50",   # primary
+    "negative": "#e74c3c",  # danger
+}
 sentiment_counts = df_results["sentiment"].value_counts().reset_index()
 sentiment_counts.columns = ["sentiment", "count"]
 
@@ -194,13 +198,10 @@ fig_top20
 
 ## Methodology (brief)
 
-1. **Company universe**: Start from the current Fortune 100 list by revenue, then drop entities without public 10-K filings (e.g., mutuals and private companies). This yields 94 public filers.
-2. **Mapping to SEC identifiers**: Map each company to its SEC CIK using the `company_tickers.json` mapping from `sec.gov`, joined on ticker (uppercased and normalized).
-3. **Filing retrieval**: For each CIK, call the SEC Submissions API (`data.sec.gov/submissions/CIK##########.json`) and select the **single most recent Form 10-K** (by filing date), capturing the accession number and primary document filename.
-4. **Text extraction**: Construct the full filing URL on `sec.gov/Archives` from the CIK, accession number (without dashes), and primary document name. Fetch the HTML, strip tags, normalize whitespace, and split into sentences.
-5. **AI-specific passages**: Identify sentences that contain AI-related terms (artificial intelligence, machine learning, deep learning, generative AI, large language models, and related phrases). For each hit, take a small window of surrounding sentences and concatenate them into an AI-focused text slice per company.
-6. **Sentiment and theme classification**: Send each AI slice to an LLM for classification into one of {positive, neutral, negative} and a primary theme (risk and regulation, competitive positioning, operational efficiency, etc.), using a structured prompt and simple parsing to extract the label, theme, and rationale.
-7. **Aggregation**: Aggregate the per-company labels and themes into the distributions shown above, and compute simple intensity metrics (e.g., AI-mention counts) for the charts.
+1. **Universe and filings**: Start from the Fortune 100 by revenue, drop entities without public 10-Ks, and for each remaining company pull the **single most recent 10-K** from the SEC Submissions API.
+2. **AI passages**: From each filing, strip HTML and extract only the sentences that mention AI-related terms (artificial intelligence, machine learning, generative AI, large language models, etc.), plus a small amount of surrounding context.
+3. **LLM classification**: Use an LLM to classify each company’s AI passage as **positive, neutral, or negative**, and assign a primary theme (risk and regulation, competitive positioning, operational efficiency, and so on) with a short rationale.
+4. **Aggregation**: Aggregate those per-company labels into the sentiment and theme distributions shown above, and compute simple intensity metrics (e.g., AI-mention counts) for the charts.
 
 ---
 
