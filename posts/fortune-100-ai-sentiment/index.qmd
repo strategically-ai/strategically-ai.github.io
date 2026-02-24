@@ -109,4 +109,4 @@ The most AI-vocal companies include Sysco (AI in the context of operational tran
 
 ---
 
-*This analysis covers the Fortune 100 by revenue. Of these, 94 companies had retrievable 10-K filings from SEC EDGAR. Sentiment was classified using natural language processing applied to AI-specific passages extracted from each filing. The full analysis is reproducible from the notebook in this repository.*
+*This analysis covers the Fortune 100 by revenue. Of these, 94 companies had retrievable 10-K filings from SEC EDGAR. Sentiment was classified using natural language processing applied to AI-specific passages extracted from each filing. The full analysis is reproducible from the [notebook](https://github.com/strategically-ai/strategically-ai.github.io/blob/main/notebooks/fortune-100-ai-sentiment.ipynb) in this repository.*
