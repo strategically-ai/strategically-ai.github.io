@@ -4,6 +4,9 @@ subtitle: "A sentiment analysis of artificial intelligence language in the lates
 description: "We analyzed the most recent 10-K filings of the Fortune 100 to measure how large companies discuss AI. The result: nearly all of them mention it, but most frame it as a risk -- not an opportunity."
 date: "2026-02-24"
 categories: [AI, sentiment-analysis, SEC-filings, strategy]
+freeze: false
+execute:
+  echo: false
 ---
 
 ## The question
@@ -133,6 +136,8 @@ fig_sector.update_layout(
 
 fig_sector
 ```
+
+Taken together with the theme distribution below, this shows not just whether companies are upbeat or cautious on AI, but where in the economy that caution is concentrated.
 
 ![](ai_themes.png)
 
