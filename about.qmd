@@ -16,7 +16,7 @@ A platform that applies artificial intelligence and data science to corporate st
 
 ## About the author
 
-**Mfundo Radebe** works in the Private Equity Group and Financial Services practices in New York, at the intersection of strategy, data science, and capital allocation. His focus is on applying AI and analytics to how companies compete, operate, and create enterprise value, particularly in private markets.
+**Mfundo Radebe** is an incoming Consultant at Bain & Company in New York, where he will focus on Private Equity Group, Financial Services, and AI & Insights practices.
 
 Before Bain, Mfundo led strategy and data analytics at Moment, a General Catalyst-incubated payments company operating across London and Johannesburg, where he built the firm's first product analytics infrastructure. He has delivered commercial due diligence and value creation work for private equity funds at Bain, applied machine learning to macroeconomic research and investment decisions at Bridgewater Associates' AI Labs, and conducted research on firm strategy and financial services at Harvard Business School. He also served as a Data Engineering Lead at Goodword and a researcher at Columbia University, where he led the transformation of the core MBA economics curriculum into an AI-powered delivery platform.
 
