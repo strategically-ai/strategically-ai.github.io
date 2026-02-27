@@ -1,0 +1,13 @@
+company_name,ticker,cik,sub_industry,source_of_truth,segment
+Grocery Outlet,GO,,Discount Retail,public_10q,pe_mid
+Weis Markets,WMK,,Grocery Retail,public_10q,pe_mid
+SpartanNash,SPTN,,Food Distribution,public_10q,pe_mid
+Natural Grocers by Vitamin Cottage,NGVC,,Specialty Grocery,public_10q,pe_mid
+BJ's Wholesale Club,BJ,,Wholesale Retail,public_10q,pe_mid
+Five Below,FIVE,,Specialty Retail,public_10q,pe_mid
+Ollie's Bargain Outlet,OLLI,,Off-Price Retail,public_10q,pe_mid
+TreeHouse Foods,THS,,Private Label Food,public_10q,pe_mid
+Post Holdings,POST,,Consumer Goods,public_10q,pe_mid
+Utz Brands,UTZ,,Snack Food,public_10q,pe_mid
+Hostess Brands,TWNK,,Baked Goods,public_10q,pe_mid
+Ingles Markets,IMKTA,,Grocery Retail,public_10q,pe_mid

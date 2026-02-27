@@ -5,3 +5,5 @@ We apply artificial intelligence and data science to corporate strategy, private
 Designed for investors, operators, and founders, this platform uses machine learning and quantitative methods to surface strategic insights, build decision tools, and turn data into durable enterprise value.
 
 **Live site:** [strategically-ai.github.io](https://strategically-ai.github.io/)
+
+**Industry trackers:** Run `python run_industry_tracker.py <industry_id> --pipelines sec,news,weekly`. Add RSS feed URLs to `config/news_feeds.yaml` to enable external news. Use the project venv for consistent dependencies — see [SETUP.md](SETUP.md).
