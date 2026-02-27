@@ -1,0 +1,9 @@
+company_name,ticker,cik,sub_industry,source_of_truth,segment
+Enova International,ENVA,,Consumer Lending,public_10q,pe_mid
+Green Dot,GDOT,,Banking-as-a-Service,public_10q,pe_mid
+LoanDepot,LDI,,Mortgage Lending,public_10q,pe_mid
+Pathward Financial,CASH,,Specialty Banking,public_10q,pe_mid
+OppFi,OPFI,,AI Lending,public_10q,pe_mid
+Donnelley Financial Solutions,DFIN,,Financial Compliance,public_10q,pe_mid
+EverQuote,EVER,,Insurance Marketplace,public_10q,pe_mid
+Triumph Financial,TBK,,Payments & Banking,public_10q,pe_mid

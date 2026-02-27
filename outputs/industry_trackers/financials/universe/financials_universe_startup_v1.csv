@@ -1,0 +1,8 @@
+company_name,ticker,cik,sub_industry,source_of_truth,segment
+Blend Labs,BLND,,Mortgage Tech,public_10q,startup
+Brex,BREX,,Corporate Cards,private_news,startup
+Ramp,RAMP,,Spend Management,private_news,startup
+Plaid,PLAID,,Banking Infrastructure,private_news,startup
+Ocrolus,OCROLUS,,Document AI,private_news,startup
+Inscribe,INSCRIBE,,Fraud Detection AI,private_news,startup
+Avant,AVANT,,AI Lending,private_news,startup

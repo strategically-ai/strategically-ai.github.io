@@ -22,3 +22,21 @@ a:hover {
 .callout-note {
   border-left-color: #2c3e50;
 }
+
+.tracker-data-as-of {
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  background: #f1f3f5;
+  border-left: 4px solid #2c3e50;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.95rem;
+}
+.tracker-data-as-of p {
+  margin: 0.25rem 0;
+}
+.tracker-data-as-of p:first-child {
+  margin-top: 0;
+}
+.tracker-data-as-of strong {
+  color: #1c2833;
+}
