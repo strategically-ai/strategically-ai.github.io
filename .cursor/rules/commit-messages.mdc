@@ -1,0 +1,25 @@
+---
+description: Simple, non-sensitive commit messages
+alwaysApply: true
+---
+
+# Commit message guidelines
+
+- **Keep messages generic and brief.**
+  - Prefer 2–6 words.
+  - Examples: `Update site`, `Minor content update`, `Adjust layout`, `Refine copy`.
+
+- **Do not include any proper nouns related to organizations or clients.**
+  - Avoid: company names, fund names, product names, or internal team names.
+
+- **Avoid sensitive or specific operational detail.**
+  - Don’t mention methodologies, tools, or internal processes beyond what’s already public in the codebase.
+
+- **Use neutral, professional language.**
+  - Focus on *what changed* at a high level (e.g., “Update charts”, “Tweak styles”) without justification or background story.
+
+- **No personal identifiers.**
+  - Don’t include author names, initials, or “Co-authored-by” trailers.
+
+When in doubt, default to a short, neutral message like `Update site` or `Minor changes`.
+

@@ -1,0 +1,10 @@
+company_name,ticker,cik,sub_industry,source_of_truth,segment
+Instacart (Maplebear),CART,,Grocery Delivery,public_10q,startup
+CAVA Group,CAVA,,Fast Casual Food,public_10q,startup
+Sweetgreen,SG,,Fast Casual Food,public_10q,startup
+Dutch Bros,BROS,,Coffee Chain,public_10q,startup
+Allbirds,BIRD,,Sustainable Footwear,public_10q,startup
+Torrid,CURV,,Plus-Size Fashion,public_10q,startup
+Gopuff,GOPUFF,,Quick Commerce,private_news,startup
+Thrive Market,THRIVE,,Specialty Online Grocery,private_news,startup
+Hungryroot,HUNGRYROOT,,AI Grocery,private_news,startup

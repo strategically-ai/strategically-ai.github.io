@@ -1,0 +1,202 @@
+---
+title: "AI Industry Trackers"
+description: "Weekly strategy summaries by industry and revenue segment, synthesised from SEC filings, 8-K material events, and news."
+---
+
+Strategy context is drawn from 10-Q filings (point-in-time blueprint); material events from 8-K filings (M&A, capex, leadership); current developments from news feeds. Each edition covers three revenue tiers — Fortune 100, PE Mid-Size ($500M–$10B), and Startups — and is synthesised by an LLM into a segment-aware narrative.
+
+```{python}
+#| echo: false
+#| output: asis
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(".")))
+
+try:
+    from trackers.io import (
+        list_industries_with_summaries,
+        list_latest_summaries,
+        get_output_dir,
+        get_latest_run_metadata,
+        get_news_feed_summary,
+    )
+    industries_with_data = list_industries_with_summaries()
+    all_industries = ["consumer", "industrials", "financials"]
+except Exception:
+    industries_with_data = []
+    all_industries = ["consumer", "industrials", "financials"]
+
+# Industry navigation
+parts = []
+for ind in all_industries:
+    if ind in industries_with_data:
+        parts.append(f"[{ind.capitalize()}](#{ind})")
+    else:
+        parts.append(f"{ind.capitalize()} (coming soon)")
+print("**View by industry:** " + " · ".join(parts))
+print()
+```
+
+```{python}
+#| echo: false
+#| output: asis
+import sys, os
+from datetime import datetime
+sys.path.insert(0, os.path.dirname(os.path.abspath(".")))
+
+def fmt_date(ymd):
+    if not ymd or len(ymd) < 10:
+        return ymd
+    try:
+        d = datetime.strptime(ymd[:10], "%Y-%m-%d")
+        return d.strftime("%d %B %Y")
+    except Exception:
+        return ymd
+
+_SEGMENT_LABELS = {
+    "fortune_100": "Fortune 100",
+    "pe_mid": "PE Mid-Size ($500M–$10B)",
+    "startup": "Startups (VC-backed)",
+}
+
+try:
+    from trackers.io import (
+        list_industries_with_summaries,
+        list_latest_summaries,
+        get_output_dir,
+        get_latest_run_metadata,
+        get_news_feed_summary,
+        list_8k_signals,
+        get_segment_summary,
+    )
+    industries_with_data = list_industries_with_summaries()
+except Exception:
+    industries_with_data = []
+
+for industry_id in industries_with_data:
+    meta = get_latest_run_metadata(industry_id) or {}
+    latest_sec = meta.get("latest_sec_run") or ""
+    summaries = list_latest_summaries(industry_id)
+    feed_info = get_news_feed_summary(industry_id)
+
+    # Section heading
+    print(f'\n## {industry_id.capitalize()} {{#{industry_id}}}\n')
+
+    # Data-as-of and sources (HTML block)
+    if latest_sec:
+        try:
+            d = datetime.strptime(latest_sec[:8], "%Y%m%d")
+            t = latest_sec[9:15] if len(latest_sec) >= 15 else ""
+            display = d.strftime("%d %B %Y")
+            if t:
+                display += " at " + t[:2] + ":" + t[2:4] + " UTC"
+        except Exception:
+            display = latest_sec
+    else:
+        display = "No data available for this industry yet."
+    feed_line = ""
+    if feed_info and (feed_info.get("configured_count") or feed_info.get("sources_in_run")):
+        cfg = feed_info.get("configured_count") or 0
+        srcs = feed_info.get("sources_in_run") or []
+        if srcs:
+            names = [s.replace("www.", "").replace("feeds.", "").split(".")[0].title() for s in srcs]
+            feed_line = f"<p>News sources: {cfg} feed(s) configured; {len(srcs)} contributed to this edition: " + ", ".join(names) + ".</p>"
+        else:
+            feed_line = f"<p>News sources: {cfg} feed(s) configured; none matched this edition.</p>"
+    html_block = f'<div class="tracker-data-as-of"><p><strong>Data as of</strong></p><p>{display}</p>{feed_line}</div>'
+    try:
+        from IPython.display import HTML, display as ipydisplay
+        ipydisplay(HTML(html_block))
+    except Exception:
+        print(html_block)
+
+    # Segment coverage table
+    try:
+        seg_summary = get_segment_summary(industry_id)
+        if seg_summary:
+            print("| Segment | Companies with news coverage |")
+            print("|---|---|")
+            for seg in ["fortune_100", "pe_mid", "startup"]:
+                count = seg_summary.get(seg, 0)
+                label = _SEGMENT_LABELS.get(seg, seg)
+                print(f"| {label} | {count} |")
+            print()
+    except Exception:
+        pass
+
+    # M&A and material events (from 8-K pipeline)
+    try:
+        k8_signals = list_8k_signals(industry_id, limit=8)
+        ma_signals = [s for s in k8_signals if s.get("is_ma")]
+        capex_signals = [s for s in k8_signals if s.get("is_capex") and not s.get("is_ma")]
+        if ma_signals or capex_signals:
+            print("**Material events this week (from 8-K filings):**\n")
+            for s in (ma_signals + capex_signals)[:6]:
+                company = s.get("company_name", "")
+                seg = s.get("segment", "")
+                seg_tag = f"[{_SEGMENT_LABELS.get(seg, seg.upper())}]" if seg else ""
+                signal_type = s.get("signal_type", "")
+                type_tag = "[M&A]" if signal_type == "ma" else "[Capex]"
+                excerpt = str(s.get("excerpt", ""))[:200]
+                url = s.get("filing_url", "")
+                dollar = s.get("dollar_amount", "")
+                dollar_str = f" ({dollar})" if dollar and str(dollar) != "nan" else ""
+                if url:
+                    print(f"- {type_tag} **[{company}]({url})** {seg_tag}{dollar_str}: {excerpt}")
+                else:
+                    print(f"- {type_tag} **{company}** {seg_tag}{dollar_str}: {excerpt}")
+            print()
+    except Exception:
+        pass
+
+    # Week / edition links
+    if summaries:
+        week_links = []
+        for i, s in enumerate(summaries):
+            date_part = s.get("date", "")
+            label = fmt_date(date_part) + (" (latest)" if i == 0 else "")
+            week_links.append(f"[{label}](#{industry_id}-{date_part})")
+        print("**Editions:** " + " | ".join(week_links))
+        print()
+
+    # Per-week summary content
+    for i, s in enumerate(summaries):
+        date_part = s.get("date", "")
+        path = s.get("path", "")
+        base = get_output_dir(industry_id, "weekly_summaries")
+        full_path = os.path.join(base, path)
+        print(f'\n### Week of {fmt_date(date_part)} {{#{industry_id}-{date_part}}}\n')
+        if os.path.isfile(full_path):
+            with open(full_path) as f:
+                body = f.read()
+            lines = body.strip().split("\n")
+            # Skip file header (title, Week of, strategy line) until ---; show everything after
+            start = 0
+            for j, line in enumerate(lines):
+                if line.strip() == "---":
+                    start = j + 1
+                    break
+                if line.strip().startswith("## "):
+                    start = j
+                    break
+            summary_lines = lines[start:] if start < len(lines) else body.split("\n")
+            bumped = []
+            for line in summary_lines:
+                stripped = line.strip()
+                if stripped.startswith("### "):
+                    bumped.append("##### " + stripped[4:])
+                elif stripped.startswith("## "):
+                    bumped.append("#### " + stripped[3:])
+                else:
+                    bumped.append(line)
+            print("\n".join(bumped))
+        else:
+            print("(Summary file not found.)")
+        print()
+
+# Placeholder sections for industries without data yet
+for industry_id in ["industrials", "financials"]:
+    if industry_id in industries_with_data:
+        continue
+    print(f'\n## {industry_id.capitalize()} {{#{industry_id}}}\n')
+    print("This tracker is in development. Universe and news feeds are configured — run the pipeline to generate the first edition.\n")
+```
