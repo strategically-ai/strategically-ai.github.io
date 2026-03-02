@@ -62,13 +62,13 @@ SECTOR_PULSE_PROMPT = """You are an equity research analyst writing a brief sect
 Recent headlines for this sector:
 {headlines}
 
-Given the comparables data and these real-world headlines, write exactly 3 concise sentences:
+Given the comparables data and these real-world headlines, write exactly 3 concise sentences as a single plain-text paragraph (no numbered lists, no bullet points, no markdown formatting, no bold):
 
-1. Where the sector trades today on valuation (EV/EBITDA, P/E) relative to the broader market — reference the actual median multiples from the data.
-2. One specific observation grounded in BOTH the data AND recent news — name companies/tickers with real numbers, and connect to a headline or event where relevant (e.g. an oil price shock hitting energy margins, a pharma approval driving a standout multiple, tariff risk compressing industrials).
-3. One forward-looking implication for investors, tying the data to the current news cycle.
+Sentence 1: Where the sector trades today on valuation (EV/EBITDA, P/E) relative to the broader market — reference the actual median multiples from the data.
+Sentence 2: One specific observation grounded in BOTH the data AND recent news — name companies/tickers with real numbers, and connect to a headline or event where relevant (e.g. an oil price shock hitting energy margins, a pharma approval driving a standout multiple, tariff risk compressing industrials).
+Sentence 3: One forward-looking implication for investors, tying the data to the current news cycle.
 
-Be direct. Use tickers and numbers. Reference actual events from the headlines. No generic filler. Write like a Bloomberg terminal note.
+IMPORTANT: Output plain text only. No numbered lists, no "1.", no "**bold**", no markdown. Just three sentences in a single paragraph.
 
 Sector: {industry}
 {summary}

@@ -86,7 +86,11 @@ if os.path.isdir(base):
                     pulse_data = json.load(f)
                 pulse_text = pulse_data.get("pulse", "")
                 if pulse_text:
-                    print(f'<div class="comps-sector-pulse"><strong>Sector pulse:</strong> {pulse_text}</div>')
+                    # HTML-escape the LLM output so Pandoc does not parse
+                    # numbered lists, **bold**, etc. as markdown — that breaks
+                    # the page layout by injecting <ol>/<section> nodes.
+                    safe_pulse = html_lib.escape(pulse_text)
+                    print(f'<div class="comps-sector-pulse"><strong>Sector pulse:</strong> {safe_pulse}</div>')
         except Exception:
             pass
 
