@@ -1,0 +1,16 @@
+{
+  "industries": [
+    "Consumer",
+    "Energy",
+    "Financials",
+    "Healthcare",
+    "Industrials",
+    "Real Estate",
+    "Technology"
+  ],
+  "rows_written": 71,
+  "revenue_rows": 1207,
+  "errors": [],
+  "warnings": [],
+  "timestamp_utc": "2026-03-01T21:21:22.703453Z"
+}

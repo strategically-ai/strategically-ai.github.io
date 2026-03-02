@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The AI Strategist</title>
+<title>launch – The AI Strategist</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-latest .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-latest'] = new List('listing-latest', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -150,7 +90,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -252,100 +192,19 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#latest" id="toc-latest" class="nav-link active" data-scroll-target="#latest">Latest</a></li>
+  <li><a href="#launch" id="toc-launch" class="nav-link active" data-scroll-target="#launch">Launch</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">The AI Strategist</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>We apply artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.</p>
-<p><strong>AI and data science applied to:</strong></p>
-<ul>
-<li>Market sizing, competitive positioning, and revenue forecasting</li>
-<li>Due diligence, operating diagnostics, and portfolio analytics</li>
-<li>Capital allocation, pricing, and operational benchmarking</li>
-</ul>
-<p>Designed for investors, operators, and founders. This platform uses machine learning and quantitative methods to surface strategic insights, build decision tools, and turn data into durable enterprise value.</p>
-<hr>
-<section id="latest" class="level3">
-<h3 class="anchored" data-anchor-id="latest">Latest</h3>
-<div id="listing-latest" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QUklMkNzZW50aW1lbnQtYW5hbHlzaXMlMkNTRUMtZmlsaW5ncyUyQ3N0cmF0ZWd5" data-listing-date-sort="1771909200000" data-listing-file-modified-sort="1771947902403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1559">
-<div class="thumbnail"><a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/fortune-100-ai-sentiment/ai_mention_rate.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">What Fortune 100 Companies Actually Say About AI</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">A sentiment analysis of artificial intelligence language in the latest 10-K filings of America’s largest public companies</a>
-</div>
-<div class="delink listing-description"><a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">
-<p>We analyzed the most recent 10-K filings of the Fortune 100 to measure how large companies discuss AI. The result: nearly all of them mention it, but most frame it as a risk – not an opportunity.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">
-<div class="listing-date">
-Feb 24, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="c3RyYXRlZ3klMkNBSSUyQ2NhcGl0YWwtYWxsb2NhdGlvbg==" data-listing-date-sort="1771822800000" data-listing-file-modified-sort="1771890522051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1055">
-<div class="thumbnail"><a href="./posts/foundational-thesis/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/foundational-thesis/index.html" class="no-external">The End of Intuition-Led Strategy</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/foundational-thesis/index.html" class="no-external">Why the strategist’s core toolkit is shifting from intuition and spreadsheets to models and data infrastructure</a>
-</div>
-<div class="delink listing-description"><a href="./posts/foundational-thesis/index.html" class="no-external">
-<p>A foundational essay on why strategy is moving from gut-driven to model-informed, and how AI and data science are becoming the primary instruments for capital allocation, operating decisions, and competitive analysis.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/foundational-thesis/index.html" class="no-external">
-<div class="listing-date">
-Feb 23, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p><a href="./blog.html">Browse all insights →</a></p>
-
+<section id="launch" class="level1">
+<h1>Launch</h1>
+<p>The <strong>Industry comparables</strong> page (valuation and operational metrics by industry, updated monthly) is in the navbar and launches with the site. The previous SEC/news weekly trackers are archived under <code>_archive/industry_trackers/</code> and do not launch.</p>
 
 
 </section>

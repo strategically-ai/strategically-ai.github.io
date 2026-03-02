@@ -40,3 +40,209 @@ a:hover {
 .tracker-data-as-of strong {
   color: #1c2833;
 }
+
+/* ───────────────────────────────────────────────
+   Market Comps page
+   ─────────────────────────────────────────────── */
+
+/* Hide margin sidebar to avoid overlap with wide tables */
+.comps-page #quarto-margin-sidebar {
+  display: none !important;
+}
+
+/* Sector navigation pills */
+.comps-sector-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+.comps-nav-link {
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  background: #e8edf2;
+  color: #1a5276;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  &:hover {
+    background: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* Sector headings */
+.comps-sector-heading {
+  margin-top: 2.5rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #2c3e50;
+  color: #1c2833;
+  font-size: 1.3rem;
+  font-weight: 700;
+  scroll-margin-top: 80px;
+}
+
+/* Sector pulse callout */
+.comps-sector-pulse {
+  padding: 0.65rem 1rem;
+  margin: 0.4rem 0 0.6rem 0;
+  background: #eaf2f8;
+  border-left: 4px solid #2980b9;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.85rem;
+  color: #2c3e50;
+  line-height: 1.55;
+}
+.comps-sector-pulse strong {
+  color: #1c2833;
+}
+
+/* Sector summary line */
+.comps-sector-summary {
+  font-size: 0.85rem;
+  color: #495057;
+  margin: 0.25rem 0 0.4rem 0;
+  font-weight: 500;
+}
+
+/* Download link styled as button */
+.comps-download-link {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid #2c3e50;
+  border-radius: 4px;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  margin-bottom: 0.5rem;
+  &:hover {
+    background: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/* Scrollable table wrapper */
+.comps-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+/* ── Professional comps table ── */
+.comps-table {
+  font-size: 0.8rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 0;
+}
+.comps-table a {
+  font-weight: 500;
+  color: #1a5276;
+  text-decoration: none;
+  &:hover {
+    color: #2980b9;
+    text-decoration: underline;
+  }
+}
+
+/* Header row */
+.comps-table thead th {
+  background: #1c2833;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.73rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 0.55rem;
+  border-bottom: 2px solid #2c3e50;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.comps-table thead th:hover {
+  background: #263747;
+}
+
+/* Body cells */
+.comps-table tbody td {
+  padding: 0.35rem 0.55rem;
+  border-bottom: 1px solid #e9ecef;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.comps-table tbody tr:hover {
+  background-color: #f0f4f8;
+}
+
+/* Right-align numeric columns (all except Ticker and Company) */
+.comps-table thead th:nth-child(n+3),
+.comps-table tbody td:nth-child(n+3) {
+  text-align: right;
+}
+
+/* Company column min width */
+.comps-table tbody td:nth-child(2) {
+  min-width: 140px;
+}
+
+/* Median row */
+.comps-median-row {
+  font-weight: 700;
+  border-top: 2px solid #2c3e50 !important;
+}
+.comps-median-row td {
+  background-color: #e8edf2 !important;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+
+/* Sort indicators */
+.sort-indicator {
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.4);
+  margin-left: 0.15rem;
+}
+th[data-sort] .sort-indicator {
+  color: #fff;
+}
+
+/* Outlier badge */
+.comps-outlier-badge {
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.12em 0.4em;
+  border-radius: 3px;
+}
+
+/* Conditional formatting */
+.comps-val-positive {
+  color: #1e8449;
+  font-weight: 600;
+}
+.comps-val-negative {
+  color: #c0392b;
+}
+
+/* Revenue forecast & CAGR tables — auto-width, not full-width */
+.comps-revenue-table,
+.comps-cagr-table {
+  width: auto;
+  max-width: 700px;
+}
+.comps-cagr-table {
+  max-width: 500px;
+}

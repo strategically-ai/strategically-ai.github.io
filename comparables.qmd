@@ -1,0 +1,316 @@
+---
+title: "Market Comps"
+description: "Valuation multiples, operating metrics, and revenue forecasts for every publicly traded Fortune 100 company across seven sectors. Refreshed daily."
+format:
+  html:
+    page-layout: full
+    body-classes: comps-page
+    include-after-body: comparables-sort.html
+    toc: false
+---
+
+Comparable-company analysis is one of the first things an investor or strategist reaches for when sizing up a sector or vetting a name. Market Comps gives you a clean, current set of valuation multiples (EV/EBITDA, P/E, EV/Revenue), operating metrics (margins, FCF yield, leverage), and simple revenue forecasts for every publicly traded Fortune 100 company across seven sectors. Data is pulled from public filings and market feeds, then refreshed daily so the numbers stay current. Click any ticker to open the company on Yahoo Finance.
+
+```{python}
+#| echo: false
+#| output: asis
+import os
+path = "outputs/comparables/last_updated.txt"
+if os.path.isfile(path):
+    with open(path) as f:
+        date = f.read().strip()
+    print(f'<p class="comps-last-updated"><strong>Last updated:</strong> {date}</p>')
+else:
+    print('<p class="comps-last-updated"><strong>Last updated:</strong> Pending first data refresh.</p>')
+```
+
+## By industry
+
+Each table covers one sector. Columns are sortable; click any header to rank by that metric. The final row is the sector median. An <span class="comps-outlier-badge" style="font-size:0.7rem">Outlier</span> flag marks names where a key multiple falls outside 1.5 IQR of the sector.
+
+```{python}
+#| echo: false
+#| output: asis
+import os
+import glob
+import re
+import json
+import pandas as pd
+import html as html_lib
+
+YAHOO_QUOTE = "https://finance.yahoo.com/quote/{}"
+
+COLUMN_LABELS = {
+    "ticker": "Ticker",
+    "name": "Company",
+    "market_cap_m": "Mkt Cap (M)",
+    "ev_to_ebitda": "EV / EBITDA",
+    "trailing_pe": "Trailing P/E",
+    "forward_pe": "Forward P/E",
+    "ev_to_revenue": "EV / Revenue",
+    "fcf_yield": "FCF Yield",
+    "net_debt_ebitda": "Net Debt / EBITDA",
+    "profit_margin": "Profit Margin",
+    "operating_margin": "Op. Margin",
+    "revenue_growth": "Rev. Growth",
+    "outlier_flag": "Flag",
+}
+
+MULTIPLE_COLS = ["ev_to_ebitda", "trailing_pe", "forward_pe", "ev_to_revenue", "net_debt_ebitda"]
+
+base = "outputs/comparables"
+if os.path.isdir(base):
+    all_paths = sorted(glob.glob(os.path.join(base, "comparables_*.csv")))
+    paths = [p for p in all_paths if not re.search(r"_\d{4}-\d{2}\.csv$", p)]
+
+    # Sector navigation
+    nav_items = []
+    for p in paths:
+        s = os.path.basename(p).replace("comparables_", "").replace(".csv", "")
+        l = s.replace("_", " ").title()
+        nav_items.append(f'<a href="#sector-{s}" class="comps-nav-link">{l}</a>')
+    print(f'<nav class="comps-sector-nav">{"".join(nav_items)}</nav>')
+
+    for path in paths:
+        name = os.path.basename(path).replace("comparables_", "").replace(".csv", "").replace("_", " ").title()
+        safe = os.path.basename(path).replace("comparables_", "").replace(".csv", "")
+
+        # Sector heading
+        print(f'<h3 id="sector-{safe}" class="comps-sector-heading">{name}</h3>')
+
+        # Sector pulse (pure HTML — no ::: markdown)
+        try:
+            pulse_path = os.path.join(base, f"sector_pulse_{safe}.json")
+            if os.path.isfile(pulse_path):
+                with open(pulse_path) as f:
+                    pulse_data = json.load(f)
+                pulse_text = pulse_data.get("pulse", "")
+                if pulse_text:
+                    print(f'<div class="comps-sector-pulse"><strong>Sector pulse:</strong> {pulse_text}</div>')
+        except Exception:
+            pass
+
+        try:
+            df = pd.read_csv(path)
+            raw = pd.read_csv(path)
+
+            # Columns to show (no industry, no raw market_cap)
+            show = [c for c in ["ticker", "name", "market_cap_m", "ev_to_ebitda", "trailing_pe", "forward_pe", "ev_to_revenue", "fcf_yield", "net_debt_ebitda", "profit_margin", "operating_margin", "revenue_growth", "outlier_flag"] if c in df.columns]
+            df = df[show].copy()
+
+            # --- Number formatting ---
+            # Market cap
+            if "market_cap_m" in df.columns:
+                df["market_cap_m"] = df["market_cap_m"].apply(lambda x: f"{x:,.0f}" if pd.notna(x) else "")
+
+            # Multiples: format with x suffix
+            for col in MULTIPLE_COLS:
+                if col in df.columns:
+                    df[col] = df[col].apply(lambda x: f"{float(x):.1f}x" if pd.notna(x) else "" if not isinstance(x, str) else x)
+
+            # Percentages: fcf_yield, revenue_growth
+            for col in ("fcf_yield", "revenue_growth"):
+                if col in df.columns:
+                    def _pct2(x, _col=col, _raw=raw):
+                        try:
+                            return f"{float(x) * 100:.1f}%" if pd.notna(x) else ""
+                        except (TypeError, ValueError):
+                            return ""
+                    df[col] = df[col].apply(_pct2)
+
+            # Percentages: profit_margin, operating_margin
+            for col in ("profit_margin", "operating_margin"):
+                if col in df.columns:
+                    def _pct(x):
+                        try:
+                            return f"{float(x) * 100:.1f}%" if pd.notna(x) else ""
+                        except (TypeError, ValueError):
+                            return ""
+                    df[col] = df[col].apply(_pct)
+
+            # Outlier flag as badge
+            if "outlier_flag" in df.columns:
+                df["outlier_flag"] = df["outlier_flag"].apply(lambda x: '<span class="comps-outlier-badge">Outlier</span>' if x else "")
+
+            # Sector summary card
+            n_names = raw["ticker"].nunique() if "ticker" in raw.columns else 0
+            med_ev_ebitda = raw["ev_to_ebitda"].median() if "ev_to_ebitda" in raw.columns and pd.notna(raw["ev_to_ebitda"].median()) else None
+            med_rev_gr = raw["revenue_growth"].median() if "revenue_growth" in raw.columns and pd.notna(raw["revenue_growth"].median()) else None
+            summary_parts = [f"{n_names} names"]
+            if med_ev_ebitda is not None:
+                summary_parts.append(f"median EV/EBITDA {med_ev_ebitda:.1f}x")
+            if med_rev_gr is not None:
+                summary_parts.append(f"median rev growth {med_rev_gr*100:.1f}%")
+            print(f'<div class="comps-sector-summary">{" &middot; ".join(summary_parts)}</div>')
+            print(f'<p><a href="comparables/{os.path.basename(path)}" download class="comps-download-link">&#x2913; Download CSV</a></p>')
+
+            # Clickable ticker and name (Yahoo Finance)
+            tickers_raw = raw["ticker"].astype(str) if "ticker" in raw.columns else pd.Series([""] * len(df))
+            if "ticker" in df.columns:
+                df["ticker"] = [f'<a href="{YAHOO_QUOTE.format(html_lib.escape(t))}" target="_blank" rel="noopener">{html_lib.escape(t)}</a>' for t in tickers_raw]
+            if "name" in df.columns:
+                names_raw = raw["name"].astype(str) if "name" in raw.columns else df["name"].astype(str)
+                df["name"] = [f'<a href="{YAHOO_QUOTE.format(html_lib.escape(t))}" target="_blank" rel="noopener">{html_lib.escape(n)}</a>' for t, n in zip(tickers_raw, names_raw)]
+
+            # Conditional formatting for margins and growth
+            med_profit = raw["profit_margin"].median() if "profit_margin" in raw.columns else None
+            med_op = raw["operating_margin"].median() if "operating_margin" in raw.columns else None
+            med_rev = raw["revenue_growth"].median() if "revenue_growth" in raw.columns else None
+
+            def _cond_fmt(val_str, median_val):
+                if not val_str or val_str == "—" or median_val is None or pd.isna(median_val):
+                    return val_str
+                try:
+                    v = float(val_str.replace("%", "")) / 100
+                    if v > median_val * 1.0:
+                        return f'<span class="comps-val-positive">{val_str}</span>'
+                    elif v < median_val * 1.0:
+                        return f'<span class="comps-val-negative">{val_str}</span>'
+                except (ValueError, TypeError, AttributeError):
+                    pass
+                return val_str
+
+            if "profit_margin" in df.columns and med_profit is not None:
+                df["profit_margin"] = df["profit_margin"].apply(lambda x: _cond_fmt(x, med_profit))
+            if "operating_margin" in df.columns and med_op is not None:
+                df["operating_margin"] = df["operating_margin"].apply(lambda x: _cond_fmt(x, med_op))
+            if "revenue_growth" in df.columns and med_rev is not None:
+                df["revenue_growth"] = df["revenue_growth"].apply(lambda x: _cond_fmt(x, med_rev))
+
+            # Sector median row
+            median_row = {}
+            for c in show:
+                if c == "ticker":
+                    median_row[c] = "—"
+                elif c == "name":
+                    median_row[c] = "<strong>Sector median</strong>"
+                elif c == "market_cap_m" and "market_cap" in raw.columns:
+                    m = raw["market_cap"].median()
+                    median_row[c] = f"{m/1e6:,.0f}" if pd.notna(m) else ""
+                elif c == "outlier_flag":
+                    median_row[c] = ""
+                elif c in ("fcf_yield", "revenue_growth") and c in raw.columns:
+                    m = raw[c].median()
+                    median_row[c] = f"{float(m) * 100:.1f}%" if pd.notna(m) else ""
+                elif c in raw.columns and pd.api.types.is_numeric_dtype(raw[c]):
+                    m = raw[c].median()
+                    if c in ("profit_margin", "operating_margin"):
+                        median_row[c] = f"{float(m) * 100:.1f}%" if pd.notna(m) else ""
+                    elif c in MULTIPLE_COLS:
+                        median_row[c] = f"{float(m):.1f}x" if pd.notna(m) else ""
+                    else:
+                        median_row[c] = f"{float(m):,.2f}" if pd.notna(m) else ""
+                else:
+                    median_row[c] = ""
+            df = pd.concat([df, pd.DataFrame([median_row])], ignore_index=True)
+
+            # Replace NaN / empty with em dash
+            df = df.fillna("—")
+            df = df.replace({"": "—", "nan": "—", "nanx": "—", "NaN": "—"})
+
+            # Rename columns to human-readable labels
+            df = df.rename(columns=COLUMN_LABELS)
+
+            html_table = df.to_html(index=False, escape=False, classes="table table-sm comps-table")
+
+            # Mark median row (last <tr>) with CSS class
+            last_tr_idx = html_table.rfind('<tr>')
+            if last_tr_idx != -1:
+                html_table = html_table[:last_tr_idx] + '<tr class="comps-median-row">' + html_table[last_tr_idx + 4:]
+
+            print('<div class="comps-table-wrapper">')
+            print(html_table)
+            print('</div>')
+        except Exception as e:
+            print(f"<p>(No data yet. Run the comparables pipeline.)</p>")
+else:
+    print('<p>Comparables output directory not yet created. Run <code>python run_comparables.py --industry all</code> to generate data.</p>')
+```
+
+## Revenue: historical and forecast
+
+We pull quarterly revenue from reported financials and project the next four quarters using a simple growth rate (trailing quarterly growth applied forward). Bear/base/bull bands use 0.5x, 1x, and 1.5x that growth rate. No ML; this is a level 1 forecast for quick comparison. Below: last 2 historical quarters, next 2 forecast quarters, and implied CAGRs (historical vs forecast) for a sanity check.
+
+```{python}
+#| echo: false
+#| output: asis
+import os
+import glob
+import pandas as pd
+base = "outputs/comparables"
+rev_files = sorted(glob.glob(os.path.join(base, "revenue_forecast_*.csv"))) if os.path.isdir(base) else []
+if not rev_files:
+    print("<p>No revenue forecast data yet. Run <code>python run_comparables.py --industry all</code> to generate historicals and forecasts.</p>")
+else:
+    for path in rev_files:
+        industry_name = os.path.basename(path).replace("revenue_forecast_", "").replace(".csv", "").replace("_", " ").title()
+        print(f'<h3 class="comps-sector-heading">{industry_name}</h3>')
+        df = pd.read_csv(path)
+        df["period_end"] = pd.to_datetime(df["period_end"])
+        df["revenue_b"] = (df["revenue"] / 1e9).round(2)
+        # Summary: last 2 historical + next 2 forecast per ticker
+        hist = df[df["type"] == "historical"].sort_values(["ticker", "period_end"])
+        fcast = df[df["type"] == "forecast"].sort_values(["ticker", "period_end"])
+        last2 = hist.groupby("ticker").tail(2)
+        next2 = fcast.groupby("ticker").head(2)
+        summary = []
+        for ticker in df["ticker"].unique():
+            h = last2[last2["ticker"] == ticker][["period_end", "revenue_b"]].sort_values("period_end")
+            fc = next2[next2["ticker"] == ticker][["period_end", "revenue_b"]].sort_values("period_end")
+            row = {"Ticker": ticker, "Hist Q-1": "", "Hist Q-2": "", "Fcst Q+1": "", "Fcst Q+2": ""}
+            for i, (_, r) in enumerate(h.tail(2).iterrows()):
+                key = "Hist Q-2" if i == 0 else "Hist Q-1"
+                row[key] = f"{r['revenue_b']}B"
+            for i, (_, r) in enumerate(fc.head(2).iterrows()):
+                key = "Fcst Q+1" if i == 0 else "Fcst Q+2"
+                row[key] = f"{r['revenue_b']}B"
+            summary.append(row)
+        tbl = pd.DataFrame(summary)
+        print(tbl.to_html(index=False, escape=False, classes="table table-sm comps-table comps-revenue-table"))
+        # CAGR: historical (annualized from last 4q) vs forecast (implied from 4q forward)
+        hist_df = df[df["type"] == "historical"].sort_values(["ticker", "period_end"])
+        fcast_df = df[df["type"] == "forecast"].sort_values(["ticker", "period_end"])
+        cagr_rows = []
+        for t in df["ticker"].unique()[:10]:
+            h = hist_df[hist_df["ticker"] == t]["revenue"]
+            fc = fcast_df[fcast_df["ticker"] == t]["revenue"]
+            if len(h) >= 2 and len(fc) >= 2:
+                n_hist = len(h) - 1
+                hist_cagr = (h.iloc[-1] / h.iloc[0]) ** (4 / max(n_hist, 1)) - 1 if n_hist else None
+                n_fc = len(fc) - 1
+                fcast_cagr = (fc.iloc[-1] / fc.iloc[0]) ** (4 / max(n_fc, 1)) - 1 if n_fc else None
+                cagr_rows.append({"Ticker": t, "Historical CAGR": f"{hist_cagr*100:.1f}%" if hist_cagr else "", "Forecast CAGR": f"{fcast_cagr*100:.1f}%" if fcast_cagr else ""})
+        if cagr_rows:
+            cagr_tbl = pd.DataFrame(cagr_rows)
+            print('<p><strong>Implied annualized CAGR (historical vs forecast):</strong></p>')
+            print(cagr_tbl.to_html(index=False, escape=False, classes="table table-sm comps-table comps-cagr-table"))
+        # Line chart: first 4 tickers, historical + forecast
+        try:
+            import plotly.graph_objects as go
+            from IPython.display import display, HTML
+            plot_tickers = df["ticker"].unique()[:4]
+            fig = go.Figure()
+            for t in plot_tickers:
+                for typ, dash, lbl in [("historical", "solid", "hist"), ("forecast", "solid", "fcast"), ("forecast_bear", "dot", "bear"), ("forecast_bull", "dot", "bull")]:
+                    sub = df[(df["ticker"] == t) & (df["type"] == typ)]
+                    if sub.empty:
+                        continue
+                    sub = sub.sort_values("period_end")
+                    fig.add_trace(go.Scatter(x=sub["period_end"].dt.strftime("%Y-%m"), y=sub["revenue_b"], name=f"{t} {lbl}", line=dict(dash=dash)))
+            fig.update_layout(
+                title=f"Quarterly Revenue (B USD) — {industry_name}",
+                xaxis_title="Quarter",
+                yaxis_title="Revenue (B USD)",
+                margin=dict(t=50, b=80, l=60, r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)",
+                font=dict(family="Source Sans Pro, sans-serif", color="#1c2833", size=12),
+                xaxis=dict(gridcolor="#e9ecef", linecolor="#2c3e50", linewidth=1),
+                yaxis=dict(gridcolor="#e9ecef", linecolor="#2c3e50", linewidth=1),
+                legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5, font=dict(size=10)),
+                colorway=["#1c2833", "#2980b9", "#27ae60", "#e74c3c", "#8e44ad", "#f39c12", "#1abc9c", "#e67e22"],
+            )
+            display(HTML(fig.to_html(include_plotlyjs="cdn")))
+        except Exception:
+            pass
+```

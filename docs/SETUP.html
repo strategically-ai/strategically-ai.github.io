@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The AI Strategist</title>
+<title>setup – The AI Strategist</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +65,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +103,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-latest .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-latest'] = new List('listing-latest', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -150,7 +125,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -252,102 +227,62 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#latest" id="toc-latest" class="nav-link active" data-scroll-target="#latest">Latest</a></li>
+  <li><a href="#project-setup" id="toc-project-setup" class="nav-link active" data-scroll-target="#project-setup">Project setup</a>
+  <ul class="collapse">
+  <li><a href="#one-time-setup" id="toc-one-time-setup" class="nav-link" data-scroll-target="#one-time-setup">One-time setup</a></li>
+  <li><a href="#running-the-comparables-pipeline-monthly" id="toc-running-the-comparables-pipeline-monthly" class="nav-link" data-scroll-target="#running-the-comparables-pipeline-monthly">Running the comparables pipeline (monthly)</a></li>
+  <li><a href="#local-site-preview" id="toc-local-site-preview" class="nav-link" data-scroll-target="#local-site-preview">Local site preview</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#no-impact-on-the-rest-of-the-project" id="toc-no-impact-on-the-rest-of-the-project" class="nav-link" data-scroll-target="#no-impact-on-the-rest-of-the-project">No impact on the rest of the project</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">The AI Strategist</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>We apply artificial intelligence and data science to corporate strategy, private equity value creation, and capital allocation.</p>
-<p><strong>AI and data science applied to:</strong></p>
+<section id="project-setup" class="level1">
+<h1>Project setup</h1>
+<p>Use a project virtual environment so the tracker and Quarto run with consistent dependencies (and to avoid system Python/Homebrew conflicts).</p>
+<section id="one-time-setup" class="level2">
+<h2 class="anchored" data-anchor-id="one-time-setup">One-time setup</h2>
+<p>From the repo root:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv .venv</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate   <span class="co"># On Windows: .venv\Scripts\activate</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>.venv</code> is already in <code>.gitignore</code>; it will not be committed.</p>
+</section>
+<section id="running-the-comparables-pipeline-monthly" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-comparables-pipeline-monthly">Running the comparables pipeline (monthly)</h2>
+<p>With the venv activated:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> run_comparables.py <span class="at">--industry</span> all</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Or without activating: use <code>.venv/bin/python run_comparables.py --industry all</code>. Archived industry trackers (SEC/news/weekly): see <code>_archive/industry_trackers/README.md</code>. Or without activating, use the venv’s Python directly:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">.venv/bin/python</span> run_comparables.py <span class="at">--industry</span> all</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="local-site-preview" class="level2">
+<h2 class="anchored" data-anchor-id="local-site-preview">Local site preview</h2>
+<p>From the repo root (with venv activated so Python chunks use the same env):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Opens the site in your browser; live-reloads on file changes. The <strong>Market Comps</strong> page shows comparables tables from <code>outputs/comparables/</code> (run <code>python run_comparables.py --industry all</code> first to generate data).</p>
+</section>
+<section id="quarto" class="level2">
+<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
+<p>Quarto will use whatever <code>python</code> is on your PATH. If you run <code>quarto preview</code> or <code>quarto render</code> with the venv activated, it will use the venv’s Python and the same packages. Everything else (rendering, site build) is unchanged.</p>
+</section>
+<section id="no-impact-on-the-rest-of-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="no-impact-on-the-rest-of-the-project">No impact on the rest of the project</h2>
 <ul>
-<li>Market sizing, competitive positioning, and revenue forecasting</li>
-<li>Due diligence, operating diagnostics, and portfolio analytics</li>
-<li>Capital allocation, pricing, and operational benchmarking</li>
+<li>The site, Quarto, and existing notebooks work as before.</li>
+<li>The venv only affects how you run the tracker and which Python/packages are used when you run it or when Quarto runs Python chunks. You can still use your system or Anaconda Python for other work; use the venv only when working in this repo.</li>
 </ul>
-<p>Designed for investors, operators, and founders. This platform uses machine learning and quantitative methods to surface strategic insights, build decision tools, and turn data into durable enterprise value.</p>
-<hr>
-<section id="latest" class="level3">
-<h3 class="anchored" data-anchor-id="latest">Latest</h3>
-<div id="listing-latest" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QUklMkNzZW50aW1lbnQtYW5hbHlzaXMlMkNTRUMtZmlsaW5ncyUyQ3N0cmF0ZWd5" data-listing-date-sort="1771909200000" data-listing-file-modified-sort="1771947902403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1559">
-<div class="thumbnail"><a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/fortune-100-ai-sentiment/ai_mention_rate.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">What Fortune 100 Companies Actually Say About AI</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">A sentiment analysis of artificial intelligence language in the latest 10-K filings of America’s largest public companies</a>
-</div>
-<div class="delink listing-description"><a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">
-<p>We analyzed the most recent 10-K filings of the Fortune 100 to measure how large companies discuss AI. The result: nearly all of them mention it, but most frame it as a risk – not an opportunity.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/fortune-100-ai-sentiment/index.html" class="no-external">
-<div class="listing-date">
-Feb 24, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="c3RyYXRlZ3klMkNBSSUyQ2NhcGl0YWwtYWxsb2NhdGlvbg==" data-listing-date-sort="1771822800000" data-listing-file-modified-sort="1771890522051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1055">
-<div class="thumbnail"><a href="./posts/foundational-thesis/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/foundational-thesis/index.html" class="no-external">The End of Intuition-Led Strategy</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/foundational-thesis/index.html" class="no-external">Why the strategist’s core toolkit is shifting from intuition and spreadsheets to models and data infrastructure</a>
-</div>
-<div class="delink listing-description"><a href="./posts/foundational-thesis/index.html" class="no-external">
-<p>A foundational essay on why strategy is moving from gut-driven to model-informed, and how AI and data science are becoming the primary instruments for capital allocation, operating decisions, and competitive analysis.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/foundational-thesis/index.html" class="no-external">
-<div class="listing-date">
-Feb 23, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p><a href="./blog.html">Browse all insights →</a></p>
 
 
-
+</section>
 </section>
 
 </main> <!-- /main -->
