@@ -1,23 +1,61 @@
-# Run Market Comps pipeline daily at 6:00 AM ET (11:00 UTC).
+# Run Market Comps pipeline daily, re-render the site, and auto-publish.
 name: Run comparables pipeline
 on:
   schedule:
     - cron: "0 11 * * 1-5"  # 11:00 UTC (6 AM ET) Mon-Fri
   workflow_dispatch:  # allow manual trigger
+
+permissions:
+  contents: write  # needed to push commits back to the repo
+
 jobs:
   comparables:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
-      - name: Install dependencies
+
+      - name: Install Python dependencies
         run: pip install -r requirements.txt
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
       - name: Run comparables pipeline
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
         run: python run_comparables.py --industry all
-      - name: Upload outputs
+
+      - name: Render site with Quarto
+        run: quarto render
+
+      - name: Copy CSVs to docs (after render so they survive)
+        run: |
+          mkdir -p docs/comparables
+          cp outputs/comparables/comparables_*.csv docs/comparables/ 2>/dev/null || true
+          cp outputs/comparables/revenue_forecast_*.csv docs/comparables/ 2>/dev/null || true
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add outputs/ docs/ data/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily refresh: $(date -u +%Y-%m-%d) comparables data and site render
+
+          Automated by GitHub Actions pipeline.
+          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+            git push
+          fi
+
+      - name: Upload outputs artifact
         uses: actions/upload-artifact@v4
         with:
           name: comparables-outputs
