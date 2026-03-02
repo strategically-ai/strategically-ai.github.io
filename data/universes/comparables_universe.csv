@@ -1,0 +1,114 @@
+industry,ticker,name
+Consumer,WMT,Walmart
+Consumer,AMZN,Amazon
+Consumer,COST,Costco
+Consumer,HD,Home Depot
+Consumer,TGT,Target
+Consumer,NKE,Nike
+Consumer,SBUX,Starbucks
+Consumer,KR,Kroger
+Consumer,DG,Dollar General
+Consumer,BBY,Best Buy
+Consumer,PEP,PepsiCo
+Consumer,KO,Coca-Cola
+Consumer,PG,Procter & Gamble
+Consumer,LOW,Lowe's
+Consumer,ADM,Archer Daniels Midland
+Consumer,SYY,Sysco
+Consumer,ACI,Albertsons
+Consumer,DIS,Walt Disney
+Consumer,WBA,Walgreens Boots Alliance
+Consumer,PFGC,Performance Food Group
+Consumer,TJX,TJX Companies
+Consumer,TSN,Tyson Foods
+Industrials,F,Ford Motor
+Industrials,GM,General Motors
+Industrials,GE,GE Aerospace
+Industrials,CAT,Caterpillar
+Industrials,DE,Deere & Company
+Industrials,FDX,FedEx
+Industrials,UPS,UPS
+Industrials,HON,Honeywell
+Industrials,LMT,Lockheed Martin
+Industrials,RTX,RTX Corporation
+Industrials,MMM,3M
+Industrials,GD,General Dynamics
+Industrials,NOC,Northrop Grumman
+Industrials,NUE,Nucor
+Industrials,TSLA,Tesla
+Industrials,BA,Boeing
+Industrials,DAL,Delta Air Lines
+Industrials,UAL,United Airlines
+Industrials,AAL,American Airlines
+Financials,JPM,JPMorgan Chase
+Financials,BAC,Bank of America
+Financials,C,Citigroup
+Financials,GS,Goldman Sachs
+Financials,MS,Morgan Stanley
+Financials,AXP,American Express
+Financials,PGR,Progressive
+Financials,AIG,American International Group
+Financials,COF,Capital One
+Financials,WFC,Wells Fargo
+Financials,BRK.B,Berkshire Hathaway
+Financials,SNEX,StoneX Group
+Financials,MET,MetLife
+Financials,ALL,Allstate
+Financials,PRU,Prudential Financial
+Financials,TRV,Travelers
+Technology,AAPL,Apple
+Technology,MSFT,Microsoft
+Technology,GOOGL,Alphabet
+Technology,NVDA,Nvidia
+Technology,META,Meta Platforms
+Technology,ORCL,Oracle
+Technology,CRM,Salesforce
+Technology,AVGO,Broadcom
+Technology,INTC,Intel
+Technology,CSCO,Cisco Systems
+Technology,DELL,Dell Technologies
+Technology,IBM,IBM
+Technology,HPQ,HP Inc
+Technology,VZ,Verizon
+Technology,T,AT&T
+Technology,CMCSA,Comcast
+Technology,CHTR,Charter Communications
+Technology,UBER,Uber Technologies
+Technology,SNX,TD Synnex
+Healthcare,UNH,UnitedHealth Group
+Healthcare,JNJ,Johnson & Johnson
+Healthcare,PFE,Pfizer
+Healthcare,ABBV,AbbVie
+Healthcare,MRK,Merck
+Healthcare,TMO,Thermo Fisher Scientific
+Healthcare,ABT,Abbott Laboratories
+Healthcare,DHR,Danaher
+Healthcare,ELV,Elevance Health
+Healthcare,CVS,CVS Health
+Healthcare,MCK,McKesson
+Healthcare,COR,Cencora
+Healthcare,CI,Cigna Group
+Healthcare,CAH,Cardinal Health
+Healthcare,CNC,Centene
+Healthcare,HUM,Humana
+Healthcare,HCA,HCA Healthcare
+Healthcare,LLY,Eli Lilly
+Healthcare,BMY,Bristol-Myers Squibb
+Energy,XOM,ExxonMobil
+Energy,CVX,Chevron
+Energy,COP,ConocoPhillips
+Energy,EOG,EOG Resources
+Energy,SLB,Schlumberger
+Energy,MPC,Marathon Petroleum
+Energy,VLO,Valero Energy
+Energy,PSX,Phillips 66
+Energy,ET,Energy Transfer
+Energy,EPD,Enterprise Products Partners
+Energy,PAGP,Plains GP Holdings
+Real Estate,PLD,Prologis
+Real Estate,AMT,American Tower
+Real Estate,EQR,Equity Residential
+Real Estate,SPG,Simon Property Group
+Real Estate,O,Realty Income
+Real Estate,WELL,Welltower
+Real Estate,DLR,Digital Realty Trust

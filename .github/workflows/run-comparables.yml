@@ -1,0 +1,24 @@
+# Run Market Comps pipeline daily at 6:00 AM ET (11:00 UTC).
+name: Run comparables pipeline
+on:
+  schedule:
+    - cron: "0 11 * * 1-5"  # 11:00 UTC (6 AM ET) Mon-Fri
+  workflow_dispatch:  # allow manual trigger
+jobs:
+  comparables:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run comparables pipeline
+        run: python run_comparables.py --industry all
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: comparables-outputs
+          path: outputs/comparables/

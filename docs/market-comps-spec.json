@@ -1,0 +1,100 @@
+{
+  "product": "Market Comps — Comparables Tracker",
+  "north_star": "The go-to benchmarking tool for investors and strategists: real-time-ish, beautiful, opinionated",
+
+  "current_state_gaps": {
+    "data": [
+      "Static CSVs / manual refresh — no live pipeline yet",
+      "Only 3 industries covered (Consumer, Financials, Industrials)",
+      "Revenue forecast is naive trailing-growth extrapolation, no confidence intervals",
+      "Missing high-signal metrics: ROIC, FCF yield, net debt/EBITDA, NTM multiples",
+      "No peer-group or sub-industry granularity (e.g. 'Big Box' vs 'Grocery' within Consumer)"
+    ],
+    "pipeline": [
+      "No orchestration layer — monthly cadence is manual",
+      "SEC/EDGAR path exists but external API stub not wired",
+      "No data quality checks or anomaly flags (e.g. P/E outliers like KR at 60x)"
+    ],
+    "product_surface": [
+      "No interactivity — user can't filter, sort, or select peers",
+      "No historical multiple time series — only point-in-time snapshot",
+      "No export / download CTA for the tables"
+    ]
+  },
+
+  "upgrade_vectors": {
+    "data_depth": {
+      "priority": "high",
+      "ideas": [
+        "Add NTM (next-twelve-month) multiples alongside LTM — more actionable for investors",
+        "Surface net debt / EBITDA as a leverage signal per company",
+        "Add FCF margin and FCF yield — P/E is noisy, FCF is cleaner",
+        "Flag statistical outliers inline (e.g. red badge on P/E > 3 std devs from sector median)",
+        "Compute sector medians and quartiles so users see where each name sits in the distribution"
+      ]
+    },
+    "forecast_quality": {
+      "priority": "medium",
+      "ideas": [
+        "Replace naive trailing-growth with consensus-anchored estimates (FactSet / Bloomberg API when credentialed)",
+        "Add a bear / base / bull scenario band on the revenue chart",
+        "Show CAGR implied by forecast vs. historical CAGR — instant sanity check"
+      ]
+    },
+    "industry_coverage": {
+      "priority": "high",
+      "ideas": [
+        "Add Tech, Healthcare, Energy, Real Estate — users expect full market coverage",
+        "Introduce sub-industry groupings (e.g. within Tech: Semiconductors, SaaS, Hardware)",
+        "Allow custom peer group construction: user picks 5 tickers, gets instant comp table"
+      ]
+    },
+    "pipeline_reliability": {
+      "priority": "high",
+      "ideas": [
+        "Wrap run_comparables.py in a lightweight scheduler (GitHub Actions cron on first weekday of month)",
+        "Add data validation step: schema checks, null-rate thresholds, range guards before writing output",
+        "Version outputs with YYYY-MM suffix AND maintain a 'latest' symlink so the Quarto page always reads current",
+        "Emit a pipeline run log (run_log.json) with timestamp, rows written, error count — useful for debugging"
+      ]
+    },
+    "product_surface": {
+      "priority": "high",
+      "ideas": [
+        "Make the Quarto page interactive: Observable JS or a lightweight React embed for sortable, filterable tables",
+        "Add sparklines for revenue trend inline in the table — visual > numbers for quick scanning",
+        "One-click CSV / Excel download per industry table",
+        "'Last updated' badge prominent at top with a tooltip explaining data lag",
+        "Sector summary card at top of each section: median EV/EBITDA, median rev growth, # of names — fast orientation"
+      ]
+    },
+    "narrative_layer": {
+      "priority": "medium",
+      "ideas": [
+        "Auto-generate a 2-3 sentence 'sector pulse' blurb per industry using an LLM call over the freshly computed metrics",
+        "Flag month-over-month multiple expansion / compression with directional arrows",
+        "Add a 'notable movers' section at top of page — top 3 names with biggest multiple change this month"
+      ]
+    },
+    "monetization_and_distribution": {
+      "priority": "low_now_high_later",
+      "ideas": [
+        "Email digest: monthly summary table sent to subscribers on pipeline run day",
+        "Embeddable widget: iframe-able comp table for external blogs / newsletters",
+        "API endpoint: serve the comparables data as JSON so power users can pull programmatically"
+      ]
+    }
+  },
+
+  "launch_checklist_done": [
+    "Wire run_comparables.py end-to-end for Consumer + Financials + Industrials",
+    "Write outputs/comparables/comparables_{industry}.csv + last_updated.txt",
+    "Build comparables.qmd with embedded tables reading from those CSVs",
+    "Add Market Comps to navbar (_quarto.yml)",
+    "Sector median row added to each industry table"
+  ],
+
+  "north_star_metric": "Monthly active sessions on comparables page + CSV download rate — if analysts are downloading, the data is good enough to trust",
+
+  "llm_reasoning_prompt": "When suggesting improvements, always ask: does this help an investor make a faster, better-informed judgment about relative value? If yes, prioritize. If it only adds visual polish without analytical lift, deprioritize."
+}

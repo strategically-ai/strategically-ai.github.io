@@ -1,0 +1,61 @@
+<script>
+document.querySelectorAll(".comps-table-wrapper table").forEach(function(table) {
+  var headers = table.querySelectorAll("thead th");
+  headers.forEach(function(th, i) {
+    // Add sort indicator
+    var indicator = document.createElement("span");
+    indicator.className = "sort-indicator";
+    indicator.innerHTML = " \u25B4\u25BE";
+    th.appendChild(indicator);
+
+    th.addEventListener("click", function() {
+      // Reset all indicators in this table
+      headers.forEach(function(h) {
+        var ind = h.querySelector(".sort-indicator");
+        if (ind) ind.innerHTML = " \u25B4\u25BE";
+        if (h !== th) h.removeAttribute("data-sort");
+      });
+
+      var tbody = table.querySelector("tbody");
+      if (!tbody) return;
+
+      // Separate median row from data rows
+      var allRows = Array.from(tbody.querySelectorAll("tr"));
+      var dataRows = [];
+      var medianRow = null;
+      allRows.forEach(function(r) {
+        if (r.classList.contains("comps-median-row")) {
+          medianRow = r;
+        } else {
+          dataRows.push(r);
+        }
+      });
+
+      var ascending = th.getAttribute("data-sort") !== "asc";
+      th.setAttribute("data-sort", ascending ? "asc" : "desc");
+
+      // Update indicator
+      var ind = th.querySelector(".sort-indicator");
+      if (ind) ind.innerHTML = ascending ? " \u25B4" : " \u25BE";
+
+      dataRows.sort(function(a, b) {
+        var ac = a.cells[i] ? a.cells[i].textContent.trim() : "";
+        var bc = b.cells[i] ? b.cells[i].textContent.trim() : "";
+        // Strip non-numeric chars for numeric comparison
+        var an = parseFloat(ac.replace(/[^0-9.\-]/g, ""));
+        var bn = parseFloat(bc.replace(/[^0-9.\-]/g, ""));
+        if (!isNaN(an) && !isNaN(bn)) {
+          return ascending ? an - bn : bn - an;
+        }
+        // Text comparison fallback
+        return ascending ? (ac < bc ? -1 : ac > bc ? 1 : 0) : (bc < ac ? -1 : bc > ac ? 1 : 0);
+      });
+
+      // Re-append data rows in sorted order
+      dataRows.forEach(function(r) { tbody.appendChild(r); });
+      // Always pin median row at the bottom
+      if (medianRow) tbody.appendChild(medianRow);
+    });
+  });
+});
+</script>
