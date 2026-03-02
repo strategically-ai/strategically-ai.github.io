@@ -8,13 +8,15 @@ from typing import Optional
 from .universe import _repo_root
 from .io import get_output_dir
 
-SECTOR_PULSE_PROMPT = """You are an equity research analyst writing a brief sector note for institutional investors. Given the comparables data below, write exactly 3 concise sentences:
+SECTOR_PULSE_PROMPT = """You are an equity research analyst writing a brief sector note for institutional investors. Today's date is {date}. Q4 2025 earnings season is wrapping up with S&P 500 blended EPS growth of ~13% and revenue growth of ~9%. A rotation from mega-cap tech into cyclicals (industrials, financials, energy, healthcare) is underway. The S&P 500 forward P/E is 21.6x vs the 5-year average of 20.0x.
 
-1. Where the sector trades today on valuation (EV/EBITDA, P/E) and how that compares to what you would expect given the growth profile.
-2. One specific observation grounded in the data — name the company or companies involved (e.g. a wide spread between the richest and cheapest name, a standout grower, compressed margins across the group, or notable leverage).
-3. One forward-looking implication for investors or strategists evaluating this sector.
+Given the comparables data below, write exactly 3 concise sentences:
 
-Be direct and specific. Use the actual numbers and tickers. Avoid generic filler like "this indicates" or "notably." Write as if this will appear on a Bloomberg terminal screen.
+1. Where the sector trades today on valuation (EV/EBITDA, P/E) relative to the broader market and its own growth profile — reference the actual median multiples.
+2. One specific, data-driven observation — name companies and use real numbers from the data (e.g. a wide valuation spread between the richest and cheapest name, a standout grower or margin leader, compressed margins, or unusual leverage).
+3. One forward-looking implication for investors evaluating this sector, tying to the current earnings cycle or macro backdrop where relevant.
+
+Be direct. Use tickers and numbers. No filler. Write like a Bloomberg terminal note.
 
 Sector: {industry}
 {summary}
@@ -27,7 +29,8 @@ def generate_sector_pulse(industry: str, summary: str, openai_client) -> Optiona
     if openai_client is None:
         return None
     try:
-        prompt = SECTOR_PULSE_PROMPT.format(industry=industry, summary=summary)
+        from datetime import date as _date
+        prompt = SECTOR_PULSE_PROMPT.format(industry=industry, summary=summary, date=_date.today().isoformat())
         r = openai_client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}],

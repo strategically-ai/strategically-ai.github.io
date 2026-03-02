@@ -8,9 +8,11 @@
     "Real Estate",
     "Technology"
   ],
-  "rows_written": 71,
-  "revenue_rows": 1207,
+  "rows_written": 113,
+  "revenue_rows": 1887,
   "errors": [],
-  "warnings": [],
-  "timestamp_utc": "2026-03-01T21:21:22.703453Z"
+  "warnings": [
+    "Industrials: ev_to_ebitda max 141.1 above 100"
+  ],
+  "timestamp_utc": "2026-03-02T12:39:35.488511Z"
 }

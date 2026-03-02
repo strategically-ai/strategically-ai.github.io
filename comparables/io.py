@@ -1,4 +1,6 @@
 """Write comparables outputs: CSV per industry (versioned + latest), last_updated.txt, run_log.json."""
+from __future__ import annotations
+
 from pathlib import Path
 from datetime import datetime
 import json

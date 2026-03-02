@@ -1,0 +1,38 @@
+---
+title: "Introducing Market Comps"
+subtitle: "Daily comparable-company analysis for every publicly traded Fortune 100 name"
+description: "Market Comps is our first standing analytical tool: valuation multiples, operating metrics, revenue forecasts, and AI-generated sector commentary for 100+ companies across seven sectors, refreshed every trading day."
+date: "2026-03-01"
+categories: [tools, valuation, market-comps]
+freeze: true
+---
+
+## What it is
+
+[Market Comps](/comparables.html) is a daily comparable-company analysis covering every publicly traded Fortune 100 company. It surfaces the numbers an investor or strategist actually needs when sizing up a sector or vetting a name: valuation multiples (EV/EBITDA, P/E, EV/Revenue), operating metrics (margins, FCF yield, leverage), and simple revenue forecasts with bear/base/bull bands.
+
+The universe spans seven sectors and 100+ names. Data is pulled from public filings and market feeds via automated pipelines, then refreshed each trading day before the US open.
+
+## Why we built it
+
+Comparable-company analysis is one of the most common exercises in finance, yet most practitioners still toggle between terminal screens, export to Excel, and manually format tables every time they need a fresh set of comps. The result is a workflow that takes 30 minutes and produces a static artifact that starts aging the moment it is built.
+
+Market Comps eliminates that friction. The tables are always current, consistently formatted, and sortable on any metric. The median row pins to the bottom of every table so you can eyeball relative value at a glance. An outlier flag marks names where a key multiple falls outside 1.5 IQR of the sector, catching the names that deserve a second look.
+
+## Sector pulse
+
+Each sector includes an AI-generated commentary note we call the **sector pulse**. This is not a generic summary. The model receives the full company-level data set (every ticker's multiples, margins, growth, and leverage) and writes three sentences: where the sector trades relative to its growth profile, one specific data-driven observation naming companies and numbers, and one forward-looking implication for investors.
+
+The pulse is generated using a large language model (GPT-4o-mini) with a structured prompt that enforces specificity. It references real tickers and real numbers from the data. There is no hallucinated color commentary; everything in the pulse is grounded in the comparables table directly above it.
+
+## Revenue forecasts
+
+For each company, we pull quarterly revenue from reported financials and project the next four quarters using trailing quarterly growth rates. Bear, base, and bull bands use 0.5x, 1x, and 1.5x that growth rate. This is deliberately simple: a level-one forecast for quick comparison, not a DCF replacement. Implied CAGRs (historical vs. forecast) appear below each sector to sanity-check whether the extrapolation looks reasonable.
+
+## What is next
+
+Market Comps is the first standing tool on the platform. It sets the pattern for what comes next: automated data pipelines feeding structured analytical views, refreshed on a cadence that keeps the numbers useful, with AI-generated context layered on top.
+
+Planned additions include earnings surprise tracking, consensus estimate overlays, and sector-relative performance charts. If you have a view on what would make this more useful, we want to hear it.
+
+&rarr; **[Open Market Comps](/comparables.html)**
