@@ -1,0 +1,24 @@
+company_name,ticker,cik,sub_industry,source_of_truth,segment
+Walmart,WMT,,Retail,fortune_100,fortune_100
+Costco,COST,,Retail,fortune_100,fortune_100
+Kroger,KR,,Retail,fortune_100,fortune_100
+Walgreens Boots Alliance,WBA,,Retail,fortune_100,fortune_100
+Home Depot,HD,,Retail,fortune_100,fortune_100
+Target,TGT,,Retail,fortune_100,fortune_100
+Lowe's,LOW,,Retail,fortune_100,fortune_100
+Albertsons,ACI,,Retail,fortune_100,fortune_100
+TJX Companies,TJX,,Retail,fortune_100,fortune_100
+Best Buy,BBY,,Retail,fortune_100,fortune_100
+Dollar General,DG,,Retail,fortune_100,fortune_100
+Publix Super Markets,PUBLIX,,Retail,private_news,fortune_100
+Procter & Gamble,PG,,Consumer Goods,fortune_100,fortune_100
+PepsiCo,PEP,,Consumer Goods,fortune_100,fortune_100
+Archer Daniels Midland,ADM,,Consumer Goods,fortune_100,fortune_100
+Nike,NKE,,Consumer Goods,fortune_100,fortune_100
+US Foods,USFD,,Consumer Goods,fortune_100,fortune_100
+Tyson Foods,TSN,,Consumer Goods,fortune_100,fortune_100
+Sysco,SYY,,Consumer Goods,fortune_100,fortune_100
+Starbucks,SBUX,,Consumer Goods,fortune_100,fortune_100
+Philip Morris,PM,,Consumer Goods,fortune_100,fortune_100
+Kraft Heinz,KHC,,Consumer Goods,fortune_100,fortune_100
+Coca-Cola,KO,,Consumer Goods,fortune_100,fortune_100

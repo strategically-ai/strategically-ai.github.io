@@ -1,0 +1,9 @@
+company_name,ticker,cik,sub_industry,source_of_truth,segment
+Symbotic,SYM,,Warehouse Automation,public_10q,startup
+Bright Machines,BGMTW,,Smart Factory,public_10q,startup
+Nuro,NURO,,Autonomous Delivery,private_news,startup
+Fabric (CommonSense Robotics),FABRIC,,Micro-Fulfillment,private_news,startup
+Gather AI,GATHERAI,,Warehouse AI,private_news,startup
+Vecna Robotics,VECNA,,Logistics Automation,private_news,startup
+Hadrian,HADRIAN,,Precision Manufacturing,private_news,startup
+Machina Labs,MACHINA,,AI Metal Forming,private_news,startup

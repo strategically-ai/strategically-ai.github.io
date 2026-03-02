@@ -1,0 +1,32 @@
+# RSS feed URLs for external news ingestion (industry-wide secondary pass).
+# Per-company feeds (Google News, Yahoo Finance) are fetched automatically by the pipeline.
+# These industry-wide feeds catch macro/sector stories not company-specific.
+# Use industry keys (consumer, industrials, financials) or "default" for all.
+
+default: []
+
+consumer:
+  # Retail and consumer goods
+  - https://www.retaildive.com/feeds/news/
+  - https://www.grocerydive.com/feeds/news/
+  - https://feeds.bloomberg.com/business/news.rss
+  - https://feeds.bloomberg.com/markets/news.rss
+  # Broader business / M&A
+  - https://feeds.content.dowjones.io/public/rss/mw_topstories
+  - https://www.reutersagency.com/feed/
+
+industrials:
+  # Supply chain, manufacturing, logistics
+  - https://www.supplychaindive.com/feeds/news/
+  - https://www.manufacturingdive.com/feeds/news/
+  - https://feeds.bloomberg.com/markets/news.rss
+  - https://feeds.content.dowjones.io/public/rss/mw_topstories
+  - https://www.reutersagency.com/feed/
+
+financials:
+  # Banking, payments, insurance, fintech
+  - https://www.bankingdive.com/feeds/news/
+  - https://www.paymentsdive.com/feeds/news/
+  - https://feeds.bloomberg.com/markets/news.rss
+  - https://feeds.content.dowjones.io/public/rss/mw_topstories
+  - https://www.reutersagency.com/feed/

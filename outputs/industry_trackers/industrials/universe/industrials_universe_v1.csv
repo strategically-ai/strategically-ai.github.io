@@ -1,0 +1,17 @@
+company_name,ticker,cik,sub_industry,source_of_truth,segment
+United Parcel Service,UPS,,Logistics,fortune_100,fortune_100
+FedEx,FDX,,Logistics,fortune_100,fortune_100
+Boeing,BA,,Aerospace & Defense,fortune_100,fortune_100
+Lockheed Martin,LMT,,Aerospace & Defense,fortune_100,fortune_100
+RTX Corporation,RTX,,Aerospace & Defense,fortune_100,fortune_100
+Honeywell,HON,,Industrial Conglomerate,fortune_100,fortune_100
+3M,MMM,,Industrial Conglomerate,fortune_100,fortune_100
+Caterpillar,CAT,,Heavy Equipment,fortune_100,fortune_100
+Deere & Company,DE,,Agricultural Machinery,fortune_100,fortune_100
+Parker-Hannifin,PH,,Industrial Equipment,fortune_100,fortune_100
+Emerson Electric,EMR,,Automation,fortune_100,fortune_100
+Illinois Tool Works,ITW,,Industrial Manufacturing,fortune_100,fortune_100
+Eaton Corporation,ETN,,Power Management,fortune_100,fortune_100
+Cummins,CMI,,Engine Manufacturing,fortune_100,fortune_100
+Northrop Grumman,NOC,,Aerospace & Defense,fortune_100,fortune_100
+General Dynamics,GD,,Aerospace & Defense,fortune_100,fortune_100

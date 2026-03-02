@@ -1,0 +1,11 @@
+company_name,ticker,cik,sub_industry,source_of_truth,segment
+Chart Industries,GTLS,,Industrial Equipment,public_10q,pe_mid
+Thermon Group,THR,,Industrial Heating,public_10q,pe_mid
+NN Inc,NNBR,,Precision Components,public_10q,pe_mid
+Haynes International,HAYN,,Specialty Alloys,public_10q,pe_mid
+Insteel Industries,IIIN,,Steel Wire Products,public_10q,pe_mid
+Vicor Corporation,VICR,,Power Electronics,public_10q,pe_mid
+CIRCOR International,CIR,,Flow Control,public_10q,pe_mid
+Watts Water Technologies,WTS,,Water Products,public_10q,pe_mid
+Rexnord,RXN,,Water & Process Solutions,public_10q,pe_mid
+Omega Flex,OFLX,,Flexible Piping,public_10q,pe_mid
