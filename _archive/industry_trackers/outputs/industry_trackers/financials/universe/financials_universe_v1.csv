@@ -1,0 +1,15 @@
+company_name,ticker,cik,sub_industry,source_of_truth,segment
+JPMorgan Chase,JPM,,Banking,fortune_100,fortune_100
+Bank of America,BAC,,Banking,fortune_100,fortune_100
+Wells Fargo,WFC,,Banking,fortune_100,fortune_100
+Goldman Sachs,GS,,Investment Banking,fortune_100,fortune_100
+Morgan Stanley,MS,,Investment Banking,fortune_100,fortune_100
+Citigroup,C,,Banking,fortune_100,fortune_100
+American Express,AXP,,Payments,fortune_100,fortune_100
+Visa,V,,Payments,fortune_100,fortune_100
+Mastercard,MA,,Payments,fortune_100,fortune_100
+BlackRock,BLK,,Asset Management,fortune_100,fortune_100
+Prudential Financial,PRU,,Insurance,fortune_100,fortune_100
+MetLife,MET,,Insurance,fortune_100,fortune_100
+Allstate,ALL,,Insurance,fortune_100,fortune_100
+Berkshire Hathaway,BRK-B,,Diversified Financials,fortune_100,fortune_100
