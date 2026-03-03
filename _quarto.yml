@@ -27,3 +27,4 @@ format:
 execute:
   echo: true
   warning: false
+  freeze: auto  # only re-execute when source changes; prevents notebook re-runs in CI

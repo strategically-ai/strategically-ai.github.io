@@ -1,0 +1,12 @@
+{
+  "hash": "2cb2ac643c77a2f333e201124c46f850",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"AI Industry Trackers\"\ndescription: \"Weekly strategy summaries by industry and revenue segment, synthesised from SEC filings, 8-K material events, and news.\"\n---\n\nStrategy context is drawn from 10-Q filings (point-in-time blueprint); material events from 8-K filings (M&A, capex, leadership); current developments from news feeds. Each edition covers three revenue tiers — Fortune 100, PE Mid-Size ($500M–$10B), and Startups — and is synthesised by an LLM into a segment-aware narrative.\n\n**View by industry:** Consumer (coming soon) · Industrials (coming soon) · Financials (coming soon)\n\n\n\n\n## Industrials {#industrials}\n\nThis tracker is in development. Universe and news feeds are configured — run the pipeline to generate the first edition.\n\n\n## Financials {#financials}\n\nThis tracker is in development. Universe and news feeds are configured — run the pipeline to generate the first edition.\n\n\n\n",
+    "supporting": [
+      "tracker-refreshes_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
