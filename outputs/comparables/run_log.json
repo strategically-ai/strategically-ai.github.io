@@ -12,7 +12,7 @@
   "revenue_rows": 1887,
   "errors": [],
   "warnings": [
-    "Industrials: ev_to_ebitda max 141.1 above 100"
+    "Industrials: ev_to_ebitda max 141.4 above 100"
   ],
-  "timestamp_utc": "2026-03-02T12:39:35.488511Z"
+  "timestamp_utc": "2026-03-03T14:27:13.604851Z"
 }
