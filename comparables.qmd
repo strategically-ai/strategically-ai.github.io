@@ -1,6 +1,7 @@
 ---
 title: "Market Comps"
 description: "Valuation multiples, operating metrics, and revenue forecasts for every publicly traded Fortune 100 company across seven sectors. Refreshed daily."
+freeze: false
 format:
   html:
     page-layout: full
