@@ -4,7 +4,7 @@ subtitle: "A sentiment analysis of artificial intelligence language in the lates
 description: "We analyzed the most recent 10-K filings of the Fortune 100 to measure how large companies discuss AI. The result: nearly all of them mention it, but most frame it as a risk -- not an opportunity."
 date: "2026-02-24"
 categories: [AI, sentiment-analysis, SEC-filings, strategy]
-freeze: false
+freeze: auto
 execute:
   echo: false
 ---
@@ -108,7 +108,7 @@ The chart below ranks the 20 companies with the highest density of AI-related la
 import pandas as pd
 import plotly.express as px
 
-df_scatter = pd.read_csv("/Users/radebe/Documents/ai-strategist/data/fortune_100_ai_sentiment_results.csv")
+df_scatter = pd.read_csv("../../data/fortune_100_ai_sentiment_results.csv")
 sentiment_to_num = {"negative": -1, "neutral": 0, "positive": 1}
 df_scatter["sentiment_num"] = df_scatter["sentiment"].map(sentiment_to_num)
 
