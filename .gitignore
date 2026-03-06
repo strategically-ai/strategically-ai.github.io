@@ -17,6 +17,11 @@ api_keys.py
 *.egg-info/
 .eggs/
 
+# Research data (large cached filings)
+data/research/filings_cache/
+data/research/news_cache.db
+data/research/model_artifacts/
+
 # OS
 .DS_Store
 Thumbs.db
