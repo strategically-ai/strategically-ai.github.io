@@ -2,6 +2,8 @@
 
 Fetches live news headlines via Google News RSS to ground commentary
 in real events — not just static boilerplate.
+
+Uses Anthropic Claude API (Haiku) for generation.
 """
 from __future__ import annotations
 
@@ -16,6 +18,7 @@ from urllib.parse import quote
 
 from .universe import _repo_root
 from .io import get_output_dir
+from .env_loader import HAIKU_MODEL
 
 # ── Sector → search terms for Google News RSS ──────────────────────
 SECTOR_NEWS_QUERIES: dict[str, list[str]] = {
@@ -76,9 +79,9 @@ Sector: {industry}
 Sector pulse:"""
 
 
-def generate_sector_pulse(industry: str, summary: str, openai_client) -> Optional[str]:
-    """Return 2-3 sentence sector pulse from LLM, or None if no client or error."""
-    if openai_client is None:
+def generate_sector_pulse(industry: str, summary: str, anthropic_client) -> Optional[str]:
+    """Return 2-3 sentence sector pulse from Claude Haiku, or None if no client or error."""
+    if anthropic_client is None:
         return None
     try:
         headlines = _fetch_news_headlines(industry)
@@ -89,12 +92,12 @@ def generate_sector_pulse(industry: str, summary: str, openai_client) -> Optiona
             date=_date.today().isoformat(),
             headlines=headline_text,
         )
-        r = openai_client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
+        message = anthropic_client.messages.create(
+            model=HAIKU_MODEL,
             max_tokens=250,
+            messages=[{"role": "user", "content": prompt}],
         )
-        text = r.choices[0].message.content.strip() if r.choices else None
+        text = message.content[0].text.strip() if message.content else None
         return text
     except Exception:
         return None

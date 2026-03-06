@@ -1,0 +1,699 @@
+ticker,name,industry,filing_date,fiscal_year,ai_adoption_score,keyword_score,section_score,classification_score,breadth_score,keyword_count,keyword_density,unique_keywords,sections_with_ai,primary_category,avg_commitment,passage_count,ai_score_yoy_change,ai_score_yoy_pct
+AAL,American Airlines,Industrials,2020-02-19,2019,11.36,0.87,20.0,16.0,10,2,0.1737,1,['unknown'],none,0.0,2,,
+AAL,American Airlines,Industrials,2021-02-17,2020,11.31,0.68,20.0,16.0,10,2,0.1368,1,['unknown'],none,0.0,2,-0.049999999999998934,-0.004401408450704136
+AAL,American Airlines,Industrials,2022-02-22,2021,11.3,0.65,20.0,16.0,10,2,0.1306,1,['unknown'],none,0.0,2,-0.009999999999999787,-0.0008841732979664174
+AAL,American Airlines,Industrials,2023-02-22,2022,11.22,0.38,20.0,16.0,10,1,0.0769,1,['unknown'],none,0.0,1,-0.08000000000000007,-0.0070796460176991705
+AAL,American Airlines,Industrials,2024-02-21,2023,11.22,0.39,20.0,16.0,10,1,0.0787,1,['unknown'],none,0.0,1,0.0,0.0
+AAL,American Airlines,Industrials,2025-02-19,2024,20.81,12.35,20.0,16.0,50,32,2.4708,5,['unknown'],none,0.0,10,9.589999999999998,0.8547237076648839
+AAL,American Airlines,Industrials,2026-02-18,2025,22.68,18.59,20.0,16.0,50,47,3.7178,5,['unknown'],none,0.0,10,1.870000000000001,0.08986064392119175
+AAPL,Apple,Technology,2020-10-30,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+AAPL,Apple,Technology,2021-10-29,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+AAPL,Apple,Technology,2022-10-28,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+AAPL,Apple,Technology,2023-11-03,2023,11.54,3.12,10.0,16.0,20,2,0.624,2,['financial_statements'],none,0.0,1,11.54,inf
+AAPL,Apple,Technology,2024-11-01,2024,18.88,9.25,30.0,16.0,30,6,1.8505,3,"['unknown', 'financial_statements']",none,0.0,4,7.34,0.6360485268630849
+AAPL,Apple,Technology,2025-10-31,2025,17.18,15.27,20.0,16.0,20,10,3.0542,2,['unknown'],none,0.0,6,-1.6999999999999993,-0.09004237288135586
+ABBV,AbbVie,Healthcare,2020-02-21,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+ABBV,AbbVie,Healthcare,2021-02-19,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ABBV,AbbVie,Healthcare,2022-02-18,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ABBV,AbbVie,Healthcare,2023-02-17,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ABBV,AbbVie,Healthcare,2024-02-20,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ABBV,AbbVie,Healthcare,2025-02-14,2024,13.67,3.57,20.0,16.0,20,5,0.7138,2,['unknown'],none,0.0,4,13.67,inf
+ABBV,AbbVie,Healthcare,2026-02-20,2025,14.11,5.03,20.0,16.0,20,7,1.0063,2,['unknown'],none,0.0,5,0.4399999999999995,0.03218727139722022
+ABT,Abbott Laboratories,Healthcare,2020-02-21,2019,11.83,2.42,20.0,16.0,10,3,0.4843,1,['unknown'],none,0.0,2,,
+ABT,Abbott Laboratories,Healthcare,2021-02-19,2020,11.9,2.68,20.0,16.0,10,3,0.5355,1,['unknown'],none,0.0,2,0.07000000000000028,0.00591715976331364
+ABT,Abbott Laboratories,Healthcare,2022-02-18,2021,11.9,2.65,20.0,16.0,10,3,0.5304,1,['unknown'],none,0.0,2,0.0,0.0
+ABT,Abbott Laboratories,Healthcare,2023-02-17,2022,11.96,2.88,20.0,16.0,10,3,0.5761,1,['unknown'],none,0.0,2,0.0600000000000005,0.005042016806722671
+ABT,Abbott Laboratories,Healthcare,2024-02-16,2023,12.22,3.73,20.0,16.0,10,4,0.7459,1,['unknown'],none,0.0,3,0.2599999999999998,0.021739130434782483
+ABT,Abbott Laboratories,Healthcare,2025-02-21,2024,12.24,3.81,20.0,16.0,10,4,0.7616,1,['unknown'],none,0.0,3,0.019999999999999574,0.0016366612111291534
+ABT,Abbott Laboratories,Healthcare,2026-02-20,2025,13.77,3.9,20.0,16.0,20,4,0.7791,2,['unknown'],none,0.0,3,1.5299999999999994,0.125
+ACI,Albertsons,Consumer,2020-08-07,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+ACI,Albertsons,Consumer,2020-05-13,2020,11.28,0.59,20.0,16.0,10,1,0.1173,1,['unknown'],none,0.0,1,11.28,inf
+ACI,Albertsons,Consumer,2021-04-28,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-11.28,-1.0
+ACI,Albertsons,Consumer,2022-04-26,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ACI,Albertsons,Consumer,2023-04-25,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ACI,Albertsons,Consumer,2024-04-22,2024,19.24,12.12,20.0,16.0,40,14,2.4247,4,['unknown'],none,0.0,9,19.24,inf
+ACI,Albertsons,Consumer,2025-04-21,2025,19.82,14.07,20.0,16.0,40,16,2.8135,4,['unknown'],none,0.0,10,0.5800000000000018,0.03014553014553023
+ADM,Archer Daniels Midland,Consumer,2020-02-18,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+ADM,Archer Daniels Midland,Consumer,2021-02-18,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ADM,Archer Daniels Midland,Consumer,2022-02-17,2021,12.55,0.83,26.0,16.0,10,1,0.1667,1,['mda'],none,0.0,1,12.55,inf
+ADM,Archer Daniels Midland,Consumer,2023-02-14,2022,12.55,0.84,26.0,16.0,10,1,0.1688,1,['mda'],none,0.0,1,0.0,0.0
+ADM,Archer Daniels Midland,Consumer,2024-03-12,2023,15.83,5.76,20.0,16.0,30,8,1.153,3,['unknown'],none,0.0,5,3.2799999999999994,0.2613545816733067
+ADM,Archer Daniels Midland,Consumer,2025-02-20,2024,21.62,20.06,20.0,16.0,40,25,4.0128,4,['unknown'],none,0.0,10,5.790000000000001,0.36576121288692365
+ADM,Archer Daniels Midland,Consumer,2024-11-18,2024,20.97,5.57,46.0,16.0,30,8,1.1145,3,"['unknown', 'mda']",none,0.0,5,-0.6500000000000021,-0.030064754856614306
+ADM,Archer Daniels Midland,Consumer,2026-02-17,2025,20.24,20.46,20.0,16.0,30,24,4.0919,3,['unknown'],none,0.0,10,-0.7300000000000004,-0.03481163567000478
+AIG,American International Group,Financials,2021-02-19,2020,11.16,0.2,20.0,16.0,10,1,0.0401,1,['unknown'],none,0.0,1,,
+AIG,American International Group,Financials,2022-02-17,2021,25.64,1.81,60.0,16.0,50,9,0.3612,5,"['unknown', 'business', 'financial_statements']",none,0.0,6,14.48,1.2974910394265233
+AIG,American International Group,Financials,2023-02-17,2022,22.29,2.29,50.0,16.0,40,9,0.4573,4,"['unknown', 'business']",none,0.0,6,-3.3500000000000014,-0.13065522620904846
+AIG,American International Group,Financials,2024-02-14,2023,24.33,8.09,44.0,16.0,50,34,1.6176,5,"['risk_factors', 'business']",none,0.0,10,2.039999999999999,0.0915208613728129
+AIG,American International Group,Financials,2025-02-13,2024,28.24,12.13,50.0,16.0,60,37,2.4253,6,"['unknown', 'business']",none,0.0,10,3.91,0.16070694615700787
+AIG,American International Group,Financials,2026-02-12,2025,31.05,21.5,50.0,16.0,60,56,4.2999,6,"['unknown', 'business']",none,0.0,10,2.8100000000000023,0.09950424929178481
+ALL,Allstate,Financials,2020-02-21,2019,24.47,2.24,76.0,16.0,20,7,0.4484,2,"['unknown', 'business', 'mda']",none,0.0,6,,
+ALL,Allstate,Financials,2021-02-22,2020,27.85,3.51,76.0,16.0,40,10,0.7017,4,"['unknown', 'business', 'mda']",none,0.0,8,3.3800000000000026,0.13812832039231715
+ALL,Allstate,Financials,2022-02-18,2021,30.57,3.22,90.0,16.0,40,8,0.6442,4,"['risk_factors', 'unknown', 'business', 'mda']",none,0.0,6,2.719999999999999,0.09766606822262114
+ALL,Allstate,Financials,2023-02-16,2022,24.69,3.63,60.0,16.0,40,9,0.727,4,"['risk_factors', 'unknown', 'mda']",none,0.0,7,-5.879999999999999,-0.19234543670264959
+ALL,Allstate,Financials,2024-02-21,2023,21.98,3.92,46.0,16.0,40,10,0.7835,4,"['unknown', 'mda']",none,0.0,8,-2.710000000000001,-0.1097610368570272
+ALL,Allstate,Financials,2025-02-24,2024,22.17,7.56,34.0,16.0,50,18,1.5114,5,"['risk_factors', 'unknown']",none,0.0,10,0.19000000000000128,0.008644222020018244
+ALL,Allstate,Financials,2026-02-20,2025,28.06,7.22,64.0,16.0,50,16,1.4431,5,"['risk_factors', 'unknown', 'business']",none,0.0,10,5.889999999999997,0.26567433468651314
+AMT,American Tower,Real Estate,2020-02-25,2019,11.27,0.56,20.0,16.0,10,1,0.1124,1,['unknown'],none,0.0,1,,
+AMT,American Tower,Real Estate,2021-02-25,2020,11.27,0.58,20.0,16.0,10,1,0.1162,1,['unknown'],none,0.0,1,0.0,0.0
+AMT,American Tower,Real Estate,2022-02-25,2021,11.26,0.55,20.0,16.0,10,1,0.1097,1,['unknown'],none,0.0,1,-0.009999999999999787,-0.0008873114463175957
+AMT,American Tower,Real Estate,2023-02-23,2022,11.27,0.58,20.0,16.0,10,1,0.1161,1,['unknown'],none,0.0,1,0.009999999999999787,0.000888099467140302
+AMT,American Tower,Real Estate,2024-02-27,2023,13.1,1.67,20.0,16.0,20,3,0.3341,2,['unknown'],none,0.0,3,1.83,0.16237799467613123
+AMT,American Tower,Real Estate,2025-02-25,2024,16.35,3.18,34.0,16.0,20,6,0.635,2,"['risk_factors', 'unknown']",none,0.0,6,3.2500000000000018,0.24809160305343525
+AMT,American Tower,Real Estate,2026-02-24,2025,23.08,15.6,34.0,16.0,40,28,3.1206,4,"['risk_factors', 'unknown']",none,0.0,10,6.729999999999997,0.4116207951070334
+AMZN,Amazon,Consumer,2020-01-31,2019,13.96,4.52,20.0,16.0,20,4,0.9044,2,['unknown'],none,0.0,3,,
+AMZN,Amazon,Consumer,2021-02-03,2020,22.81,7.37,60.0,16.0,20,6,1.4745,2,"['unknown', 'business', 'financial_statements']",none,0.0,5,8.849999999999998,0.6339541547277936
+AMZN,Amazon,Consumer,2022-02-04,2021,23.19,8.65,60.0,16.0,20,7,1.7291,2,"['unknown', 'business', 'financial_statements']",none,0.0,6,0.38000000000000256,0.016659359929855455
+AMZN,Amazon,Consumer,2023-02-03,2022,25.61,11.69,60.0,16.0,30,10,2.3378,3,"['unknown', 'business', 'financial_statements']",none,0.0,9,2.419999999999998,0.10435532557136695
+AMZN,Amazon,Consumer,2024-02-02,2023,27.29,19.98,56.0,16.0,30,18,3.9955,3,"['unknown', 'financial_statements', 'mda']",none,0.0,10,1.6799999999999997,0.06559937524404535
+AMZN,Amazon,Consumer,2025-02-07,2024,33.05,29.18,56.0,16.0,50,26,5.8367,5,"['unknown', 'financial_statements', 'mda']",none,0.0,10,5.759999999999998,0.21106632466104802
+AMZN,Amazon,Consumer,2026-02-06,2025,38.16,54.21,44.0,16.0,50,49,10.8421,5,"['risk_factors', 'unknown', 'financial_statements']",none,0.0,10,5.109999999999999,0.15461422087745835
+AVGO,Broadcom,Technology,2020-12-18,2020,26.62,11.75,50.0,16.0,50,18,2.3499,5,"['unknown', 'business']",none,0.0,10,,
+AVGO,Broadcom,Technology,2021-12-17,2021,32.77,14.89,76.0,16.0,50,20,2.9786,5,"['unknown', 'business', 'mda']",none,0.0,10,6.150000000000002,0.2310293012772353
+AVGO,Broadcom,Technology,2022-12-16,2022,27.88,15.92,50.0,16.0,50,20,3.1841,5,"['unknown', 'business']",none,0.0,10,-4.890000000000004,-0.14922184925236504
+AVGO,Broadcom,Technology,2023-12-14,2023,28.52,18.06,50.0,16.0,50,22,3.6123,5,"['unknown', 'business']",none,0.0,10,0.6400000000000006,0.022955523672883782
+AVGO,Broadcom,Technology,2024-12-20,2024,43.68,63.6,50.0,16.0,60,77,12.721,6,"['unknown', 'business']",none,0.0,10,15.16,0.5315568022440393
+AVGO,Broadcom,Technology,2025-12-18,2025,48.85,85.84,50.0,16.0,50,100,17.1671,5,"['unknown', 'business']",none,0.0,10,5.170000000000002,0.11836080586080588
+AXP,American Express,Financials,2020-02-13,2019,13.24,2.13,20.0,16.0,20,4,0.4253,2,['unknown'],none,0.0,3,,
+AXP,American Express,Financials,2021-02-12,2020,17.71,7.03,20.0,16.0,40,13,1.406,4,['unknown'],none,0.0,6,4.470000000000001,0.33761329305135956
+AXP,American Express,Financials,2022-02-11,2021,17.54,6.47,20.0,16.0,40,12,1.2933,4,['unknown'],none,0.0,6,-0.1700000000000017,-0.009599096555618414
+AXP,American Express,Financials,2023-02-10,2022,19.37,7.55,20.0,16.0,50,14,1.5105,5,['unknown'],none,0.0,6,1.8300000000000018,0.10433295324971503
+AXP,American Express,Financials,2024-02-09,2023,28.88,19.94,34.0,16.0,70,39,3.9885,7,"['risk_factors', 'unknown']",none,0.0,10,9.509999999999998,0.4909654104284975
+AXP,American Express,Financials,2025-02-07,2024,32.04,30.47,34.0,16.0,70,61,6.0939,7,"['risk_factors', 'unknown']",none,0.0,10,3.16,0.10941828254847641
+AXP,American Express,Financials,2026-02-06,2025,40.38,35.93,60.0,16.0,80,72,7.1868,8,"['risk_factors', 'unknown', 'mda']",none,0.0,10,8.340000000000003,0.2602996254681649
+BA,Boeing,Industrials,2020-01-31,2019,13.05,1.5,20.0,16.0,20,2,0.3,2,['unknown'],none,0.0,2,,
+BA,Boeing,Industrials,2021-02-01,2020,11.3,0.66,20.0,16.0,10,1,0.1324,1,['unknown'],none,0.0,1,-1.75,-0.13409961685823757
+BA,Boeing,Industrials,2022-01-31,2021,11.31,0.7,20.0,16.0,10,1,0.1405,1,['unknown'],none,0.0,1,0.009999999999999787,0.0008849557522123686
+BA,Boeing,Industrials,2023-01-27,2022,11.33,0.78,20.0,16.0,10,1,0.1553,1,['unknown'],none,0.0,1,0.019999999999999574,0.0017683465959328348
+BA,Boeing,Industrials,2024-01-31,2023,16.55,3.18,20.0,16.0,40,4,0.6359,4,['unknown'],none,0.0,3,5.220000000000001,0.4607237422771404
+BA,Boeing,Industrials,2025-02-03,2024,16.48,2.92,20.0,16.0,40,4,0.5839,4,['unknown'],none,0.0,3,-0.07000000000000028,-0.004229607250755274
+BA,Boeing,Industrials,2026-01-30,2025,16.47,2.89,20.0,16.0,40,4,0.5778,4,['unknown'],none,0.0,3,-0.010000000000001563,-0.0006067961165049374
+BAC,Bank of America,Financials,2026-02-25,2025,22.96,14.52,20.0,16.0,60,45,2.9036,6,['unknown'],none,0.0,10,,
+BBY,Best Buy,Consumer,2020-03-23,2019,19.86,4.2,50.0,16.0,20,4,0.8399,2,"['unknown', 'business']",none,0.0,4,,
+BBY,Best Buy,Consumer,2021-03-19,2020,19.84,4.13,50.0,16.0,20,4,0.8267,2,"['unknown', 'business']",none,0.0,4,-0.019999999999999574,-0.001007049345417954
+BBY,Best Buy,Consumer,2022-03-18,2021,20.48,6.27,50.0,16.0,20,6,1.2534,2,"['unknown', 'business']",none,0.0,6,0.6400000000000006,0.032258064516129004
+BBY,Best Buy,Consumer,2023-03-17,2022,11.43,1.1,20.0,16.0,10,1,0.2203,1,['unknown'],none,0.0,1,-9.05,-0.44189453125
+BBY,Best Buy,Consumer,2024-03-15,2023,15.86,10.87,20.0,16.0,20,10,2.1731,2,['unknown'],none,0.0,8,4.43,0.38757655293088367
+BBY,Best Buy,Consumer,2025-03-19,2024,17.58,16.6,20.0,16.0,20,15,3.3203,2,['unknown'],none,0.0,10,1.7199999999999989,0.10844892812105922
+BMY,Bristol-Myers Squibb,Healthcare,2020-02-24,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+BMY,Bristol-Myers Squibb,Healthcare,2021-02-10,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+BMY,Bristol-Myers Squibb,Healthcare,2022-02-09,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+BMY,Bristol-Myers Squibb,Healthcare,2023-02-14,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+BMY,Bristol-Myers Squibb,Healthcare,2024-02-13,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+BMY,Bristol-Myers Squibb,Healthcare,2025-02-12,2024,15.7,5.33,20.0,16.0,30,9,1.066,3,['unknown'],none,0.0,6,15.7,inf
+BMY,Bristol-Myers Squibb,Healthcare,2026-02-11,2025,18.27,8.9,20.0,16.0,40,15,1.78,4,['unknown'],none,0.0,10,2.5700000000000003,0.16369426751592364
+BRK.B,Berkshire Hathaway,Financials,2020-02-24,2019,13.09,1.64,20.0,16.0,20,3,0.3288,2,['unknown'],none,0.0,3,,
+BRK.B,Berkshire Hathaway,Financials,2021-03-01,2020,13.24,2.13,20.0,16.0,20,4,0.4262,2,['unknown'],none,0.0,4,0.15000000000000036,0.011459129106187849
+BRK.B,Berkshire Hathaway,Financials,2022-02-28,2021,13.25,2.15,20.0,16.0,20,4,0.4307,2,['unknown'],none,0.0,4,0.009999999999999787,0.0007552870090634656
+BRK.B,Berkshire Hathaway,Financials,2023-02-27,2022,13.25,2.16,20.0,16.0,20,4,0.431,2,['unknown'],none,0.0,4,0.0,0.0
+BRK.B,Berkshire Hathaway,Financials,2024-02-26,2023,13.23,2.09,20.0,16.0,20,4,0.4171,2,['unknown'],none,0.0,4,-0.019999999999999574,-0.0015094339622641062
+BRK.B,Berkshire Hathaway,Financials,2025-02-24,2024,13.24,2.13,20.0,16.0,20,4,0.4263,2,['unknown'],none,0.0,4,0.009999999999999787,0.0007558578987150177
+BRK.B,Berkshire Hathaway,Financials,2026-03-02,2025,15.09,3.29,20.0,16.0,30,6,0.6574,3,['unknown'],none,0.0,6,1.8499999999999996,0.13972809667673713
+C,Citigroup,Financials,2026-02-20,2025,23.25,11.16,34.0,16.0,50,46,2.2327,5,"['risk_factors', 'unknown']",none,0.0,10,,
+CAH,Cardinal Health,Healthcare,2020-08-13,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+CAH,Cardinal Health,Healthcare,2021-08-16,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+CAH,Cardinal Health,Healthcare,2022-08-11,2022,11.34,0.8,20.0,16.0,10,1,0.1602,1,['unknown'],none,0.0,1,11.34,inf
+CAH,Cardinal Health,Healthcare,2023-08-15,2023,10.16,0.88,14.0,16.0,10,1,0.1759,1,['risk_factors'],none,0.0,1,-1.1799999999999997,-0.10405643738977066
+CAH,Cardinal Health,Healthcare,2024-08-14,2024,18.52,5.39,34.0,16.0,30,7,1.078,3,"['risk_factors', 'unknown']",none,0.0,5,8.36,0.8228346456692912
+CAH,Cardinal Health,Healthcare,2025-08-12,2025,17.11,5.03,20.0,16.0,40,6,1.0056,4,['unknown'],none,0.0,4,-1.4100000000000001,-0.07613390928725705
+CAT,Caterpillar,Industrials,2020-02-19,2019,12.01,3.04,20.0,16.0,10,6,0.6074,1,['unknown'],none,0.0,6,,
+CAT,Caterpillar,Industrials,2021-02-17,2020,11.82,2.4,20.0,16.0,10,4,0.4804,1,['unknown'],none,0.0,4,-0.1899999999999995,-0.01582014987510405
+CAT,Caterpillar,Industrials,2022-02-16,2021,11.85,2.51,20.0,16.0,10,4,0.5024,1,['unknown'],none,0.0,4,0.02999999999999936,0.002538071065989689
+CAT,Caterpillar,Industrials,2023-02-15,2022,13.97,4.56,20.0,16.0,20,7,0.9126,2,['unknown'],none,0.0,7,2.120000000000001,0.17890295358649788
+CAT,Caterpillar,Industrials,2024-02-16,2023,13.98,4.59,20.0,16.0,20,7,0.9187,2,['unknown'],none,0.0,7,0.009999999999999787,0.0007158196134573469
+CAT,Caterpillar,Industrials,2025-02-14,2024,19.06,6.54,20.0,16.0,50,10,1.3087,5,['unknown'],none,0.0,8,5.079999999999998,0.3633762517882688
+CAT,Caterpillar,Industrials,2026-02-13,2025,20.86,5.87,30.0,16.0,50,9,1.1739,5,"['unknown', 'financial_statements']",none,0.0,7,1.8000000000000007,0.09443861490031491
+CHTR,Charter Communications,Technology,2020-01-31,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+CHTR,Charter Communications,Technology,2021-01-29,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+CHTR,Charter Communications,Technology,2022-01-28,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+CHTR,Charter Communications,Technology,2023-01-27,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+CHTR,Charter Communications,Technology,2024-02-02,2023,15.09,8.31,20.0,16.0,20,11,1.6611,2,['unknown'],none,0.0,9,15.09,inf
+CHTR,Charter Communications,Technology,2025-01-31,2024,20.87,7.57,50.0,16.0,20,11,1.5146,2,"['unknown', 'business']",none,0.0,9,5.780000000000001,0.38303512259774686
+CHTR,Charter Communications,Technology,2026-01-30,2025,22.79,8.95,50.0,16.0,30,14,1.7903,3,"['unknown', 'business']",none,0.0,10,1.9199999999999982,0.09199808337326298
+CI,Cigna Group,Healthcare,2020-02-27,2019,11.67,1.91,20.0,16.0,10,4,0.382,1,['unknown'],none,0.0,4,,
+CI,Cigna Group,Healthcare,2021-02-25,2020,14.96,2.86,20.0,16.0,30,6,0.5716,3,['unknown'],none,0.0,5,3.290000000000001,0.28191945158526144
+CI,Cigna Group,Healthcare,2022-02-24,2021,19.14,6.79,20.0,16.0,50,14,1.3588,5,['unknown'],none,0.0,10,4.18,0.27941176470588225
+CI,Cigna Group,Healthcare,2023-02-23,2022,19.18,6.95,20.0,16.0,50,14,1.3892,5,['unknown'],none,0.0,10,0.03999999999999915,0.002089864158829613
+CI,Cigna Group,Healthcare,2024-02-29,2023,30.91,26.03,20.0,16.0,90,54,5.2053,9,['unknown'],none,0.0,10,11.73,0.6115745568300313
+CI,Cigna Group,Healthcare,2025-02-27,2024,32.17,35.24,20.0,16.0,80,61,7.0488,8,['unknown'],none,0.0,10,1.2600000000000016,0.040763506955677764
+CI,Cigna Group,Healthcare,2026-02-26,2025,35.33,45.77,20.0,16.0,80,76,9.1536,8,['unknown'],none,0.0,10,3.1599999999999966,0.09822816288467506
+CMCSA,Comcast,Technology,2020-01-30,2019,13.53,8.11,20.0,16.0,10,15,1.6211,1,['unknown'],none,0.0,10,,
+CMCSA,Comcast,Technology,2021-02-04,2020,15.42,5.08,34.0,16.0,10,7,1.0155,1,"['risk_factors', 'unknown']",none,0.0,7,1.8900000000000006,0.13968957871396892
+CMCSA,Comcast,Technology,2022-02-02,2021,12.01,3.04,20.0,16.0,10,4,0.6087,1,['unknown'],none,0.0,4,-3.41,-0.22114137483787288
+CMCSA,Comcast,Technology,2023-02-03,2022,13.29,2.31,20.0,16.0,20,3,0.4618,2,['unknown'],none,0.0,3,1.2799999999999994,0.10657785179017476
+CMCSA,Comcast,Technology,2024-01-31,2023,17.24,5.47,20.0,16.0,40,7,1.0949,4,['unknown'],none,0.0,6,3.9499999999999993,0.29721595184349137
+CMCSA,Comcast,Technology,2025-01-31,2024,18.06,8.2,20.0,16.0,40,10,1.6404,4,['unknown'],none,0.0,9,0.8200000000000003,0.047563805104408274
+CMCSA,Comcast,Technology,2026-02-03,2025,20.43,11.11,20.0,16.0,50,14,2.2222,5,['unknown'],none,0.0,10,2.370000000000001,0.1312292358803988
+CNC,Centene,Healthcare,2020-02-18,2019,11.52,1.39,20.0,16.0,10,2,0.2779,1,['unknown'],none,0.0,2,,
+CNC,Centene,Healthcare,2021-02-22,2020,15.35,4.16,20.0,16.0,30,6,0.8314,3,['unknown'],none,0.0,5,3.83,0.3324652777777779
+CNC,Centene,Healthcare,2022-02-22,2021,15.78,5.61,20.0,16.0,30,8,1.122,3,['unknown'],none,0.0,6,0.4299999999999997,0.028013029315960836
+CNC,Centene,Healthcare,2023-02-21,2022,11.33,0.75,20.0,16.0,10,1,0.1509,1,['unknown'],none,0.0,1,-4.449999999999999,-0.28200253485424587
+CNC,Centene,Healthcare,2024-02-20,2023,10.11,0.7,14.0,16.0,10,1,0.1404,1,['risk_factors'],none,0.0,1,-1.2200000000000006,-0.10767872903795239
+CNC,Centene,Healthcare,2025-02-18,2024,26.14,17.79,46.0,16.0,40,25,3.5576,4,"['unknown', 'mda']",none,0.0,10,16.03,1.5855588526211672
+CNC,Centene,Healthcare,2026-02-17,2025,25.39,22.65,20.0,16.0,60,34,4.529,6,['unknown'],none,0.0,10,-0.75,-0.028691660290742105
+COF,Capital One,Financials,2021-02-25,2020,21.5,2.34,46.0,16.0,40,6,0.469,4,"['unknown', 'mda']",none,0.0,4,,
+COF,Capital One,Financials,2022-02-25,2021,21.67,2.91,46.0,16.0,40,7,0.582,4,"['unknown', 'mda']",none,0.0,4,0.1700000000000017,0.007906976744186167
+COF,Capital One,Financials,2023-02-24,2022,23.69,2.97,56.0,16.0,40,7,0.5943,4,"['unknown', 'financial_statements', 'mda']",none,0.0,4,2.0199999999999996,0.09321642824180887
+COF,Capital One,Financials,2024-02-23,2023,26.26,16.2,34.0,16.0,60,41,3.2408,6,"['risk_factors', 'unknown']",none,0.0,10,2.5700000000000003,0.10848459265512878
+COF,Capital One,Financials,2025-02-20,2024,27.27,19.56,34.0,16.0,60,51,3.9121,6,"['risk_factors', 'unknown']",none,0.0,10,1.009999999999998,0.038461538461538325
+COF,Capital One,Financials,2026-02-19,2025,31.25,27.82,34.0,16.0,70,80,5.5635,7,"['risk_factors', 'unknown']",none,0.0,10,3.9800000000000004,0.145947928126146
+COP,ConocoPhillips,Energy,2020-02-18,2019,16.16,1.85,20.0,16.0,40,4,0.37,4,['unknown'],none,0.0,2,,
+COP,ConocoPhillips,Energy,2021-02-16,2020,16.16,1.86,20.0,16.0,40,4,0.3722,4,['unknown'],none,0.0,2,0.0,0.0
+COP,ConocoPhillips,Energy,2022-02-17,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-16.16,-1.0
+COP,ConocoPhillips,Energy,2023-02-16,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+COP,ConocoPhillips,Energy,2024-02-15,2023,12.94,1.14,20.0,16.0,20,2,0.2283,2,['unknown'],none,0.0,1,12.94,inf
+COP,ConocoPhillips,Energy,2025-02-18,2024,12.94,1.13,20.0,16.0,20,2,0.2268,2,['unknown'],none,0.0,1,0.0,0.0
+COP,ConocoPhillips,Energy,2026-02-17,2025,12.96,1.21,20.0,16.0,20,2,0.2428,2,['unknown'],none,0.0,1,0.02000000000000135,0.0015455950540959051
+COR,Cencora,Healthcare,2020-11-19,2020,17.58,1.59,50.0,16.0,10,2,0.3185,1,"['unknown', 'business']",none,0.0,2,,
+COR,Cencora,Healthcare,2021-11-23,2021,17.57,1.58,50.0,16.0,10,2,0.3151,1,"['unknown', 'business']",none,0.0,2,-0.00999999999999801,-0.0005688282138792689
+COR,Cencora,Healthcare,2022-11-22,2022,17.57,1.56,50.0,16.0,10,2,0.3122,1,"['unknown', 'business']",none,0.0,2,0.0,0.0
+COR,Cencora,Healthcare,2023-11-21,2023,21.35,4.16,50.0,16.0,30,5,0.8319,3,"['unknown', 'business']",none,0.0,3,3.780000000000001,0.21513944223107573
+COR,Cencora,Healthcare,2024-11-26,2024,21.34,4.14,50.0,16.0,30,5,0.8282,3,"['unknown', 'business']",none,0.0,3,-0.010000000000001563,-0.00046838407494154133
+COR,Cencora,Healthcare,2025-11-25,2025,31.58,23.93,64.0,16.0,40,30,4.7855,4,"['risk_factors', 'unknown', 'business']",none,0.0,10,10.239999999999998,0.47985004686035615
+COST,Costco,Consumer,2020-10-07,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+COST,Costco,Consumer,2021-10-06,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+COST,Costco,Consumer,2022-10-05,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+COST,Costco,Consumer,2023-10-11,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+COST,Costco,Consumer,2024-10-09,2024,12.0,3.0,20.0,16.0,10,2,0.5999,1,['unknown'],none,0.0,2,12.0,inf
+COST,Costco,Consumer,2025-10-08,2025,12.02,3.07,20.0,16.0,10,2,0.6144,1,['unknown'],none,0.0,2,0.019999999999999574,0.0016666666666667052
+CRM,Salesforce,Technology,2024-03-06,2023,44.14,70.14,50.0,16.0,50,88,14.0284,5,"['unknown', 'business']",none,0.0,10,,
+CRM,Salesforce,Technology,2025-03-05,2024,60.6,100.0,50.0,16.0,100,150,24.0732,10,"['unknown', 'business']",none,0.0,10,16.46,0.37290439510647944
+CRM,Salesforce,Technology,2026-03-02,2025,59.1,100.0,50.0,16.0,90,156,24.3727,9,"['unknown', 'business']",none,0.0,10,-1.5,-0.024752475247524774
+CSCO,Cisco Systems,Technology,2020-09-03,2020,20.72,7.74,34.0,16.0,40,11,1.5485,4,"['risk_factors', 'unknown']",none,0.0,9,,
+CSCO,Cisco Systems,Technology,2021-09-09,2021,18.48,9.6,20.0,16.0,40,13,1.9193,4,['unknown'],none,0.0,10,-2.2399999999999984,-0.108108108108108
+CSCO,Cisco Systems,Technology,2022-09-08,2022,20.61,7.36,34.0,16.0,40,10,1.4712,4,"['risk_factors', 'unknown']",none,0.0,8,2.129999999999999,0.11525974025974017
+CSCO,Cisco Systems,Technology,2023-09-07,2023,28.16,22.53,34.0,16.0,60,29,4.5051,6,"['risk_factors', 'unknown']",none,0.0,10,7.550000000000001,0.3663270257156721
+CSCO,Cisco Systems,Technology,2024-09-05,2024,25.53,23.75,34.0,16.0,40,32,4.7501,4,"['risk_factors', 'unknown']",none,0.0,10,-2.629999999999999,-0.09339488636363635
+CSCO,Cisco Systems,Technology,2025-09-03,2025,34.37,48.24,34.0,16.0,50,63,9.6485,5,"['risk_factors', 'unknown']",none,0.0,10,8.839999999999996,0.34625930278104167
+CVS,CVS Health,Healthcare,2020-02-18,2019,18.85,0.83,50.0,16.0,20,2,0.1668,2,"['unknown', 'business']",none,0.0,2,,
+CVS,CVS Health,Healthcare,2021-02-16,2020,19.08,1.61,50.0,16.0,20,4,0.3227,2,"['unknown', 'business']",none,0.0,3,0.22999999999999687,0.012201591511936227
+CVS,CVS Health,Healthcare,2022-02-09,2021,19.09,1.63,50.0,16.0,20,4,0.325,2,"['unknown', 'business']",none,0.0,3,0.010000000000001563,0.0005241090146750338
+CVS,CVS Health,Healthcare,2023-02-08,2022,13.07,1.56,20.0,16.0,20,4,0.3122,2,['unknown'],none,0.0,3,-6.02,-0.3153483499214248
+CVS,CVS Health,Healthcare,2024-02-07,2023,16.37,2.57,20.0,16.0,40,7,0.5136,4,['unknown'],none,0.0,4,3.3000000000000007,0.25248661055853105
+CVS,CVS Health,Healthcare,2025-02-12,2024,18.36,4.2,20.0,16.0,50,11,0.8398,5,['unknown'],none,0.0,7,1.9899999999999984,0.12156383628588863
+CVS,CVS Health,Healthcare,2026-02-10,2025,17.1,9.99,20.0,16.0,30,24,1.9972,3,['unknown'],none,0.0,10,-1.259999999999998,-0.06862745098039202
+CVX,Chevron,Energy,2020-02-21,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+CVX,Chevron,Energy,2021-02-25,2020,11.3,0.66,20.0,16.0,10,1,0.1316,1,['unknown'],none,0.0,1,11.3,inf
+CVX,Chevron,Energy,2022-02-24,2021,11.3,0.67,20.0,16.0,10,1,0.1343,1,['unknown'],none,0.0,1,0.0,0.0
+CVX,Chevron,Energy,2023-02-23,2022,11.3,0.65,20.0,16.0,10,1,0.1307,1,['unknown'],none,0.0,1,0.0,0.0
+CVX,Chevron,Energy,2024-02-26,2023,13.16,1.87,20.0,16.0,20,3,0.3735,2,['unknown'],none,0.0,3,1.8599999999999994,0.16460176991150433
+CVX,Chevron,Energy,2025-02-21,2024,18.95,6.16,20.0,16.0,50,10,1.2315,5,['unknown'],none,0.0,7,5.789999999999999,0.4399696048632218
+CVX,Chevron,Energy,2026-02-24,2025,18.49,9.63,20.0,16.0,40,16,1.9258,4,['unknown'],none,0.0,10,-0.46000000000000085,-0.024274406332453924
+DAL,Delta Air Lines,Industrials,2020-02-13,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+DAL,Delta Air Lines,Industrials,2021-02-12,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DAL,Delta Air Lines,Industrials,2022-02-11,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DAL,Delta Air Lines,Industrials,2023-02-10,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DAL,Delta Air Lines,Industrials,2024-02-12,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DAL,Delta Air Lines,Industrials,2025-02-11,2024,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DAL,Delta Air Lines,Industrials,2026-02-11,2025,16.26,12.2,20.0,16.0,20,14,2.4407,2,['unknown'],none,0.0,10,16.26,inf
+DE,Deere & Company,Industrials,2020-12-17,2020,13.98,4.61,20.0,16.0,20,8,0.9224,2,['unknown'],none,0.0,8,,
+DE,Deere & Company,Industrials,2021-12-16,2021,18.57,5.56,34.0,16.0,30,10,1.1124,3,"['risk_factors', 'unknown']",none,0.0,10,4.59,0.3283261802575108
+DE,Deere & Company,Industrials,2022-12-15,2022,25.02,14.08,46.0,16.0,40,24,2.8166,4,"['unknown', 'mda']",none,0.0,10,6.449999999999999,0.3473344103392568
+DE,Deere & Company,Industrials,2023-12-15,2023,24.14,23.46,20.0,16.0,50,36,4.6919,5,['unknown'],none,0.0,10,-0.879999999999999,-0.035171862509991936
+DE,Deere & Company,Industrials,2024-12-12,2024,30.16,28.54,20.0,16.0,80,45,5.707,8,['unknown'],none,0.0,10,6.02,0.24937862468931238
+DE,Deere & Company,Industrials,2025-12-18,2025,28.6,28.34,20.0,16.0,70,45,5.6686,7,['unknown'],none,0.0,10,-1.5599999999999987,-0.051724137931034475
+DELL,Dell Technologies,Technology,2020-03-27,2019,13.39,2.63,20.0,16.0,20,6,0.5268,2,['unknown'],none,0.0,3,,
+DELL,Dell Technologies,Technology,2022-03-24,2021,15.43,4.44,20.0,16.0,30,8,0.8888,3,['unknown'],none,0.0,4,2.039999999999999,0.15235250186706484
+DELL,Dell Technologies,Technology,2023-03-30,2022,19.39,12.63,20.0,16.0,40,22,2.5256,4,['unknown'],none,0.0,10,3.960000000000001,0.2566429034348672
+DELL,Dell Technologies,Technology,2024-03-25,2023,33.18,24.25,64.0,16.0,50,41,4.8502,5,"['risk_factors', 'unknown', 'business']",none,0.0,10,13.79,0.7111913357400721
+DELL,Dell Technologies,Technology,2025-03-25,2024,36.46,48.52,44.0,16.0,50,83,9.7049,5,"['risk_factors', 'unknown', 'financial_statements']",none,0.0,10,3.280000000000001,0.09885473176612414
+DG,Dollar General,Consumer,2020-03-19,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+DG,Dollar General,Consumer,2021-03-19,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DG,Dollar General,Consumer,2022-03-18,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DG,Dollar General,Consumer,2023-03-24,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DG,Dollar General,Consumer,2024-03-25,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DG,Dollar General,Consumer,2025-03-21,2024,16.84,4.8,34.0,16.0,20,5,0.9609,2,"['risk_factors', 'unknown']",none,0.0,4,16.84,inf
+DHR,Danaher,Healthcare,2020-02-21,2019,19.94,4.47,50.0,16.0,20,8,0.8946,2,"['unknown', 'business']",none,0.0,7,,
+DHR,Danaher,Healthcare,2021-02-25,2020,19.99,4.62,50.0,16.0,20,8,0.9241,2,"['unknown', 'business']",none,0.0,7,0.04999999999999716,0.0025075225677029245
+DHR,Danaher,Healthcare,2022-02-23,2021,20.24,5.47,50.0,16.0,20,9,1.0934,2,"['unknown', 'business']",none,0.0,8,0.25,0.012506253126563394
+DHR,Danaher,Healthcare,2023-02-22,2022,20.42,6.08,50.0,16.0,20,10,1.2151,2,"['unknown', 'business']",none,0.0,9,0.18000000000000327,0.008893280632411127
+DHR,Danaher,Healthcare,2024-02-21,2023,21.6,15.68,34.0,16.0,30,25,3.1365,3,"['risk_factors', 'unknown']",none,0.0,10,1.1799999999999997,0.057786483839373126
+DHR,Danaher,Healthcare,2025-02-20,2024,22.1,17.34,34.0,16.0,30,26,3.4675,3,"['risk_factors', 'unknown']",none,0.0,10,0.5,0.02314814814814814
+DHR,Danaher,Healthcare,2026-02-24,2025,24.62,20.74,34.0,16.0,40,32,4.1486,4,"['risk_factors', 'unknown']",none,0.0,10,2.5199999999999996,0.11402714932126701
+DIS,Walt Disney,Consumer,2020-11-25,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+DIS,Walt Disney,Consumer,2021-11-24,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+DIS,Walt Disney,Consumer,2023-01-24,2022,11.53,1.42,20.0,16.0,10,1,0.2846,1,['unknown'],none,0.0,1,11.53,inf
+DIS,Walt Disney,Consumer,2022-11-29,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-11.53,-1.0
+DIS,Walt Disney,Consumer,2024-01-24,2023,17.34,10.81,20.0,16.0,30,8,2.1619,3,['unknown'],none,0.0,4,17.34,inf
+DIS,Walt Disney,Consumer,2023-11-21,2023,15.45,4.5,20.0,16.0,30,7,0.9006,3,['unknown'],none,0.0,3,-1.8900000000000006,-0.10899653979238755
+DIS,Walt Disney,Consumer,2024-11-14,2024,24.19,8.64,50.0,16.0,40,13,1.7279,4,"['unknown', 'business']",none,0.0,7,8.740000000000002,0.5656957928802591
+DIS,Walt Disney,Consumer,2025-11-13,2025,18.23,8.76,20.0,16.0,40,13,1.7523,4,['unknown'],none,0.0,7,-5.960000000000001,-0.24638280281107894
+DLR,Digital Realty Trust,Real Estate,2020-03-02,2019,12.81,0.71,20.0,16.0,20,2,0.1424,2,['unknown'],none,0.0,1,,
+DLR,Digital Realty Trust,Real Estate,2021-03-01,2020,12.82,0.74,20.0,16.0,20,2,0.1472,2,['unknown'],none,0.0,1,0.009999999999999787,0.0007806401249024209
+DLR,Digital Realty Trust,Real Estate,2022-02-25,2021,12.89,0.97,20.0,16.0,20,2,0.1939,2,['unknown'],none,0.0,1,0.07000000000000028,0.00546021840873645
+DLR,Digital Realty Trust,Real Estate,2023-02-27,2022,12.88,0.95,20.0,16.0,20,2,0.1894,2,['unknown'],none,0.0,1,-0.009999999999999787,-0.0007757951900697613
+DLR,Digital Realty Trust,Real Estate,2024-02-23,2023,14.65,1.84,20.0,16.0,30,4,0.3684,3,['unknown'],none,0.0,3,1.7699999999999996,0.13742236024844723
+DLR,Digital Realty Trust,Real Estate,2025-02-25,2024,16.7,3.67,20.0,16.0,40,8,0.734,4,['unknown'],none,0.0,5,2.049999999999999,0.13993174061433433
+DLR,Digital Realty Trust,Real Estate,2026-02-13,2025,18.01,8.04,20.0,16.0,40,18,1.6072,4,['unknown'],none,0.0,10,1.3100000000000023,0.07844311377245528
+ELV,Elevance Health,Healthcare,2020-02-19,2019,11.4,0.98,20.0,16.0,10,2,0.197,1,['unknown'],none,0.0,2,,
+ELV,Elevance Health,Healthcare,2021-02-18,2020,16.0,2.01,34.0,16.0,20,4,0.4013,2,"['risk_factors', 'unknown']",none,0.0,4,4.6,0.4035087719298245
+ELV,Elevance Health,Healthcare,2022-02-16,2021,15.24,2.14,30.0,16.0,20,4,0.4289,2,"['unknown', 'financial_statements']",none,0.0,4,-0.7599999999999998,-0.04749999999999999
+ELV,Elevance Health,Healthcare,2023-02-15,2022,14.92,1.06,30.0,16.0,20,2,0.2118,2,"['unknown', 'financial_statements']",none,0.0,2,-0.3200000000000003,-0.02099737532808399
+ELV,Elevance Health,Healthcare,2024-02-21,2023,14.59,1.63,20.0,16.0,30,3,0.325,3,['unknown'],none,0.0,3,-0.33000000000000007,-0.022117962466487895
+ELV,Elevance Health,Healthcare,2025-02-20,2024,24.61,10.03,50.0,16.0,40,19,2.0057,4,"['unknown', 'business']",none,0.0,10,10.02,0.686771761480466
+ELV,Elevance Health,Healthcare,2026-02-06,2025,28.38,12.61,50.0,16.0,60,23,2.523,6,"['unknown', 'business']",none,0.0,10,3.7699999999999996,0.15318976026005693
+EOG,EOG Resources,Energy,2020-02-27,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+EOG,EOG Resources,Energy,2021-02-25,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EOG,EOG Resources,Energy,2022-02-24,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EOG,EOG Resources,Energy,2023-02-23,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EOG,EOG Resources,Energy,2024-02-22,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EOG,EOG Resources,Energy,2025-02-27,2024,15.26,3.86,20.0,16.0,30,5,0.7718,3,['unknown'],none,0.0,3,15.26,inf
+EOG,EOG Resources,Energy,2026-02-24,2025,15.21,3.7,20.0,16.0,30,5,0.7393,3,['unknown'],none,0.0,3,-0.049999999999998934,-0.003276539973787629
+EPD,Enterprise Products Partners,Energy,2020-02-28,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+EPD,Enterprise Products Partners,Energy,2021-03-01,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EPD,Enterprise Products Partners,Energy,2022-02-28,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EPD,Enterprise Products Partners,Energy,2023-02-28,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EPD,Enterprise Products Partners,Energy,2024-02-28,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EPD,Enterprise Products Partners,Energy,2025-02-28,2024,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EPD,Enterprise Products Partners,Energy,2026-02-27,2025,11.22,0.41,20.0,16.0,10,1,0.0815,1,['unknown'],none,0.0,1,11.22,inf
+EQR,Equity Residential,Real Estate,2020-02-20,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+EQR,Equity Residential,Real Estate,2021-02-18,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EQR,Equity Residential,Real Estate,2022-02-17,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EQR,Equity Residential,Real Estate,2023-02-16,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+EQR,Equity Residential,Real Estate,2024-02-15,2023,15.35,4.16,20.0,16.0,30,8,0.8316,3,['unknown'],none,0.0,6,15.35,inf
+EQR,Equity Residential,Real Estate,2025-02-13,2024,15.35,4.17,20.0,16.0,30,8,0.834,3,['unknown'],none,0.0,6,0.0,0.0
+EQR,Equity Residential,Real Estate,2026-02-13,2025,18.78,6.26,34.0,16.0,30,12,1.2523,3,"['risk_factors', 'unknown']",none,0.0,10,3.4300000000000015,0.2234527687296417
+ET,Energy Transfer,Energy,2020-02-21,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+ET,Energy Transfer,Energy,2021-02-19,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ET,Energy Transfer,Energy,2022-02-18,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ET,Energy Transfer,Energy,2023-02-17,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+ET,Energy Transfer,Energy,2024-02-16,2023,11.19,0.3,20.0,16.0,10,1,0.0595,1,['unknown'],none,0.0,1,11.19,inf
+ET,Energy Transfer,Energy,2025-03-13,2024,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-11.19,-1.0
+ET,Energy Transfer,Energy,2025-02-14,2024,11.19,0.29,20.0,16.0,10,1,0.0579,1,['unknown'],none,0.0,1,11.19,inf
+ET,Energy Transfer,Energy,2026-02-19,2025,11.18,0.28,20.0,16.0,10,1,0.0564,1,['unknown'],none,0.0,1,-0.009999999999999787,-0.0008936550491509543
+F,Ford Motor,Industrials,2020-02-05,2019,23.9,13.34,64.0,16.0,10,25,2.6683,1,"['risk_factors', 'unknown', 'business']",none,0.0,10,,
+F,Ford Motor,Industrials,2021-02-05,2020,30.94,31.78,64.0,16.0,20,61,6.3569,2,"['risk_factors', 'unknown', 'business']",none,0.0,10,7.040000000000003,0.2945606694560672
+F,Ford Motor,Industrials,2022-02-04,2021,34.9,27.66,90.0,16.0,20,54,5.5313,2,"['risk_factors', 'unknown', 'business', 'mda']",none,0.0,10,3.9599999999999973,0.1279896574014221
+F,Ford Motor,Industrials,2023-02-03,2022,28.24,37.79,34.0,16.0,30,76,7.557,3,"['risk_factors', 'unknown']",none,0.0,10,-6.66,-0.19083094555873925
+F,Ford Motor,Industrials,2024-02-07,2023,29.77,17.89,64.0,16.0,40,37,3.5771,4,"['risk_factors', 'unknown', 'business']",none,0.0,10,1.5300000000000011,0.05417847025495748
+F,Ford Motor,Industrials,2025-02-06,2024,30.09,18.97,64.0,16.0,40,40,3.7943,4,"['risk_factors', 'unknown', 'business']",none,0.0,10,0.3200000000000003,0.010749076251259648
+F,Ford Motor,Industrials,2026-02-11,2025,26.29,11.32,64.0,16.0,30,24,2.263,3,"['risk_factors', 'unknown', 'business']",none,0.0,10,-3.8000000000000007,-0.12628780325689604
+FDX,FedEx,Industrials,2020-07-20,2020,24.44,7.79,60.0,16.0,30,16,1.5576,3,"['risk_factors', 'unknown', 'mda']",none,0.0,10,,
+FDX,FedEx,Industrials,2021-07-19,2021,27.98,14.6,60.0,16.0,40,27,2.92,4,"['risk_factors', 'unknown', 'mda']",none,0.0,10,3.539999999999999,0.14484451718494262
+FDX,FedEx,Industrials,2022-07-18,2022,24.77,16.22,34.0,16.0,50,29,3.2438,5,"['risk_factors', 'unknown']",none,0.0,10,-3.210000000000001,-0.1147248034310222
+FDX,FedEx,Industrials,2023-07-17,2023,23.34,11.46,34.0,16.0,50,21,2.2926,5,"['risk_factors', 'unknown']",none,0.0,10,-1.4299999999999997,-0.0577311263625353
+FDX,FedEx,Industrials,2024-07-15,2024,31.03,22.42,56.0,16.0,50,42,4.4838,5,"['unknown', 'financial_statements', 'mda']",none,0.0,10,7.690000000000001,0.329477292202228
+FDX,FedEx,Industrials,2025-07-21,2025,33.18,21.95,60.0,16.0,60,37,4.3899,6,"['risk_factors', 'unknown', 'mda']",none,0.0,10,2.1499999999999986,0.06928778601353525
+GD,General Dynamics,Industrials,2020-02-10,2019,20.99,7.96,20.0,16.0,60,9,1.5912,6,['unknown'],none,0.0,4,,
+GD,General Dynamics,Industrials,2021-02-09,2020,17.86,7.54,20.0,16.0,40,8,1.5075,4,['unknown'],none,0.0,5,-3.129999999999999,-0.1491186279180562
+GD,General Dynamics,Industrials,2022-02-09,2021,22.71,18.71,20.0,16.0,50,18,3.7421,5,['unknown'],none,0.0,10,4.850000000000001,0.27155655095184783
+GD,General Dynamics,Industrials,2023-02-07,2022,22.43,17.76,20.0,16.0,50,17,3.5514,5,['unknown'],none,0.0,9,-0.28000000000000114,-0.012329370321444322
+GD,General Dynamics,Industrials,2024-02-08,2023,17.87,12.55,20.0,16.0,30,12,2.5107,3,['unknown'],none,0.0,9,-4.559999999999999,-0.20329915292019607
+GD,General Dynamics,Industrials,2025-02-07,2024,22.08,16.61,20.0,16.0,50,16,3.3229,5,['unknown'],none,0.0,9,4.209999999999997,0.2355903749300503
+GD,General Dynamics,Industrials,2026-01-30,2025,20.27,10.57,20.0,16.0,50,10,2.1131,5,['unknown'],none,0.0,5,-1.8099999999999987,-0.08197463768115942
+GE,GE Aerospace,Industrials,2020-02-24,2019,18.37,1.91,46.0,16.0,20,4,0.3821,2,"['unknown', 'mda']",none,0.0,4,,
+GE,GE Aerospace,Industrials,2021-02-12,2020,15.19,3.63,20.0,16.0,30,7,0.7259,3,['unknown'],none,0.0,6,-3.1800000000000015,-0.1731083287969516
+GE,GE Aerospace,Industrials,2022-02-11,2021,13.51,3.04,20.0,16.0,20,5,0.6086,2,['unknown'],none,0.0,5,-1.6799999999999997,-0.11059907834101379
+GE,GE Aerospace,Industrials,2023-02-10,2022,15.25,3.85,20.0,16.0,30,6,0.769,3,['unknown'],none,0.0,5,1.7400000000000002,0.12879348630643972
+GE,GE Aerospace,Industrials,2024-02-02,2023,15.9,6.01,20.0,16.0,30,9,1.2011,3,['unknown'],none,0.0,8,0.6500000000000004,0.042622950819672045
+GE,GE Aerospace,Industrials,2025-02-03,2024,15.39,4.3,20.0,16.0,30,6,0.8609,3,['unknown'],none,0.0,5,-0.5099999999999998,-0.0320754716981132
+GE,GE Aerospace,Industrials,2026-01-29,2025,15.47,4.55,20.0,16.0,30,6,0.9106,3,['unknown'],none,0.0,5,0.08000000000000007,0.005198180636777128
+GM,General Motors,Industrials,2020-02-05,2019,25.0,27.01,34.0,16.0,30,38,5.4026,3,"['risk_factors', 'unknown']",none,0.0,10,,
+GM,General Motors,Industrials,2021-02-10,2020,24.23,24.42,34.0,16.0,30,35,4.8848,3,"['risk_factors', 'unknown']",none,0.0,10,-0.7699999999999996,-0.03079999999999994
+GM,General Motors,Industrials,2022-02-02,2021,19.47,8.58,34.0,16.0,30,12,1.7166,3,"['risk_factors', 'unknown']",none,0.0,10,-4.760000000000002,-0.1964506809739992
+GM,General Motors,Industrials,2023-01-31,2022,19.22,7.72,34.0,16.0,30,11,1.5445,3,"['risk_factors', 'unknown']",none,0.0,10,-0.25,-0.012840267077555256
+GM,General Motors,Industrials,2024-01-30,2023,16.44,3.45,34.0,16.0,20,5,0.6907,2,"['risk_factors', 'unknown']",none,0.0,5,-2.7799999999999976,-0.14464099895941718
+GM,General Motors,Industrials,2025-01-28,2024,27.22,12.05,60.0,16.0,40,18,2.4101,4,"['risk_factors', 'unknown', 'mda']",none,0.0,10,10.779999999999998,0.6557177615571774
+GM,General Motors,Industrials,2026-01-27,2025,26.49,21.98,34.0,16.0,50,33,4.3953,5,"['risk_factors', 'unknown']",none,0.0,10,-0.7300000000000004,-0.026818515797207954
+GOOGL,Alphabet,Technology,2023-02-03,2022,27.4,27.02,46.0,16.0,30,28,5.4032,3,"['unknown', 'mda']",none,0.0,10,,
+GOOGL,Alphabet,Technology,2024-01-31,2023,58.1,100.0,60.0,16.0,70,125,22.7649,7,"['unknown', 'business', 'financial_statements']",none,0.0,10,30.700000000000003,1.1204379562043796
+GOOGL,Alphabet,Technology,2025-02-05,2024,56.6,100.0,60.0,16.0,60,130,23.0084,6,"['unknown', 'business', 'financial_statements']",none,0.0,10,-1.5,-0.025817555938037917
+GOOGL,Alphabet,Technology,2026-02-05,2025,58.3,100.0,76.0,16.0,50,133,23.7827,5,"['unknown', 'business', 'mda']",none,0.0,10,1.6999999999999957,0.030035335689045928
+GS,Goldman Sachs,Financials,2026-02-25,2025,24.01,13.71,34.0,16.0,50,50,2.7422,5,"['risk_factors', 'unknown']",none,0.0,10,,
+HCA,HCA Healthcare,Healthcare,2020-02-20,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+HCA,HCA Healthcare,Healthcare,2021-02-19,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+HCA,HCA Healthcare,Healthcare,2022-02-18,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+HCA,HCA Healthcare,Healthcare,2023-02-17,2022,12.95,1.18,20.0,16.0,20,2,0.2356,2,['unknown'],none,0.0,1,12.95,inf
+HCA,HCA Healthcare,Healthcare,2024-02-16,2023,21.09,13.3,20.0,16.0,50,22,2.6603,5,['unknown'],none,0.0,10,8.14,0.6285714285714286
+HCA,HCA Healthcare,Healthcare,2025-02-14,2024,26.77,32.23,20.0,16.0,50,54,6.4451,5,['unknown'],none,0.0,10,5.68,0.2693219535324798
+HCA,HCA Healthcare,Healthcare,2026-02-10,2025,29.02,39.74,20.0,16.0,50,66,7.9477,5,['unknown'],none,0.0,10,2.25,0.08404930892790441
+HD,Home Depot,Consumer,2020-03-25,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+HD,Home Depot,Consumer,2021-03-24,2020,11.41,1.05,20.0,16.0,10,1,0.2098,1,['unknown'],none,0.0,1,11.41,inf
+HD,Home Depot,Consumer,2022-03-23,2021,11.43,1.11,20.0,16.0,10,1,0.2212,1,['unknown'],none,0.0,1,0.019999999999999574,0.0017528483786151128
+HD,Home Depot,Consumer,2023-03-15,2022,11.43,1.1,20.0,16.0,10,1,0.2198,1,['unknown'],none,0.0,1,0.0,0.0
+HD,Home Depot,Consumer,2024-03-13,2023,15.7,5.32,20.0,16.0,30,5,1.0649,3,['unknown'],none,0.0,4,4.27,0.37357830271216086
+HD,Home Depot,Consumer,2025-03-21,2024,16.15,6.83,20.0,16.0,30,7,1.3659,3,['unknown'],none,0.0,5,0.4499999999999993,0.028662420382165488
+HON,Honeywell,Industrials,2020-02-14,2019,13.71,8.7,20.0,16.0,10,10,1.7398,1,['unknown'],none,0.0,9,,
+HON,Honeywell,Industrials,2021-02-12,2020,20.68,17.58,34.0,16.0,20,22,3.5167,2,"['risk_factors', 'unknown']",none,0.0,10,6.969999999999999,0.5083880379285193
+HON,Honeywell,Industrials,2022-02-11,2021,16.38,12.6,20.0,16.0,20,16,2.52,2,['unknown'],none,0.0,10,-4.300000000000001,-0.20793036750483562
+HON,Honeywell,Industrials,2023-02-10,2022,22.46,13.54,34.0,16.0,40,18,2.7079,4,"['risk_factors', 'unknown']",none,0.0,10,6.080000000000002,0.3711843711843714
+HON,Honeywell,Industrials,2024-02-16,2023,26.22,26.07,34.0,16.0,40,36,5.2146,4,"['risk_factors', 'unknown']",none,0.0,10,3.759999999999998,0.1674087266251112
+HON,Honeywell,Industrials,2025-02-14,2024,47.66,85.88,44.0,16.0,50,121,17.1753,5,"['risk_factors', 'unknown', 'financial_statements']",none,0.0,10,21.439999999999998,0.8176964149504196
+HON,Honeywell,Industrials,2026-02-17,2025,55.6,96.68,60.0,16.0,60,147,19.3365,6,"['risk_factors', 'unknown', 'mda']",none,0.0,10,7.940000000000005,0.1665967268149393
+HPQ,HP Inc,Technology,2020-02-27,2019,13.66,3.52,20.0,16.0,20,2,0.704,2,['unknown'],none,0.0,2,,
+HPQ,HP Inc,Technology,2020-12-10,2020,13.16,1.88,20.0,16.0,20,3,0.3759,2,['unknown'],none,0.0,2,-0.5,-0.03660322108345537
+HPQ,HP Inc,Technology,2021-12-09,2021,11.3,0.67,20.0,16.0,10,1,0.1349,1,['unknown'],none,0.0,1,-1.8599999999999994,-0.1413373860182371
+HPQ,HP Inc,Technology,2022-12-06,2022,13.21,2.02,20.0,16.0,20,3,0.4045,2,['unknown'],none,0.0,3,1.9100000000000001,0.1690265486725664
+HPQ,HP Inc,Technology,2023-12-18,2023,19.82,19.05,20.0,16.0,30,27,3.8109,3,['unknown'],none,0.0,10,6.609999999999999,0.5003785011355033
+HPQ,HP Inc,Technology,2023-09-11,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-19.82,-1.0
+HPQ,HP Inc,Technology,2024-12-13,2024,36.29,37.29,60.0,16.0,50,50,7.4583,5,"['unknown', 'business', 'financial_statements']",none,0.0,10,36.29,inf
+HPQ,HP Inc,Technology,2025-12-10,2025,40.73,42.76,74.0,16.0,50,57,8.5519,5,"['risk_factors', 'unknown', 'business', 'financial_statements']",none,0.0,10,4.439999999999998,0.12234775420225952
+HUM,Humana,Healthcare,2020-02-20,2019,13.48,1.26,30.0,16.0,10,2,0.2515,1,"['unknown', 'financial_statements']",none,0.0,2,,
+HUM,Humana,Healthcare,2021-02-18,2020,13.5,1.33,30.0,16.0,10,2,0.2651,1,"['unknown', 'financial_statements']",none,0.0,2,0.019999999999999574,0.0014836795252224366
+HUM,Humana,Healthcare,2022-02-17,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-13.5,-1.0
+HUM,Humana,Healthcare,2023-02-16,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+HUM,Humana,Healthcare,2024-02-15,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+HUM,Humana,Healthcare,2025-02-20,2024,22.06,9.85,30.0,16.0,50,14,1.9707,5,"['unknown', 'financial_statements']",none,0.0,3,22.06,inf
+HUM,Humana,Healthcare,2026-02-19,2025,25.04,19.81,30.0,16.0,50,28,3.9611,5,"['unknown', 'financial_statements']",none,0.0,6,2.9800000000000004,0.13508612873980064
+IBM,IBM,Technology,2020-02-25,2019,37.2,71.99,20.0,16.0,40,34,14.3982,4,['unknown'],none,0.0,10,,
+IBM,IBM,Technology,2021-02-23,2020,26.94,26.81,44.0,16.0,30,11,5.3614,3,"['risk_factors', 'unknown', 'financial_statements']",none,0.0,9,-10.260000000000002,-0.2758064516129033
+IBM,IBM,Technology,2022-02-22,2021,30.12,37.41,44.0,16.0,30,15,7.4817,3,"['risk_factors', 'unknown', 'financial_statements']",none,0.0,10,3.1799999999999997,0.11804008908685959
+IBM,IBM,Technology,2023-02-28,2022,27.16,27.54,44.0,16.0,30,11,5.5085,3,"['risk_factors', 'unknown', 'financial_statements']",none,0.0,9,-2.960000000000001,-0.09827357237715806
+IBM,IBM,Technology,2024-02-26,2023,36.41,40.04,64.0,16.0,40,17,8.0083,4,"['risk_factors', 'unknown', 'business']",none,0.0,10,9.249999999999996,0.3405743740795286
+IBM,IBM,Technology,2025-02-25,2024,51.99,91.97,64.0,16.0,40,40,18.3933,4,"['risk_factors', 'unknown', 'business']",none,0.0,10,15.580000000000005,0.42790442186212596
+IBM,IBM,Technology,2026-02-24,2025,43.08,67.26,64.0,16.0,30,28,13.4525,3,"['risk_factors', 'unknown', 'business']",none,0.0,10,-8.910000000000004,-0.17137911136757078
+INTC,Intel,Technology,2020-01-24,2019,48.07,70.91,46.0,16.0,80,100,14.1828,8,"['unknown', 'mda']",none,0.0,10,,
+INTC,Intel,Technology,2021-01-22,2020,38.2,60.33,20.0,16.0,70,87,12.0666,7,['unknown'],none,0.0,10,-9.869999999999997,-0.20532556688163095
+INTC,Intel,Technology,2022-01-27,2021,36.29,53.97,20.0,16.0,70,79,10.7947,7,['unknown'],none,0.0,10,-1.9100000000000037,-0.050000000000000044
+INTC,Intel,Technology,2023-01-27,2022,39.51,64.69,20.0,16.0,70,99,12.9375,7,['unknown'],none,0.0,10,3.219999999999999,0.08872967759713424
+INTC,Intel,Technology,2024-01-26,2023,59.6,100.0,60.0,16.0,80,155,20.2255,8,"['risk_factors', 'unknown', 'mda']",none,0.0,10,20.090000000000003,0.5084788661098458
+INTC,Intel,Technology,2025-01-31,2024,54.77,83.91,60.0,16.0,80,127,16.783,8,"['risk_factors', 'unknown', 'mda']",none,0.0,10,-4.829999999999998,-0.0810402684563758
+INTC,Intel,Technology,2026-01-23,2025,48.32,84.73,34.0,16.0,70,140,16.9455,7,"['risk_factors', 'unknown']",none,0.0,10,-6.450000000000003,-0.11776519992696732
+JNJ,Johnson & Johnson,Healthcare,2020-02-18,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+JNJ,Johnson & Johnson,Healthcare,2021-02-22,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+JNJ,Johnson & Johnson,Healthcare,2022-02-17,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+JNJ,Johnson & Johnson,Healthcare,2023-02-16,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+JNJ,Johnson & Johnson,Healthcare,2024-02-16,2023,19.28,12.25,20.0,16.0,40,17,2.4508,4,['unknown'],none,0.0,7,19.28,inf
+JNJ,Johnson & Johnson,Healthcare,2025-02-13,2024,18.38,9.28,20.0,16.0,40,13,1.8563,4,['unknown'],none,0.0,6,-0.9000000000000021,-0.04668049792531126
+JNJ,Johnson & Johnson,Healthcare,2026-02-11,2025,18.4,9.35,20.0,16.0,40,13,1.8697,4,['unknown'],none,0.0,6,0.019999999999999574,0.0010881392818280489
+JPM,JPMorgan Chase,Financials,2026-02-13,2025,22.83,9.09,20.0,16.0,70,36,1.8189,7,['unknown'],none,0.0,10,,
+KO,Coca-Cola,Consumer,2020-02-24,2019,12.87,0.91,20.0,16.0,20,2,0.1826,2,['unknown'],none,0.0,1,,
+KO,Coca-Cola,Consumer,2021-02-25,2020,12.88,0.95,20.0,16.0,20,2,0.19,2,['unknown'],none,0.0,1,0.010000000000001563,0.0007770007770009357
+KO,Coca-Cola,Consumer,2022-02-22,2021,12.9,1.0,20.0,16.0,20,2,0.1996,2,['unknown'],none,0.0,1,0.019999999999999574,0.0015527950310558758
+KO,Coca-Cola,Consumer,2023-02-21,2022,12.9,1.01,20.0,16.0,20,2,0.202,2,['unknown'],none,0.0,1,0.0,0.0
+KO,Coca-Cola,Consumer,2024-02-20,2023,22.82,4.08,50.0,16.0,40,8,0.8156,4,"['unknown', 'business']",none,0.0,4,9.92,0.7689922480620155
+KO,Coca-Cola,Consumer,2025-02-20,2024,23.44,6.14,50.0,16.0,40,12,1.228,4,"['unknown', 'business']",none,0.0,6,0.620000000000001,0.02716914986853647
+KO,Coca-Cola,Consumer,2026-02-20,2025,24.07,8.23,50.0,16.0,40,16,1.6463,4,"['unknown', 'business']",none,0.0,8,0.629999999999999,0.026877133105801976
+KR,Kroger,Consumer,2021-03-30,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+KR,Kroger,Consumer,2020-04-01,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+KR,Kroger,Consumer,2022-03-29,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+KR,Kroger,Consumer,2023-03-28,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+KR,Kroger,Consumer,2024-04-02,2024,10.13,0.77,14.0,16.0,10,1,0.1538,1,['risk_factors'],none,0.0,1,10.13,inf
+KR,Kroger,Consumer,2025-04-01,2025,21.52,7.4,46.0,16.0,30,10,1.4803,3,"['unknown', 'mda']",none,0.0,7,11.389999999999999,1.1243830207305034
+LLY,Eli Lilly,Healthcare,2022-02-23,2021,11.32,0.72,20.0,16.0,10,1,0.1442,1,['unknown'],none,0.0,1,,
+LLY,Eli Lilly,Healthcare,2023-02-22,2022,11.32,0.75,20.0,16.0,10,1,0.1492,1,['unknown'],none,0.0,1,0.0,0.0
+LLY,Eli Lilly,Healthcare,2024-02-21,2023,20.7,17.0,20.0,16.0,40,23,3.4005,4,['unknown'],none,0.0,10,9.379999999999999,0.8286219081272084
+LLY,Eli Lilly,Healthcare,2025-02-19,2024,22.05,17.18,34.0,16.0,30,23,3.436,3,"['risk_factors', 'unknown']",none,0.0,10,1.3500000000000014,0.0652173913043479
+LLY,Eli Lilly,Healthcare,2026-02-12,2025,29.9,26.0,60.0,16.0,30,30,5.1996,3,"['risk_factors', 'unknown', 'mda']",none,0.0,10,7.849999999999998,0.35600907029478446
+LMT,Lockheed Martin,Industrials,2020-02-07,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+LMT,Lockheed Martin,Industrials,2021-01-28,2020,11.29,0.63,20.0,16.0,10,1,0.1252,1,['unknown'],none,0.0,1,11.29,inf
+LMT,Lockheed Martin,Industrials,2022-01-25,2021,10.09,0.63,14.0,16.0,10,1,0.1268,1,['risk_factors'],none,0.0,1,-1.1999999999999993,-0.1062887511071744
+LMT,Lockheed Martin,Industrials,2023-01-26,2022,10.09,0.64,14.0,16.0,10,1,0.1289,1,['risk_factors'],none,0.0,1,0.0,0.0
+LMT,Lockheed Martin,Industrials,2024-01-23,2023,14.52,2.08,34.0,16.0,10,3,0.4152,1,"['risk_factors', 'unknown']",none,0.0,3,4.43,0.4390485629335976
+LMT,Lockheed Martin,Industrials,2025-01-28,2024,30.52,10.4,64.0,16.0,60,15,2.0794,6,"['risk_factors', 'unknown', 'business']",none,0.0,7,16.0,1.1019283746556474
+LMT,Lockheed Martin,Industrials,2026-01-29,2025,23.18,4.28,74.0,16.0,10,6,0.8561,1,"['risk_factors', 'unknown', 'business', 'financial_statements']",none,0.0,6,-7.34,-0.24049803407601578
+LOW,Lowe's,Consumer,2020-03-23,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+LOW,Lowe's,Consumer,2021-03-22,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+LOW,Lowe's,Consumer,2022-03-21,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+LOW,Lowe's,Consumer,2023-03-27,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+LOW,Lowe's,Consumer,2024-03-25,2023,16.69,8.64,20.0,16.0,30,8,1.729,3,['unknown'],none,0.0,3,16.69,inf
+LOW,Lowe's,Consumer,2025-03-24,2024,27.11,33.37,20.0,16.0,50,30,6.675,5,['unknown'],none,0.0,10,10.419999999999998,0.6243259436788495
+MCK,McKesson,Healthcare,2020-05-22,2020,11.62,1.73,20.0,16.0,10,3,0.3454,1,['unknown'],none,0.0,3,,
+MCK,McKesson,Healthcare,2021-05-12,2021,12.93,6.09,20.0,16.0,10,11,1.2186,1,['unknown'],none,0.0,10,1.3100000000000005,0.11273666092943202
+MCK,McKesson,Healthcare,2022-05-09,2022,16.98,2.28,46.0,16.0,10,4,0.4562,1,"['unknown', 'mda']",none,0.0,4,4.050000000000001,0.3132250580046405
+MCK,McKesson,Healthcare,2023-05-09,2023,18.83,1.77,56.0,16.0,10,3,0.3541,1,"['business', 'mda']",none,0.0,3,1.8499999999999979,0.1089517078916371
+MCK,McKesson,Healthcare,2024-05-08,2024,27.44,10.12,64.0,16.0,40,16,2.0239,4,"['risk_factors', 'unknown', 'business']",none,0.0,10,8.610000000000003,0.4572490706319705
+MCK,McKesson,Healthcare,2025-05-09,2025,28.93,19.43,50.0,16.0,50,30,3.8866,5,"['unknown', 'business']",none,0.0,10,1.4899999999999984,0.05430029154518934
+MET,MetLife,Financials,2021-02-19,2020,11.18,0.25,20.0,16.0,10,1,0.0506,1,['unknown'],none,0.0,1,,
+MET,MetLife,Financials,2022-02-18,2021,11.18,0.26,20.0,16.0,10,1,0.0518,1,['unknown'],none,0.0,1,0.0,0.0
+MET,MetLife,Financials,2023-02-23,2022,11.18,0.26,20.0,16.0,10,1,0.053,1,['unknown'],none,0.0,1,0.0,0.0
+MET,MetLife,Financials,2024-02-16,2023,20.54,6.47,20.0,16.0,60,26,1.2949,6,['unknown'],none,0.0,10,9.36,0.8372093023255813
+MET,MetLife,Financials,2025-02-21,2024,21.1,8.35,20.0,16.0,60,31,1.6697,6,['unknown'],none,0.0,10,0.5600000000000023,0.0272638753651413
+MET,MetLife,Financials,2026-02-19,2025,17.4,6.01,20.0,16.0,40,23,1.2024,4,['unknown'],none,0.0,10,-3.700000000000003,-0.17535545023696697
+META,Meta Platforms,Technology,2025-01-30,2024,43.96,69.52,50.0,16.0,50,110,13.9042,5,"['unknown', 'business']",none,0.0,10,,
+META,Meta Platforms,Technology,2026-01-29,2025,53.1,100.0,50.0,16.0,50,165,20.2159,5,"['unknown', 'business']",none,0.0,10,9.14,0.20791628753412184
+MMM,3M,Industrials,2020-02-06,2019,13.33,2.42,20.0,16.0,20,5,0.4848,2,['unknown'],none,0.0,5,,
+MMM,3M,Industrials,2021-02-04,2020,13.59,3.31,20.0,16.0,20,7,0.6614,2,['unknown'],none,0.0,7,0.2599999999999998,0.019504876219054834
+MMM,3M,Industrials,2022-02-09,2021,15.46,2.85,30.0,16.0,20,5,0.5705,2,"['unknown', 'financial_statements']",none,0.0,5,1.870000000000001,0.13760117733627686
+MMM,3M,Industrials,2023-02-08,2022,14.94,1.14,30.0,16.0,20,2,0.2282,2,"['unknown', 'financial_statements']",none,0.0,2,-0.5200000000000014,-0.03363518758085393
+MMM,3M,Industrials,2024-02-07,2023,14.64,1.82,20.0,16.0,30,3,0.363,3,['unknown'],none,0.0,2,-0.29999999999999893,-0.02008032128514048
+MMM,3M,Industrials,2025-02-05,2024,15.67,5.22,20.0,16.0,30,9,1.045,3,['unknown'],none,0.0,7,1.0299999999999994,0.07035519125683054
+MMM,3M,Industrials,2026-02-03,2025,20.9,11.01,30.0,16.0,40,17,2.2012,4,"['unknown', 'financial_statements']",none,0.0,10,5.229999999999999,0.3337587747287811
+MPC,Marathon Petroleum,Energy,2020-02-28,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+MPC,Marathon Petroleum,Energy,2021-02-26,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+MPC,Marathon Petroleum,Energy,2022-02-24,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+MPC,Marathon Petroleum,Energy,2023-02-23,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+MPC,Marathon Petroleum,Energy,2024-02-28,2023,12.97,1.24,20.0,16.0,20,2,0.2487,2,['unknown'],none,0.0,2,12.97,inf
+MPC,Marathon Petroleum,Energy,2025-02-27,2024,13.68,3.59,20.0,16.0,20,6,0.7176,2,['unknown'],none,0.0,5,0.7099999999999991,0.05474171164225128
+MPC,Marathon Petroleum,Energy,2026-02-26,2025,13.66,3.54,20.0,16.0,20,6,0.7072,2,['unknown'],none,0.0,5,-0.019999999999999574,-0.0014619883040934978
+MRK,Merck,Healthcare,2020-02-26,2019,11.41,1.05,20.0,16.0,10,2,0.2092,1,['unknown'],none,0.0,2,,
+MRK,Merck,Healthcare,2021-02-25,2020,11.4,1.01,20.0,16.0,10,2,0.2012,1,['unknown'],none,0.0,2,-0.009999999999999787,-0.0008764241893075564
+MRK,Merck,Healthcare,2022-02-25,2021,11.39,0.98,20.0,16.0,10,2,0.1952,1,['unknown'],none,0.0,2,-0.009999999999999787,-0.0008771929824561431
+MRK,Merck,Healthcare,2023-02-24,2022,11.4,1.0,20.0,16.0,10,2,0.1996,1,['unknown'],none,0.0,2,0.009999999999999787,0.0008779631255486642
+MRK,Merck,Healthcare,2024-02-26,2023,16.8,4.0,20.0,16.0,40,8,0.8002,4,['unknown'],none,0.0,6,5.4,0.4736842105263157
+MRK,Merck,Healthcare,2025-02-25,2024,17.53,6.43,20.0,16.0,40,13,1.2859,4,['unknown'],none,0.0,8,0.7300000000000004,0.04345238095238102
+MRK,Merck,Healthcare,2024-04-11,2024,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-17.53,-1.0
+MRK,Merck,Healthcare,2026-02-24,2025,19.53,8.09,20.0,16.0,50,17,1.619,5,['unknown'],none,0.0,9,19.53,inf
+MS,Morgan Stanley,Financials,2026-02-19,2025,19.04,7.12,34.0,16.0,30,19,1.4247,3,"['risk_factors', 'unknown']",none,0.0,10,,
+MSFT,Microsoft,Technology,2020-07-30,2020,32.02,30.38,64.0,16.0,30,42,6.0769,3,"['risk_factors', 'unknown', 'business']",none,0.0,10,,
+MSFT,Microsoft,Technology,2021-07-29,2021,29.61,31.69,50.0,16.0,30,44,6.3383,3,"['unknown', 'business']",none,0.0,10,-2.4100000000000037,-0.07526545908807003
+MSFT,Microsoft,Technology,2022-07-28,2022,33.54,34.81,50.0,16.0,50,48,6.9629,5,"['unknown', 'business']",none,0.0,10,3.9299999999999997,0.13272543059777098
+MSFT,Microsoft,Technology,2023-07-27,2023,53.89,88.63,56.0,16.0,70,111,17.726,7,"['business', 'mda']",none,0.0,10,20.35,0.6067382230172929
+MSFT,Microsoft,Technology,2024-07-30,2024,55.8,100.0,56.0,16.0,60,176,26.9777,6,"['business', 'mda']",none,0.0,10,1.9099999999999966,0.035442568194470114
+MSFT,Microsoft,Technology,2025-07-30,2025,58.3,100.0,76.0,16.0,50,128,21.8021,5,"['unknown', 'business', 'mda']",none,0.0,10,2.5,0.04480286738351258
+NKE,Nike,Consumer,2020-07-24,2020,11.33,0.77,20.0,16.0,10,1,0.1548,1,['unknown'],none,0.0,1,,
+NKE,Nike,Consumer,2021-07-20,2021,11.33,0.77,20.0,16.0,10,1,0.1541,1,['unknown'],none,0.0,1,0.0,0.0
+NKE,Nike,Consumer,2022-07-21,2022,11.33,0.78,20.0,16.0,10,1,0.155,1,['unknown'],none,0.0,1,0.0,0.0
+NKE,Nike,Consumer,2023-07-20,2023,11.35,0.83,20.0,16.0,10,1,0.1658,1,['unknown'],none,0.0,1,0.019999999999999574,0.001765225066195919
+NKE,Nike,Consumer,2024-07-25,2024,17.57,6.56,20.0,16.0,40,8,1.3112,4,['unknown'],none,0.0,4,6.220000000000001,0.5480176211453744
+NKE,Nike,Consumer,2025-07-17,2025,15.84,5.8,20.0,16.0,30,7,1.161,3,['unknown'],none,0.0,3,-1.7300000000000004,-0.0984632896983495
+NOC,Northrop Grumman,Industrials,2020-01-30,2019,22.83,9.1,50.0,16.0,30,11,1.8209,3,"['unknown', 'business']",none,0.0,10,,
+NOC,Northrop Grumman,Industrials,2021-01-28,2020,23.24,10.48,50.0,16.0,30,13,2.0953,3,"['unknown', 'business']",none,0.0,10,0.41000000000000014,0.017958826106000858
+NOC,Northrop Grumman,Industrials,2022-01-27,2021,25.95,9.5,50.0,16.0,50,12,1.8997,5,"['unknown', 'business']",none,0.0,10,2.710000000000001,0.11660929432013778
+NOC,Northrop Grumman,Industrials,2023-01-26,2022,25.7,8.68,50.0,16.0,50,11,1.7359,5,"['unknown', 'business']",none,0.0,10,-0.25,-0.009633911368015391
+NOC,Northrop Grumman,Industrials,2024-01-25,2023,16.82,4.07,20.0,16.0,40,5,0.8134,4,['unknown'],none,0.0,5,-8.879999999999999,-0.34552529182879377
+NOC,Northrop Grumman,Industrials,2025-01-30,2024,17.09,4.95,20.0,16.0,40,6,0.9903,4,['unknown'],none,0.0,6,0.2699999999999996,0.016052318668251964
+NOC,Northrop Grumman,Industrials,2026-01-27,2025,18.83,10.77,20.0,16.0,40,13,2.1546,4,['unknown'],none,0.0,10,1.7399999999999984,0.10181392627267405
+NUE,Nucor,Industrials,2020-02-28,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+NUE,Nucor,Industrials,2021-02-26,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+NUE,Nucor,Industrials,2022-02-28,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+NUE,Nucor,Industrials,2023-03-01,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+NUE,Nucor,Industrials,2024-02-27,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+NUE,Nucor,Industrials,2025-02-27,2024,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+NUE,Nucor,Industrials,2026-02-25,2025,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+NVDA,Nvidia,Technology,2020-02-20,2019,55.9,100.0,64.0,16.0,50,92,21.1416,5,"['risk_factors', 'unknown', 'business']",none,0.0,10,,
+NVDA,Nvidia,Technology,2021-02-26,2020,58.82,99.75,64.0,16.0,70,97,19.9498,7,"['risk_factors', 'unknown', 'business']",none,0.0,10,2.9200000000000017,0.05223613595706622
+NVDA,Nvidia,Technology,2022-03-18,2021,56.1,100.0,50.0,16.0,70,117,23.9176,7,"['unknown', 'business']",none,0.0,10,-2.719999999999999,-0.046242774566473965
+NVDA,Nvidia,Technology,2023-02-24,2022,59.1,100.0,50.0,16.0,90,137,26.8986,9,"['unknown', 'business']",none,0.0,10,3.0,0.053475935828877
+NVDA,Nvidia,Technology,2024-02-21,2023,60.6,100.0,50.0,16.0,100,175,32.3714,10,"['unknown', 'business']",none,0.0,10,1.5,0.025380710659898442
+NVDA,Nvidia,Technology,2025-02-26,2024,60.6,100.0,50.0,16.0,100,200,36.2004,11,"['unknown', 'business']",none,0.0,10,0.0,0.0
+NVDA,Nvidia,Technology,2026-02-25,2025,60.6,100.0,50.0,16.0,100,197,36.6573,13,"['unknown', 'business']",none,0.0,10,0.0,0.0
+O,Realty Income,Real Estate,2020-02-24,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+O,Realty Income,Real Estate,2021-02-23,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+O,Realty Income,Real Estate,2022-02-23,2021,11.28,0.61,20.0,16.0,10,1,0.1221,1,['unknown'],none,0.0,1,11.28,inf
+O,Realty Income,Real Estate,2023-02-22,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-11.28,-1.0
+O,Realty Income,Real Estate,2024-02-21,2023,11.32,0.72,20.0,16.0,10,1,0.1434,1,['unknown'],none,0.0,1,11.32,inf
+O,Realty Income,Real Estate,2025-02-25,2024,11.31,0.71,20.0,16.0,10,1,0.1422,1,['unknown'],none,0.0,1,-0.009999999999999787,-0.0008833922261484162
+O,Realty Income,Real Estate,2026-02-25,2025,27.42,15.08,34.0,16.0,70,22,3.0154,7,"['risk_factors', 'unknown']",none,0.0,10,16.11,1.4244031830238728
+ORCL,Oracle,Technology,2020-06-22,2020,23.83,15.78,30.0,16.0,50,25,3.1553,5,"['unknown', 'financial_statements']",none,0.0,10,,
+ORCL,Oracle,Technology,2021-06-21,2021,25.14,20.14,30.0,16.0,50,31,4.0282,5,"['unknown', 'financial_statements']",none,0.0,10,1.3100000000000023,0.054972723457826334
+ORCL,Oracle,Technology,2022-06-21,2022,25.69,21.97,30.0,16.0,50,33,4.3943,5,"['unknown', 'financial_statements']",none,0.0,10,0.5500000000000007,0.02187748607796336
+ORCL,Oracle,Technology,2023-06-20,2023,27.38,22.6,30.0,16.0,60,34,4.5206,6,"['unknown', 'financial_statements']",none,0.0,10,1.6899999999999977,0.065784351887894
+ORCL,Oracle,Technology,2024-06-20,2024,41.02,43.07,60.0,16.0,70,63,8.6134,7,"['unknown', 'business', 'financial_statements']",none,0.0,10,13.640000000000004,0.49817384952520105
+ORCL,Oracle,Technology,2025-06-18,2025,38.58,54.94,30.0,16.0,70,80,10.9874,7,"['unknown', 'financial_statements']",none,0.0,10,-2.440000000000005,-0.059483178937103975
+PAGP,Plains GP Holdings,Energy,2020-02-27,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+PAGP,Plains GP Holdings,Energy,2021-03-01,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PAGP,Plains GP Holdings,Energy,2022-03-01,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PAGP,Plains GP Holdings,Energy,2023-03-01,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PAGP,Plains GP Holdings,Energy,2024-02-29,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PAGP,Plains GP Holdings,Energy,2025-02-28,2024,12.9,1.0,20.0,16.0,20,2,0.2001,2,['unknown'],none,0.0,1,12.9,inf
+PAGP,Plains GP Holdings,Energy,2026-02-27,2025,12.89,0.97,20.0,16.0,20,2,0.1938,2,['unknown'],none,0.0,1,-0.009999999999999787,-0.0007751937984495916
+PEP,PepsiCo,Consumer,2020-02-13,2019,13.35,2.49,20.0,16.0,20,4,0.4973,2,['unknown'],none,0.0,4,,
+PEP,PepsiCo,Consumer,2021-02-11,2020,11.76,2.21,20.0,16.0,10,3,0.4412,1,['unknown'],none,0.0,3,-1.5899999999999999,-0.11910112359550562
+PEP,PepsiCo,Consumer,2022-02-10,2021,13.49,2.97,20.0,16.0,20,4,0.5941,2,['unknown'],none,0.0,4,1.7300000000000004,0.14710884353741505
+PEP,PepsiCo,Consumer,2023-02-09,2022,13.47,2.89,20.0,16.0,20,4,0.5774,2,['unknown'],none,0.0,4,-0.019999999999999574,-0.001482579688658281
+PEP,PepsiCo,Consumer,2024-02-09,2023,19.43,7.75,20.0,16.0,50,11,1.5502,5,['unknown'],none,0.0,8,5.959999999999999,0.4424647364513734
+PEP,PepsiCo,Consumer,2025-02-04,2024,20.88,12.59,20.0,16.0,50,18,2.5181,5,['unknown'],none,0.0,10,1.4499999999999993,0.07462686567164178
+PEP,PepsiCo,Consumer,2026-02-03,2025,24.66,15.86,34.0,16.0,50,22,3.1729,5,"['risk_factors', 'unknown']",none,0.0,10,3.780000000000001,0.18103448275862077
+PFE,Pfizer,Healthcare,2021-02-25,2020,11.39,0.96,20.0,16.0,10,2,0.1919,1,['unknown'],none,0.0,2,,
+PFE,Pfizer,Healthcare,2022-02-24,2021,12.89,0.96,20.0,16.0,20,2,0.1926,2,['unknown'],none,0.0,2,1.5,0.13169446883230895
+PFE,Pfizer,Healthcare,2023-02-23,2022,11.25,0.49,20.0,16.0,10,1,0.0982,1,['unknown'],none,0.0,1,-1.6400000000000006,-0.12723041117145073
+PFE,Pfizer,Healthcare,2024-02-22,2023,11.94,2.79,20.0,16.0,10,6,0.5582,1,['unknown'],none,0.0,6,0.6899999999999995,0.06133333333333324
+PFE,Pfizer,Healthcare,2025-02-27,2024,22.17,5.22,60.0,16.0,20,11,1.0434,2,"['unknown', 'business', 'financial_statements']",none,0.0,9,10.230000000000002,0.8567839195979903
+PFE,Pfizer,Healthcare,2026-02-26,2025,34.18,23.59,70.0,16.0,50,49,4.7175,5,"['risk_factors', 'unknown', 'financial_statements', 'mda']",none,0.0,10,12.009999999999998,0.5417230491655389
+PFGC,Performance Food Group,Consumer,2020-08-18,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+PFGC,Performance Food Group,Consumer,2021-08-24,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PFGC,Performance Food Group,Consumer,2022-08-19,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PFGC,Performance Food Group,Consumer,2023-08-16,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PFGC,Performance Food Group,Consumer,2024-08-14,2024,13.61,3.36,20.0,16.0,20,4,0.6726,2,['unknown'],none,0.0,3,13.61,inf
+PFGC,Performance Food Group,Consumer,2025-08-13,2025,22.43,13.43,34.0,16.0,40,16,2.6864,4,"['risk_factors', 'unknown']",none,0.0,10,8.82,0.648052902277737
+PG,Procter & Gamble,Consumer,2022-08-05,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+PG,Procter & Gamble,Consumer,2023-08-04,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PG,Procter & Gamble,Consumer,2024-08-05,2024,17.55,7.17,34.0,16.0,20,7,1.4343,2,"['risk_factors', 'unknown']",none,0.0,5,17.55,inf
+PG,Procter & Gamble,Consumer,2025-08-04,2025,17.83,8.1,34.0,16.0,20,8,1.6206,2,"['risk_factors', 'unknown']",none,0.0,6,0.2799999999999976,0.015954415954415824
+PGR,Progressive,Financials,2022-02-28,2021,23.04,15.47,34.0,16.0,40,10,3.0934,4,"['risk_factors', 'unknown']",none,0.0,7,,
+PGR,Progressive,Financials,2023-02-27,2022,25.55,23.82,34.0,16.0,40,16,4.764,4,"['risk_factors', 'unknown']",none,0.0,10,2.5100000000000016,0.10894097222222232
+PGR,Progressive,Financials,2024-02-26,2023,33.32,39.73,34.0,16.0,60,27,7.9468,6,"['risk_factors', 'unknown']",none,0.0,10,7.77,0.30410958904109586
+PGR,Progressive,Financials,2025-03-03,2024,34.12,42.4,34.0,16.0,60,28,8.4807,6,"['risk_factors', 'unknown']",none,0.0,10,0.7999999999999972,0.024009603841536498
+PGR,Progressive,Financials,2026-03-02,2025,37.97,55.24,34.0,16.0,60,36,11.0474,6,"['risk_factors', 'unknown']",none,0.0,10,3.8500000000000014,0.11283704572098485
+PLD,Prologis,Real Estate,2020-02-11,2019,14.94,1.13,30.0,16.0,20,2,0.2255,2,"['unknown', 'financial_statements']",none,0.0,2,,
+PLD,Prologis,Real Estate,2021-02-11,2020,14.92,1.07,30.0,16.0,20,2,0.2139,2,"['unknown', 'financial_statements']",none,0.0,2,-0.019999999999999574,-0.0013386880856760541
+PLD,Prologis,Real Estate,2022-02-09,2021,14.93,1.1,30.0,16.0,20,2,0.2206,2,"['unknown', 'financial_statements']",none,0.0,2,0.009999999999999787,0.0006702412868633267
+PLD,Prologis,Real Estate,2023-02-14,2022,14.92,1.06,30.0,16.0,20,2,0.2115,2,"['unknown', 'financial_statements']",none,0.0,2,-0.009999999999999787,-0.0006697923643670389
+PLD,Prologis,Real Estate,2024-02-13,2023,14.93,1.11,30.0,16.0,20,2,0.2226,2,"['unknown', 'financial_statements']",none,0.0,2,0.009999999999999787,0.0006702412868633267
+PLD,Prologis,Real Estate,2025-02-14,2024,14.93,1.11,30.0,16.0,20,2,0.2212,2,"['unknown', 'financial_statements']",none,0.0,2,0.0,0.0
+PLD,Prologis,Real Estate,2026-02-13,2025,21.91,5.04,44.0,16.0,40,9,1.0078,4,"['risk_factors', 'unknown', 'financial_statements']",none,0.0,8,6.98,0.4675150703281983
+PRU,Prudential Financial,Financials,2021-02-19,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+PRU,Prudential Financial,Financials,2022-02-17,2021,11.24,0.47,20.0,16.0,10,2,0.0945,1,['unknown'],none,0.0,2,11.24,inf
+PRU,Prudential Financial,Financials,2023-02-16,2022,16.11,1.68,20.0,16.0,40,7,0.3369,4,['unknown'],none,0.0,5,4.869999999999999,0.4332740213523132
+PRU,Prudential Financial,Financials,2024-02-21,2023,18.08,8.26,20.0,16.0,40,38,1.6528,4,['unknown'],none,0.0,10,1.9699999999999989,0.12228429546865294
+PRU,Prudential Financial,Financials,2025-02-13,2024,19.43,12.76,20.0,16.0,40,55,2.5519,4,['unknown'],none,0.0,10,1.3500000000000014,0.07466814159292046
+PRU,Prudential Financial,Financials,2026-02-12,2025,19.29,12.29,20.0,16.0,40,49,2.4572,4,['unknown'],none,0.0,10,-0.14000000000000057,-0.0072053525476067914
+PSX,Phillips 66,Energy,2020-02-21,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+PSX,Phillips 66,Energy,2021-02-24,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PSX,Phillips 66,Energy,2022-02-18,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PSX,Phillips 66,Energy,2023-02-22,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PSX,Phillips 66,Energy,2024-02-21,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+PSX,Phillips 66,Energy,2025-02-21,2024,13.28,2.26,20.0,16.0,20,4,0.4514,2,['unknown'],none,0.0,2,13.28,inf
+PSX,Phillips 66,Energy,2026-02-20,2025,13.28,2.26,20.0,16.0,20,4,0.4516,2,['unknown'],none,0.0,2,0.0,0.0
+RTX,RTX Corporation,Industrials,2020-02-06,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+RTX,RTX Corporation,Industrials,2021-02-08,2020,11.39,0.98,20.0,16.0,10,2,0.1956,1,['unknown'],none,0.0,2,11.39,inf
+RTX,RTX Corporation,Industrials,2022-02-11,2021,15.23,2.11,30.0,16.0,20,4,0.422,2,"['unknown', 'financial_statements']",none,0.0,4,3.84,0.337137840210711
+RTX,RTX Corporation,Industrials,2023-02-07,2022,15.08,3.28,20.0,16.0,30,6,0.6558,3,['unknown'],none,0.0,5,-0.15000000000000036,-0.009848982271831952
+RTX,RTX Corporation,Industrials,2024-02-05,2023,14.95,2.83,20.0,16.0,30,5,0.5654,3,['unknown'],none,0.0,5,-0.13000000000000078,-0.008620689655172487
+RTX,RTX Corporation,Industrials,2025-02-03,2024,15.85,5.84,20.0,16.0,30,11,1.1676,3,['unknown'],none,0.0,10,0.9000000000000004,0.06020066889632103
+RTX,RTX Corporation,Industrials,2026-02-06,2025,15.83,5.78,20.0,16.0,30,10,1.1553,3,['unknown'],none,0.0,10,-0.019999999999999574,-0.0012618296529968154
+SBUX,Starbucks,Consumer,2020-11-12,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+SBUX,Starbucks,Consumer,2021-11-19,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SBUX,Starbucks,Consumer,2022-11-18,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SBUX,Starbucks,Consumer,2023-11-17,2023,11.64,1.8,20.0,16.0,10,2,0.3593,1,['unknown'],none,0.0,2,11.64,inf
+SBUX,Starbucks,Consumer,2024-11-20,2024,16.63,4.1,34.0,16.0,20,5,0.8205,2,"['risk_factors', 'unknown']",none,0.0,4,4.989999999999998,0.4286941580756012
+SBUX,Starbucks,Consumer,2025-11-14,2025,16.48,6.26,30.0,16.0,20,7,1.2511,2,"['unknown', 'financial_statements']",none,0.0,5,-0.14999999999999858,-0.009019843656043247
+SLB,Schlumberger,Energy,2020-01-22,2019,12.72,5.41,20.0,16.0,10,5,1.0812,1,['unknown'],none,0.0,2,,
+SLB,Schlumberger,Energy,2021-01-27,2020,14.3,5.66,20.0,16.0,20,6,1.1324,2,['unknown'],none,0.0,3,1.58,0.12421383647798745
+SLB,Schlumberger,Energy,2022-01-26,2021,16.28,7.27,20.0,16.0,30,7,1.455,3,['unknown'],none,0.0,4,1.9800000000000004,0.1384615384615384
+SLB,Schlumberger,Energy,2023-01-25,2022,17.52,6.39,20.0,16.0,40,6,1.2784,4,['unknown'],none,0.0,4,1.2399999999999984,0.07616707616707608
+SLB,Schlumberger,Energy,2024-01-24,2023,23.89,10.31,46.0,16.0,40,9,2.061,4,"['unknown', 'mda']",none,0.0,6,6.370000000000001,0.3635844748858448
+SLB,Schlumberger,Energy,2025-01-22,2024,22.14,16.81,20.0,16.0,50,15,3.362,5,['unknown'],none,0.0,10,-1.75,-0.07325240686479695
+SLB,Schlumberger,Energy,2026-01-23,2025,23.47,21.22,20.0,16.0,50,20,4.244,5,['unknown'],none,0.0,10,1.3299999999999983,0.06007226738934057
+SNEX,StoneX Group,Financials,2020-12-14,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+SNEX,StoneX Group,Financials,2021-11-29,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SNEX,StoneX Group,Financials,2022-11-29,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SNEX,StoneX Group,Financials,2023-11-24,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SNEX,StoneX Group,Financials,2024-11-29,2024,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SNEX,StoneX Group,Financials,2025-11-28,2025,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SNX,TD Synnex,Technology,2020-01-29,2019,19.2,7.65,34.0,16.0,30,11,1.5309,3,"['risk_factors', 'unknown']",none,0.0,9,,
+SNX,TD Synnex,Technology,2021-01-28,2020,14.46,6.21,20.0,16.0,20,9,1.2426,2,['unknown'],none,0.0,8,-4.739999999999998,-0.24687499999999996
+SNX,TD Synnex,Technology,2022-01-28,2021,11.32,0.73,20.0,16.0,10,1,0.147,1,['unknown'],none,0.0,1,-3.1400000000000006,-0.21715076071922546
+SNX,TD Synnex,Technology,2023-01-24,2022,11.85,2.5,20.0,16.0,10,3,0.4992,1,['unknown'],none,0.0,3,0.5299999999999994,0.04681978798586561
+SNX,TD Synnex,Technology,2024-01-26,2023,17.89,5.95,30.0,16.0,30,7,1.1905,3,"['unknown', 'financial_statements']",none,0.0,6,6.040000000000001,0.5097046413502111
+SNX,TD Synnex,Technology,2025-01-24,2024,20.81,8.02,34.0,16.0,40,9,1.6044,4,"['risk_factors', 'unknown']",none,0.0,7,2.919999999999998,0.1632196757965343
+SNX,TD Synnex,Technology,2026-01-27,2025,23.8,20.66,30.0,16.0,40,24,4.1318,4,"['unknown', 'financial_statements']",none,0.0,10,2.990000000000002,0.14368092263334953
+SPG,Simon Property Group,Real Estate,2020-02-21,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+SPG,Simon Property Group,Real Estate,2021-02-25,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SPG,Simon Property Group,Real Estate,2022-02-24,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SPG,Simon Property Group,Real Estate,2023-02-23,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SPG,Simon Property Group,Real Estate,2024-02-22,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SPG,Simon Property Group,Real Estate,2025-02-21,2024,21.7,10.99,34.0,16.0,40,24,2.1971,4,"['risk_factors', 'unknown']",none,0.0,10,21.7,inf
+SPG,Simon Property Group,Real Estate,2026-02-25,2025,22.03,12.09,34.0,16.0,40,27,2.4176,4,"['risk_factors', 'unknown']",none,0.0,10,0.33000000000000185,0.01520737327188959
+SYY,Sysco,Consumer,2020-08-26,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+SYY,Sysco,Consumer,2021-08-30,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SYY,Sysco,Consumer,2022-08-26,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+SYY,Sysco,Consumer,2023-08-25,2023,13.25,2.15,20.0,16.0,20,3,0.4308,2,['unknown'],none,0.0,2,13.25,inf
+SYY,Sysco,Consumer,2024-08-28,2024,17.92,12.75,20.0,16.0,30,18,2.5492,3,['unknown'],none,0.0,10,4.670000000000002,0.35245283018867934
+SYY,Sysco,Consumer,2025-08-22,2025,17.93,12.76,20.0,16.0,30,18,2.5528,3,['unknown'],none,0.0,10,0.00999999999999801,0.0005580357142855874
+T,AT&T,Technology,2022-02-16,2021,12.96,1.2,20.0,16.0,20,2,0.2402,2,['unknown'],none,0.0,2,,
+T,AT&T,Technology,2023-02-13,2022,13.03,1.42,20.0,16.0,20,2,0.2843,2,['unknown'],none,0.0,2,0.06999999999999851,0.005401234567901092
+T,AT&T,Technology,2024-02-23,2023,20.58,6.62,20.0,16.0,60,9,1.3231,6,['unknown'],none,0.0,6,7.549999999999999,0.5794320798158097
+T,AT&T,Technology,2025-02-12,2024,26.39,10.97,50.0,16.0,50,14,2.1939,5,"['unknown', 'business']",none,0.0,8,5.810000000000002,0.28231292517006823
+T,AT&T,Technology,2026-02-09,2025,27.44,14.47,50.0,16.0,50,18,2.8932,5,"['unknown', 'business']",none,0.0,10,1.0500000000000007,0.039787798408488007
+TGT,Target,Consumer,2020-03-11,2019,13.46,2.86,20.0,16.0,20,2,0.5724,2,['unknown'],none,0.0,2,,
+TGT,Target,Consumer,2021-03-10,2020,13.5,3.01,20.0,16.0,20,2,0.6013,2,['unknown'],none,0.0,2,0.03999999999999915,0.002971768202080227
+TGT,Target,Consumer,2022-03-09,2021,13.54,3.12,20.0,16.0,20,2,0.6236,2,['unknown'],none,0.0,2,0.03999999999999915,0.002962962962962834
+TGT,Target,Consumer,2023-03-08,2022,13.54,3.15,20.0,16.0,20,2,0.6298,2,['unknown'],none,0.0,2,0.0,0.0
+TGT,Target,Consumer,2024-03-13,2023,17.64,7.45,34.0,16.0,20,5,1.4904,2,"['risk_factors', 'unknown']",none,0.0,4,4.100000000000001,0.30280649926144765
+TGT,Target,Consumer,2025-03-12,2024,30.25,22.18,60.0,16.0,40,16,4.4353,4,"['risk_factors', 'unknown', 'mda']",none,0.0,9,12.61,0.7148526077097506
+TJX,TJX Companies,Consumer,2020-03-27,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+TJX,TJX Companies,Consumer,2021-03-31,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+TJX,TJX Companies,Consumer,2022-03-30,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+TJX,TJX Companies,Consumer,2023-03-29,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+TJX,TJX Companies,Consumer,2024-04-03,2024,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+TJX,TJX Companies,Consumer,2025-04-02,2025,15.15,4.18,34.0,16.0,10,4,0.8358,1,"['risk_factors', 'unknown']",none,0.0,4,15.15,inf
+TMO,Thermo Fisher Scientific,Healthcare,2020-02-26,2019,11.85,2.51,20.0,16.0,10,3,0.5017,1,['unknown'],none,0.0,3,,
+TMO,Thermo Fisher Scientific,Healthcare,2021-02-25,2020,13.41,2.7,20.0,16.0,20,3,0.5393,2,['unknown'],none,0.0,3,1.5600000000000005,0.1316455696202532
+TMO,Thermo Fisher Scientific,Healthcare,2022-02-24,2021,13.63,3.43,20.0,16.0,20,4,0.6861,2,['unknown'],none,0.0,4,0.22000000000000064,0.01640566741237892
+TMO,Thermo Fisher Scientific,Healthcare,2023-02-23,2022,11.39,0.95,20.0,16.0,10,1,0.1909,1,['unknown'],none,0.0,1,-2.24,-0.16434336023477625
+TMO,Thermo Fisher Scientific,Healthcare,2024-02-22,2023,13.17,1.88,20.0,16.0,20,2,0.377,2,['unknown'],none,0.0,2,1.7799999999999994,0.15627743634767333
+TMO,Thermo Fisher Scientific,Healthcare,2025-02-20,2024,13.76,3.85,20.0,16.0,20,4,0.7702,2,['unknown'],none,0.0,4,0.5899999999999999,0.04479878511769164
+TMO,Thermo Fisher Scientific,Healthcare,2026-02-26,2025,22.89,19.31,20.0,16.0,50,21,3.8622,5,['unknown'],none,0.0,10,9.13,0.6635174418604652
+TRV,Travelers,Financials,2020-02-13,2019,24.32,2.4,60.0,16.0,40,7,0.4795,4,"['risk_factors', 'unknown', 'mda']",none,0.0,6,,
+TRV,Travelers,Financials,2021-02-11,2020,24.39,2.63,60.0,16.0,40,7,0.5261,4,"['risk_factors', 'unknown', 'mda']",none,0.0,6,0.07000000000000028,0.0028782894736842923
+TRV,Travelers,Financials,2022-02-17,2021,24.75,3.84,60.0,16.0,40,10,0.7674,4,"['risk_factors', 'unknown', 'mda']",none,0.0,8,0.35999999999999943,0.014760147601476037
+TRV,Travelers,Financials,2023-02-16,2022,24.88,4.26,60.0,16.0,40,11,0.8515,4,"['risk_factors', 'unknown', 'mda']",none,0.0,8,0.129999999999999,0.005252525252525286
+TRV,Travelers,Financials,2024-02-15,2023,20.59,7.29,34.0,16.0,40,19,1.4589,4,"['risk_factors', 'unknown']",none,0.0,10,-4.289999999999999,-0.172427652733119
+TRV,Travelers,Financials,2025-02-13,2024,24.25,9.51,34.0,16.0,60,25,1.9013,6,"['risk_factors', 'unknown']",none,0.0,10,3.66,0.17775619232637196
+TRV,Travelers,Financials,2026-02-12,2025,22.45,13.49,34.0,16.0,40,35,2.6978,4,"['risk_factors', 'unknown']",none,0.0,10,-1.8000000000000007,-0.07422680412371141
+TSLA,Tesla,Industrials,2020-02-13,2019,19.91,5.05,34.0,16.0,40,10,1.0098,4,"['risk_factors', 'unknown']",none,0.0,10,,
+TSLA,Tesla,Industrials,2021-02-08,2020,15.21,3.71,20.0,16.0,30,7,0.7415,3,['unknown'],none,0.0,7,-4.699999999999999,-0.23606228026117526
+TSLA,Tesla,Industrials,2020-04-28,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-15.21,-1.0
+TSLA,Tesla,Industrials,2022-02-07,2021,22.78,6.61,46.0,16.0,40,11,1.322,4,"['unknown', 'mda']",none,0.0,9,22.78,inf
+TSLA,Tesla,Industrials,2021-04-30,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-22.78,-1.0
+TSLA,Tesla,Industrials,2023-01-31,2022,21.38,9.28,20.0,16.0,60,14,1.8564,6,['unknown'],none,0.0,10,21.38,inf
+TSLA,Tesla,Industrials,2022-05-02,2022,11.63,1.75,20.0,16.0,10,1,0.3509,1,['unknown'],none,0.0,1,-9.749999999999998,-0.4560336763330215
+TSLA,Tesla,Industrials,2024-01-29,2023,28.87,12.56,60.0,16.0,50,16,2.5113,5,"['risk_factors', 'unknown', 'mda']",none,0.0,10,17.240000000000002,1.4823731728288907
+TSLA,Tesla,Industrials,2025-01-30,2024,27.2,24.33,34.0,16.0,50,30,4.8662,5,"['risk_factors', 'unknown']",none,0.0,10,-1.6700000000000017,-0.05784551437478358
+TSLA,Tesla,Industrials,2026-01-29,2025,46.18,76.94,50.0,16.0,50,97,15.3888,5,"['unknown', 'business']",none,0.0,10,18.98,0.6977941176470588
+TSLA,Tesla,Industrials,2025-04-30,2025,15.92,11.05,20.0,16.0,20,6,2.2106,2,['unknown'],none,0.0,5,-30.259999999999998,-0.6552620181896924
+TSN,Tyson Foods,Consumer,2021-02-11,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+TSN,Tyson Foods,Consumer,2020-11-16,2020,12.99,1.3,20.0,16.0,20,2,0.2594,2,['unknown'],none,0.0,2,12.99,inf
+TSN,Tyson Foods,Consumer,2021-11-15,2021,17.56,6.53,20.0,16.0,40,9,1.3053,4,['unknown'],none,0.0,7,4.5699999999999985,0.3518090839107004
+TSN,Tyson Foods,Consumer,2022-11-14,2022,17.78,7.26,20.0,16.0,40,10,1.453,4,['unknown'],none,0.0,8,0.22000000000000242,0.01252847380410027
+TSN,Tyson Foods,Consumer,2023-11-13,2023,17.24,5.47,20.0,16.0,40,8,1.0932,4,['unknown'],none,0.0,6,-0.5400000000000027,-0.030371203599550256
+TSN,Tyson Foods,Consumer,2024-11-12,2024,14.75,2.15,20.0,16.0,30,3,0.4301,3,['unknown'],none,0.0,3,-2.4899999999999984,-0.14443155452436185
+TSN,Tyson Foods,Consumer,2025-11-10,2025,14.94,2.81,20.0,16.0,30,4,0.5613,3,['unknown'],none,0.0,4,0.1899999999999995,0.012881355932203409
+UAL,United Airlines,Industrials,2020-02-25,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+UAL,United Airlines,Industrials,2021-03-01,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+UAL,United Airlines,Industrials,2022-02-18,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+UAL,United Airlines,Industrials,2023-02-16,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+UAL,United Airlines,Industrials,2024-02-29,2023,14.79,7.31,20.0,16.0,20,11,1.4627,2,['unknown'],none,0.0,6,14.79,inf
+UAL,United Airlines,Industrials,2025-02-27,2024,15.58,9.95,20.0,16.0,20,14,1.9896,2,['unknown'],none,0.0,7,0.7900000000000009,0.053414469235970374
+UAL,United Airlines,Industrials,2026-02-12,2025,15.77,10.57,20.0,16.0,20,15,2.1148,2,['unknown'],none,0.0,8,0.1899999999999995,0.012195121951219523
+UBER,Uber Technologies,Technology,2021-03-01,2020,30.84,19.15,60.0,16.0,50,46,3.8298,5,"['unknown', 'business', 'financial_statements']",none,0.0,10,,
+UBER,Uber Technologies,Technology,2022-02-24,2021,22.36,17.54,20.0,16.0,50,40,3.5083,5,['unknown'],none,0.0,10,-8.48,-0.27496757457846954
+UBER,Uber Technologies,Technology,2023-02-21,2022,22.19,16.97,20.0,16.0,50,37,3.3933,5,['unknown'],none,0.0,10,-0.16999999999999815,-0.007602862254024956
+UBER,Uber Technologies,Technology,2024-02-15,2023,28.2,26.99,20.0,16.0,70,56,5.3974,7,['unknown'],none,0.0,10,6.009999999999998,0.2708427219468228
+UBER,Uber Technologies,Technology,2025-02-14,2024,29.46,31.2,20.0,16.0,70,61,6.2393,7,['unknown'],none,0.0,10,1.2600000000000016,0.04468085106382991
+UBER,Uber Technologies,Technology,2026-02-13,2025,31.06,36.54,20.0,16.0,70,70,7.3086,7,['unknown'],none,0.0,10,1.5999999999999979,0.054310930074677355
+UNH,UnitedHealth Group,Healthcare,2021-03-01,2020,11.39,0.98,20.0,16.0,10,1,0.1955,1,['unknown'],none,0.0,1,,
+UNH,UnitedHealth Group,Healthcare,2022-02-15,2021,11.39,0.98,20.0,16.0,10,1,0.1959,1,['unknown'],none,0.0,1,0.0,0.0
+UNH,UnitedHealth Group,Healthcare,2023-02-24,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-11.39,-1.0
+UNH,UnitedHealth Group,Healthcare,2024-02-28,2023,28.78,33.94,20.0,16.0,60,34,6.7874,6,['unknown'],none,0.0,10,28.78,inf
+UNH,UnitedHealth Group,Healthcare,2025-02-27,2024,28.6,33.33,20.0,16.0,60,34,6.6669,6,['unknown'],none,0.0,10,-0.17999999999999972,-0.006254343293954134
+UNH,UnitedHealth Group,Healthcare,2026-03-02,2025,23.57,21.55,20.0,16.0,50,23,4.3108,5,['unknown'],none,0.0,10,-5.030000000000001,-0.17587412587412588
+UPS,UPS,Industrials,2020-02-20,2019,11.46,1.2,20.0,16.0,10,2,0.2392,1,['unknown'],none,0.0,2,,
+UPS,UPS,Industrials,2021-02-22,2020,16.68,1.28,46.0,16.0,10,2,0.2566,1,"['unknown', 'mda']",none,0.0,2,5.219999999999999,0.45549738219895275
+UPS,UPS,Industrials,2022-02-22,2021,16.7,1.33,46.0,16.0,10,2,0.2666,1,"['unknown', 'mda']",none,0.0,2,0.019999999999999574,0.0011990407673860837
+UPS,UPS,Industrials,2023-02-21,2022,12.13,3.45,20.0,16.0,10,5,0.689,1,['unknown'],none,0.0,5,-4.5699999999999985,-0.27365269461077835
+UPS,UPS,Industrials,2024-02-20,2023,19.39,2.64,50.0,16.0,20,4,0.5286,2,"['unknown', 'business']",none,0.0,4,7.26,0.5985160758450123
+UPS,UPS,Industrials,2025-02-18,2024,18.75,3.16,46.0,16.0,20,5,0.6316,2,"['unknown', 'mda']",none,0.0,5,-0.6400000000000006,-0.03300670448684895
+UPS,UPS,Industrials,2026-02-17,2025,18.66,10.2,20.0,16.0,40,15,2.0403,4,['unknown'],none,0.0,10,-0.08999999999999986,-0.0048000000000000265
+VLO,Valero Energy,Energy,2020-02-26,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+VLO,Valero Energy,Energy,2021-02-23,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+VLO,Valero Energy,Energy,2022-02-22,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+VLO,Valero Energy,Energy,2023-02-23,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+VLO,Valero Energy,Energy,2024-02-22,2023,11.33,0.75,20.0,16.0,10,1,0.1502,1,['unknown'],none,0.0,1,11.33,inf
+VLO,Valero Energy,Energy,2025-02-26,2024,15.24,3.81,20.0,16.0,30,5,0.7613,3,['unknown'],none,0.0,3,3.91,0.3451015004413063
+VLO,Valero Energy,Energy,2026-02-25,2025,17.61,6.72,20.0,16.0,40,9,1.343,4,['unknown'],none,0.0,7,2.369999999999999,0.155511811023622
+VZ,Verizon,Technology,2024-02-09,2023,15.1,3.34,20.0,16.0,30,5,0.669,3,['unknown'],none,0.0,4,,
+VZ,Verizon,Technology,2025-02-12,2024,20.27,10.56,20.0,16.0,50,16,2.112,5,['unknown'],none,0.0,10,5.17,0.3423841059602648
+VZ,Verizon,Technology,2026-02-17,2025,23.86,17.55,20.0,16.0,60,26,3.5094,6,['unknown'],none,0.0,10,3.59,0.17710902812037488
+WELL,Welltower,Real Estate,2020-02-14,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+WELL,Welltower,Real Estate,2021-02-10,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+WELL,Welltower,Real Estate,2022-02-16,2021,11.22,0.39,20.0,16.0,10,1,0.0771,1,['unknown'],none,0.0,1,11.22,inf
+WELL,Welltower,Real Estate,2023-02-21,2022,11.21,0.36,20.0,16.0,10,1,0.0723,1,['unknown'],none,0.0,1,-0.009999999999999787,-0.0008912655971479166
+WELL,Welltower,Real Estate,2024-02-15,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,-11.21,-1.0
+WELL,Welltower,Real Estate,2025-02-12,2024,22.67,9.23,34.0,16.0,50,28,1.8468,5,"['risk_factors', 'unknown']",none,0.0,10,22.67,inf
+WELL,Welltower,Real Estate,2026-02-12,2025,25.39,18.3,34.0,16.0,50,40,3.6591,5,"['risk_factors', 'unknown']",none,0.0,10,2.719999999999999,0.11998235553595049
+WFC,Wells Fargo,Financials,2024-02-20,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+WFC,Wells Fargo,Financials,2025-02-25,2024,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+WFC,Wells Fargo,Financials,2026-02-24,2025,12.21,3.71,20.0,16.0,10,1,0.7424,1,['unknown'],none,0.0,1,12.21,inf
+WMT,Walmart,Consumer,2023-03-17,2022,15.21,4.37,34.0,16.0,10,5,0.8738,1,"['risk_factors', 'unknown']",none,0.0,5,,
+WMT,Walmart,Consumer,2024-03-15,2023,17.42,6.72,34.0,16.0,20,8,1.3441,2,"['risk_factors', 'unknown']",none,0.0,7,2.210000000000001,0.14529914529914545
+WMT,Walmart,Consumer,2025-03-14,2024,24.81,21.38,34.0,16.0,40,25,4.2762,4,"['risk_factors', 'unknown']",none,0.0,10,7.389999999999997,0.42422502870264034
+XOM,ExxonMobil,Energy,2020-02-26,2019,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+XOM,ExxonMobil,Energy,2021-02-24,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+XOM,ExxonMobil,Energy,2022-02-23,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+XOM,ExxonMobil,Energy,2023-02-22,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+XOM,ExxonMobil,Energy,2024-02-28,2023,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+XOM,ExxonMobil,Energy,2025-02-19,2024,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+XOM,ExxonMobil,Energy,2026-02-18,2025,19.67,3.55,50.0,16.0,20,5,0.7107,2,"['unknown', 'business']",none,0.0,3,19.67,inf

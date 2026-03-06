@@ -1,4 +1,4 @@
-"""Load Anthropic API config from repo root api_keys.py or environment."""
+"""Load Anthropic API config from environment or local api_keys.py."""
 import os
 from pathlib import Path
 
@@ -22,4 +22,14 @@ def get_anthropic_config() -> str:
     return api_key
 
 
+def get_anthropic_client():
+    """Return an Anthropic client, or None if no API key."""
+    api_key = get_anthropic_config()
+    if not api_key:
+        return None
+    from anthropic import Anthropic
+    return Anthropic(api_key=api_key)
+
+
+# Model constants
 HAIKU_MODEL = "claude-haiku-4-5-20251001"

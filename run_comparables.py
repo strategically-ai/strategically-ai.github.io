@@ -42,13 +42,13 @@ def main() -> None:
         industries = chosen
 
     ensure_output_dir()
-    openai_client = None
+    anthropic_client = None
     try:
-        from openai import OpenAI
-        from comparables.env_loader import get_openai_config
-        api_key, base_url = get_openai_config()
+        from anthropic import Anthropic
+        from comparables.env_loader import get_anthropic_config
+        api_key = get_anthropic_config()
         if api_key:
-            openai_client = OpenAI(api_key=api_key, base_url=base_url)
+            anthropic_client = Anthropic(api_key=api_key)
     except Exception:
         pass
     run_log = {"industries": [], "rows_written": 0, "revenue_rows": 0, "errors": [], "warnings": []}
@@ -75,7 +75,7 @@ def main() -> None:
         paths = write_industry_csv(table, industry, versioned=not args.no_versioned)
         print(f"  Wrote {paths[0]}" + (f" + {paths[1]}" if len(paths) > 1 else ""))
         # Optional sector pulse (LLM) — feed full table data for richer commentary
-        if openai_client:
+        if anthropic_client:
             try:
                 n = len(table)
                 lines = [f"{n} names in {industry}."]
@@ -104,7 +104,7 @@ def main() -> None:
                                     parts.append(f"{c}={v:.1f}x")
                         lines.append(f"  {t}: {', '.join(parts)}")
                 summary = "\n".join(lines)
-                pulse = generate_sector_pulse(industry, summary, openai_client)
+                pulse = generate_sector_pulse(industry, summary, anthropic_client)
                 if pulse:
                     write_sector_pulse(industry, pulse)
                     print(f"  Wrote sector_pulse_{industry.lower().replace(' ', '_')}.json")
