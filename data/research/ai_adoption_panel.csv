@@ -1,0 +1,17 @@
+ticker,name,industry,filing_date,fiscal_year,ai_adoption_score,keyword_score,section_score,classification_score,breadth_score,keyword_count,keyword_density,unique_keywords,sections_with_ai,primary_category,avg_commitment,passage_count,ai_score_yoy_change,ai_score_yoy_pct
+AAPL,Apple,Technology,2020-10-30,2020,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,,
+AAPL,Apple,Technology,2021-10-29,2021,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+AAPL,Apple,Technology,2022-10-28,2022,0.0,0.0,0.0,0.0,0,0,0.0,0,[],none,0.0,0,0.0,
+AAPL,Apple,Technology,2023-11-03,2023,11.54,3.12,10.0,16.0,20,2,0.624,2,['financial_statements'],none,0.0,1,11.54,inf
+AAPL,Apple,Technology,2024-11-01,2024,18.88,9.25,30.0,16.0,30,6,1.8505,3,"['financial_statements', 'unknown']",none,0.0,4,7.34,0.6360485268630849
+AAPL,Apple,Technology,2025-10-31,2025,17.18,15.27,20.0,16.0,20,10,3.0542,2,['unknown'],none,0.0,6,-1.6999999999999993,-0.09004237288135586
+GOOGL,Alphabet,Technology,2023-02-03,2022,27.4,27.02,46.0,16.0,30,28,5.4032,3,"['unknown', 'mda']",none,0.0,10,,
+GOOGL,Alphabet,Technology,2024-01-31,2023,58.1,100.0,60.0,16.0,70,125,22.7649,7,"['business', 'financial_statements', 'unknown']",none,0.0,10,30.700000000000003,1.1204379562043796
+GOOGL,Alphabet,Technology,2025-02-05,2024,56.6,100.0,60.0,16.0,60,130,23.0084,6,"['business', 'financial_statements', 'unknown']",none,0.0,10,-1.5,-0.025817555938037917
+GOOGL,Alphabet,Technology,2026-02-05,2025,58.3,100.0,76.0,16.0,50,133,23.7827,5,"['business', 'unknown', 'mda']",none,0.0,10,1.6999999999999957,0.030035335689045928
+MSFT,Microsoft,Technology,2020-07-30,2020,32.02,30.38,64.0,16.0,30,42,6.0769,3,"['business', 'unknown', 'risk_factors']",none,0.0,10,,
+MSFT,Microsoft,Technology,2021-07-29,2021,29.61,31.69,50.0,16.0,30,44,6.3383,3,"['business', 'unknown']",none,0.0,10,-2.4100000000000037,-0.07526545908807003
+MSFT,Microsoft,Technology,2022-07-28,2022,33.54,34.81,50.0,16.0,50,48,6.9629,5,"['business', 'unknown']",none,0.0,10,3.9299999999999997,0.13272543059777098
+MSFT,Microsoft,Technology,2023-07-27,2023,53.89,88.63,56.0,16.0,70,111,17.726,7,"['business', 'mda']",none,0.0,10,20.35,0.6067382230172929
+MSFT,Microsoft,Technology,2024-07-30,2024,55.8,100.0,56.0,16.0,60,176,26.9777,6,"['business', 'mda']",none,0.0,10,1.9099999999999966,0.035442568194470114
+MSFT,Microsoft,Technology,2025-07-30,2025,58.3,100.0,76.0,16.0,50,128,21.8021,5,"['business', 'unknown', 'mda']",none,0.0,10,2.5,0.04480286738351258
