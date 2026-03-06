@@ -1,9 +1,9 @@
 {
   "errors": [],
   "stages_completed": [
-    "backfill"
+    "scoring"
   ],
-  "filings_cached": 698,
-  "companies_with_filings": 112,
-  "timestamp": "2026-03-06T17:53:44.347088"
+  "filings_scored": 698,
+  "mean_ai_score": 15.98,
+  "timestamp": "2026-03-06T17:55:13.587710"
 }
